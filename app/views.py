@@ -1044,3 +1044,26 @@ def get_current_theme(request):
     data = {'current_theme':f'{get_theme.theme_name}'}
     return JsonResponse(data)
 # ----------------------------------------- ASHIKH VU (end) -------------------------------------
+
+#--------------------------------------------Antony Tom------------------------------------------
+
+def crm(request):
+    if ThemeModel.objects.filter().exists():
+        current_theme = ThemeModel.objects.last().theme_name
+    else:
+        current_theme = ''
+    return render(request, 'crm.html',{"current_theme":current_theme})
+
+def altosconnect(request):
+    if ThemeModel.objects.filter().exists():
+        current_theme = ThemeModel.objects.last().theme_name
+    else:
+        current_theme = ''
+    return render(request, 'altosconnect.html',{"current_theme":current_theme})
+
+def billingsoftware(request):
+    if ThemeModel.objects.filter().exists():
+        current_theme = ThemeModel.objects.last().theme_name
+    else:
+        current_theme = ''
+    return render(request, 'billingsoftware.html',{"current_theme":current_theme})

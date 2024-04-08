@@ -135,7 +135,7 @@ urlpatterns = [
     path('Enquery-Reject/<int:pk>',views.enq_reject,name="enq_reject"),
     path('Enquery-Delete/<int:pk>',views.enq_delete,name="enq_delete"),
     
-    path('Service/WhatsappMarketTools',views.whatsappmarkettools,name='whatsappmarkettools'),
+    path('Service/AltosConnect', views.whatsappmarkettools, name='whatsappmarkettools'),
     
     
     re_path(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
@@ -144,6 +144,13 @@ urlpatterns = [
     path('change_theme/<str:theme>',views.change_theme,name='change_theme'),
     path('get_current_theme',views.get_current_theme,name='get_current_theme'),
     # -----------------------------------  ASHIKH VU (end)-----------------------------------
+
+
+    # ---------------------------------------Antony Tom------------------------------------------
+    path('crm',views.crm,name='crm'),
+    path('altosconnect',views.altosconnect,name='altosconnect'),
+    path('billingsoftware',views.billingsoftware,name='billingsoftware'),
+
 
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS)
