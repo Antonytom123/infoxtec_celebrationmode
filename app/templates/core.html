@@ -1055,9 +1055,9 @@ h5 {
     background-size: cover;
     background-repeat: no-repeat;
   }
-  .background_img1{
-    /* background-image: radial-gradient(white,rgba(255, 255, 255, 0.531),rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.245)); */
-  }
+  /* .background_img1{
+     background-image: radial-gradient(white,rgba(255, 255, 255, 0.531),rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.245)); 
+  } */
   #santa_peek11{
     width: 10rem;
   }
@@ -2516,6 +2516,33 @@ h5 {
             Contact
           </a>
         </li>
+
+        <!-- <li>
+          <a 
+          {% if current_theme == 'pongal' %}
+          class="nav-link scrollto cont hover_anchor_pongal" 
+          {% elif current_theme == 'vishu' %}
+          class="nav-link scrollto cont hover_anchor_vishu"
+          {% elif current_theme == 'easter' %}
+            class="nav-link scrollto cont easter_text_sm_bg1_hover"
+          {% elif current_theme == 'xmas' %}
+            class="nav-link scrollto cont xmas_nav_text"
+          {% elif current_theme == 'republic' %}
+            class="nav-link scrollto cont republic_nav_text"
+          {% elif current_theme == 'onam' %}
+            class="nav-link scrollto cont onam_hover"
+          {% elif current_theme == 'diwali' %}
+            class="nav-link scrollto cont diwali_nav"
+          {% elif current_theme == 'ramadan' %}
+            class="nav-link scrollto cont ramadan_nav_text"
+          {% else %}
+          class="nav-link scrollto cont hover_anchor" 
+          {% endif %}
+          href="{% url 'crm' %}">
+            Crm
+          </a>
+        </li> -->
+
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
@@ -2659,31 +2686,14 @@ h5 {
             {% endif %}
           </div>
         </div>
-        <!-- <div class="col-lg-6 col-sm-12 col-md-6">
-          <div class="content-boxs">
-          <h2>CRM </h2>
-          <p>We recognise that each business is different and that commercial CRM 
-            software might not always meet your organization's precise demands and objectives. 
-            We provide a unique CRM solution designed specifically for your company because of this.
-          </p>
-          <p>
-            In order to guarantee that it meets your company's precise demands, 
-            our Custom CRM software is created from the ground up utilising a combination 
-            of pre-built modules and custom-built features. It can be connected with other 
-            systems to provide a faster workflow and a single source of truth for all client 
-            data, such as accounting software. Furthermore, because our custom CRM software can 
-            be made to accommodate several languages and currencies, international firms can use it.
-            
-          </p>
-          </div>
-        </div> -->
+
       </div>
     </div>
   </section>
 
   <section class="pt-0">
     <div class="container mt-3">
-      <div class="row  g-3 content-boxs-parent border-0 rounded-4"">
+      <div class="row  g-3 content-boxs-parent border-0 rounded-4">
         <!-- <div class=" col-lg-6 col-sm-12 col-md-6">
           <div class="content-boxs">
             <h2>ERP </h2>
@@ -2808,7 +2818,7 @@ h5 {
           </div>
           {% endif %}
           
-          <div class="km-button my-4"><a role="button" href="/contact" 
+          <div class="km-button my-4"><a role="button" href="/crm" 
             {% if current_theme == 'pongal' %}
              class="knowmore-button1" 
             {% elif current_theme == 'vishu' %}
@@ -2835,952 +2845,302 @@ h5 {
     </div>
   </section>
 
-  
-  
 
-<section class="core-content1">
-  <div class="container mt-3">
-      {% if current_theme == 'diwali' %}
-      <div class="position-relative " style="z-index: 1;">
-        <div class="position-absolute diwali_kolam1_left_top">
-          <img loading="lazy"  id="diwali_kolam1_left" draggable="false" src="{% static 'diwali/decor/kolam1_left_half.png' %}" alt="">
-      </div>
-      </div>
-      {% endif %}
-      <div class="content" >
-        {% if current_theme == 'pongal' %}
-        <h4 class="pongal_text_theme mb-5" style="color: transparent;">//Smart CORE Software for Businesses</h4>
-        {% elif current_theme == 'vishu' %}
-        <h4 class="vishu_text_bg1 mb-5" style="color: transparent;">//Smart CORE Software for Businesses</h4>
-        {% elif current_theme == 'easter' %}
-        <h4 class="easter_text_bg1 mb-5" style="color: transparent;">//Smart CORE Software for Businesses</h4>
-        {% elif current_theme == 'xmas' %}
-        <h4 class="text-light xmas_text mb-5">//Smart CORE Software for Businesses</h4>
-        {% elif current_theme == 'onam' %}
-        <h4 style="color: orange;">//Smart CORE Software for Businesses</h4>
-        {% else %}
-        <h4 class="mb-5" style="color: #df0559;">//Smart CORE Software for Businesses</h4>
+
+  <section class="pb-0">
+    <div class="container mt-3">
+      <div class="row  g-3 content-boxs-parent border-0 rounded-4">
+
+        {% if current_theme == 'xmas' %}
+        <div class="position-relative hide_this_for_desk" style="z-index: 1;">
+          <div class="position-absolute santa_peek11_top">
+            <img loading="lazy" id="santa_peek11" draggable="false" src="{% static 'xmas/decor/xmaspap_peek.png' %}" alt="">
+        </div>
+        </div>
+        {% elif current_theme == 'ramadan' %}
+        <div class="position-relative hide_this_for_desk" style="z-index: 1;">
+          <div class="position-absolute ramdan_left_character_top">
+            <img loading="lazy"  id="ramdan_left_character" draggable="false" src="{% static 'ramadan/decor/peeking_characters/peeking_characters1_left.png' %}" alt="">
+        </div>
+        </div>
         {% endif %}
-        <div class="row g-3">
-          <div class="col-lg-6">
-            <div class="content-image text-center">
-              <img loading="lazy" src='static/img/portfolio/core-2.png' style="border-radius: 10px;" alt="Core-Image" class>
-  
-          </div>
-          </div>
-          <div class="col-lg-6" id="content-left">
-            <p>For Any business personnel, handling too many things at once and not left a work undone is a complicated task at hand. This might cause losing track of scheduled appointments, missing out on notes, faults in taking out details on the amount spend & received overtime and previous background of the client communication, which all results in total chaos. Well not anymore, being the leading custom business management software developers in Kerala, ALTOS Technologies has found the best solution for all your worries. Our CRM software will provide an instant boost to the development of company,
-              giving a clear insight, detailed reports and analysis offering a reminder via any connected devices.
-            </p>
-          </div>
-          <div class="col-lg-5" id="content-left">
-              <p> No matter how small or large you are, running multiple businesses, or running IT or non-IT businesses, there is always plethora of activities going on around. The number of companies or organizations investing in business management software is increasing, as it enables them to get things done, predict risks, and improve their productivity. Over the course of the years, business process management tools have evolved and continually 
-                improved for anyone involved in all sorts of business activities. 
-              </p>
-          
-          </div>
-          <div class="col-lg-7" id="content-left">
-            <section id="portfolio-details" class="portfolio-details">
-              <div class="container text-center">
-                <div class="portfolio-details-slider swiper">
-                  <div class="swiper-wrapper align-items-center">
-      
-                    <div class="swiper-slide">
-                      <img loading="lazy" src="static/img/portfolio/core-1.png" alt="Core-image">
-                    </div>
-      
-                    <div class="swiper-slide">
-                      <img loading="lazy" src="static/img/portfolio/core-2.png" alt="Core-image">
-                    </div>
-      
-                    <div class="swiper-slide">
-                      <img loading="lazy" src="static/img/portfolio/core-3.png" alt="Core-image">
-                    </div>
-                    <div class="swiper-slide">
-                      <img loading="lazy" src="static/img/portfolio/core-4.png" alt="Core-image">
-                    </div>
-                    <div class="swiper-slide">
-                      <img loading="lazy" src="static/img/portfolio/core-5.png" alt="Core-image">
-                    </div>
-      
-                  </div>
-                  <div class="swiper-pagination"></div>
-                </div>
+
+        <div class="col-lg-6 col-sm-12 col-md-6 px-3">
+          <div class="content-boxs border-0 rounded-4">
+            {% if current_theme == 'pongal' %}
+            <h2 class="pongal_text_theme" style="color: transparent;">Altos Connect  </h2>
+            {% elif current_theme == 'vishu' %}
+            <h2 class="vishu_text_bg1" style="color: transparent;">Altos Connect  </h2>
+            {% elif current_theme == 'easter' %}
+            <h2 class="easter_text_bg1" style="color: transparent;">Altos Connect  </h2>
+            {% elif current_theme == 'xmas' %}
+            <h2 class="xmas_text text-light">Altos Connect  </h2>
+            {% elif current_theme == 'onam' %}
+            <h2 style="color: orange;">Altos Connect  </h2>
+            {% else %}
+            <h2>Altos Connect </h2>
+            {% endif %}
+            <div class="img-box-tech image-hidden">
+            {% if current_theme == 'pongal' %}
+              <img loading="lazy" src="static/pongal/img/altosconnect.jpg" alt="AltosConnect" />
+            {% elif current_theme == 'vishu' %}
+              <img loading="lazy" src="static/vishu/img/altosconnect.jpg" alt="AltosConnect" /> 
+            {% elif current_theme == 'easter' %}
+              <img loading="lazy" src="static/easter/img/altosconnect.jpg" alt="AltosConnect" />
+            {% elif current_theme == 'xmas' %}
+              <div class="position-relative" style="z-index: 1;">
+                <img loading="lazy" src="static/img/team/altosconnect.jpg" alt="AltosConnect" />
+                <div class="position-absolute bottom-0">
+                  <img loading="lazy" draggable="false" src="{% static 'xmas/decor/lights/light2_full.png' %}" alt="">
               </div>
-            </section>
+              </div>
+            {% elif current_theme == 'republic' %}
+              <img loading="lazy" src="static/republic/img/altosconnect.jpg" alt="AltosConnect" />
+            {% elif current_theme == 'onam' %}
+              <img loading="lazy" src="static/onam/img/altosconnect.jpg" alt="AltosConnect" />
+            {% elif current_theme == 'diwali' %}
+              <img loading="lazy"  src="static/diwali/img/altosconnect.jpg" alt="AltosConnect" />
+            {% elif current_theme == 'ramadan' %}
+              <img loading="lazy"  src="static/ramadan/img/altosconnect.jpg" alt="AltosConnect" />
+            {% else %}
+              <img loading="lazy" src="static/img/team/altosconnect.jpg" alt="AltosConnect" />
+            {% endif %}
+            </div>
+          <p>Altos Connect is the ultimate solution for WhatsApp marketing, offering a comprehensive toolkit to elevate your outreach strategy. Effortlessly broadcast messages to multiple recipients and strategically retarget your audience for enhanced engagement. Simplify contact management by seamlessly importing contacts from CSV or TXT files, ensuring accuracy and efficiency in your campaigns. Altos Connect empowers businesses to unlock the full potential of WhatsApp marketing, providing unparalleled communication and efficiency. Experience innovation at its finest with Altos Connect – the platform that revolutionizes how you connect with your audience. Elevate your marketing strategy to new heights and drive unparalleled results with Altos Connect. Try it today and discover the difference it can make for your business.
+          </p>
           </div>
-          {% if current_theme == 'pongal' %}
-          <h4 class="pongal_text_theme" style="color: transparent;">//Ease of Work, Easy Work</h4>
-          {% elif current_theme == 'vishu' %}
-          <h4 class="vishu_text_bg1" style="color: transparent;">//Ease of Work, Easy Work</h4>
-          {% elif current_theme == 'easter' %}
-          <h4 class="easter_text_bg1" style="color: transparent;">//Ease of Work, Easy Work</h4>
-          {% elif current_theme == 'xmas' %}
-          <h4 class="xmas_text text-light">//Ease of Work, Easy Work</h4>
-          {% elif current_theme == 'onam' %}
-          <h4 style="color: orange;">//Ease of Work, Easy Work</h4>
-          {% else %}
-          <h4 style="color: #df0559;">//Ease of Work, Easy Work</h4>
+
+          {% if current_theme == 'xmas' %}
+          <div class="position-relative hide_for_mob">
+            <div class="position-absolute" style="margin-left: 5.4rem;margin-top: 0.2rem;">
+              <img loading="lazy" width="100rem" draggable="false" src="{% static 'xmas/decor/xmaspap_peek_left.png' %}" alt="">
+            </div>
+          </div>
+          {% elif current_theme == 'ramadan' %}
+          <div class="position-relative hide_for_mob">
+            <div class="position-absolute" style="margin-left: 6.4rem;margin-top: 0.6rem;">
+              <img loading="lazy" width="90rem" draggable="false" src="{% static 'ramadan/decor/peeking_characters/peeking_characters1.png' %}" alt="">
+            </div>
+          </div>
           {% endif %}
+
+          <div class="km-button my-5"><a role="button" href="/Service/AltosConnect" 
+            {% if current_theme == 'pongal' %}
+             class="knowmore-button1" 
+            {% elif current_theme == 'vishu' %}
+              class="knowmore-button2"
+            {% elif current_theme == 'easter' %}
+              class="knowmore-button3"
+            {% elif current_theme == 'xmas' %}
+              class="knowmore-button4"
+            {% elif current_theme == 'republic' %}
+              class="knowmore-button5"
+            {% elif current_theme == 'onam' %}
+            class="knowmore-button6"
+            {% elif current_theme == 'diwali' %}
+            class="knowmore-button7"
+            {% elif current_theme == 'ramadan' %}
+            class="knowmore-button8"
+            {% else %}
+              class="knowmore-button text-white" 
+            {% endif %} >
+            Know More</a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12 col-md-6 px-4 d-flex align-items-center">
+          <div class="img-box-tech image-visible">
+            <!-- <h4 class="hide-head">ERP</h4> -->
+            {% if current_theme == 'pongal' %}
+            <img loading="lazy" src="static/pongal/img/altosconnect.jpg" alt="AltosConnect"/>
+            {% elif current_theme == 'vishu' %}
+              <img loading="lazy" src="static/vishu/img/altosconnect.jpg" alt="AltosConnect" /> 
+            {% elif current_theme == 'easter' %}
+              <img loading="lazy" src="static/easter/img/altosconnect.jpg" alt="AltosConnect" /> 
+            {% elif current_theme == 'xmas' %}
+              <div class="position-relative" style="z-index: 1;">
+                <img loading="lazy" src="static/img/team/altosconnect.jpg" alt="AltosConnect" />
+                <div class="position-absolute bottom-0">
+                  <img loading="lazy" draggable="false" src="{% static 'xmas/decor/lights/light2_full.png' %}" alt="">
+              </div>
+              </div>
+            {% elif current_theme == 'republic' %}
+              <img loading="lazy" src="static/republic/img/altosconnect.jpg" alt="AltosConnect" />
+            {% elif current_theme == 'onam' %}
+              <img loading="lazy" src="static/onam/img/altosconnect.jpg" alt="AltosConnect" />
+            {% elif current_theme == 'diwali' %}
+              <img loading="lazy"  src="static/diwali/img/altosconnect.jpg" alt="AltosConnect" />
+            {% elif current_theme == 'ramadan' %}
+              <img loading="lazy"  src="static/ramadan/img/altosconnect.jpg" alt="AltosConnect" />
+            {% else %}
+            <img loading="lazy"  src="static/img/team/altosconnect.jpg" alt="AltosConnect"/>
+            {% endif %}
+          </div>
+        </div>
+        <!-- <div class="col-lg-6 col-sm-12 col-md-6">
+          <div class="content-boxs">
+          <h2>CRM </h2>
+          <p>We recognise that each business is different and that commercial CRM 
+            software might not always meet your organization's precise demands and objectives. 
+            We provide a unique CRM solution designed specifically for your company because of this.
+          </p>
+          <p>
+            In order to guarantee that it meets your company's precise demands, 
+            our Custom CRM software is created from the ground up utilising a combination 
+            of pre-built modules and custom-built features. It can be connected with other 
+            systems to provide a faster workflow and a single source of truth for all client 
+            data, such as accounting software. Furthermore, because our custom CRM software can 
+            be made to accommodate several languages and currencies, international firms can use it.
             
-              <div class="col-lg-5">
-                <div class="content-image pt-3">
-                    <img loading="lazy" src='static/img/portfolio/core-3.png' alt="Core-image" class>
-                </div>
-              </div>
-            <div class="col-lg-7">
-            <p>You may find it difficult to maintain regular and potential clients as your client database grows.
-               Despite being humans, we are not capable of remembering all these data. You can stay in constant contact with 
-               your sales team and uncover more opportunities equally with our marketing automation functionality. The 
-               tools we have integrated into our sales, marketing, and customer service help you deliver highly personalized 
-               experiences to your customers and gain insight and loyalty from them. As well as tracking the work time, attendance, 
-               work quality, and other data, this amazing tool can also do so many other things as well. 
-                By designing CRM solutions, we accelerate business growth by forging close bonds with potential customers. 
-            </p>
-          
-          </div>  
+          </p>
+          </div>
+        </div> -->
       </div>
-      {% if current_theme == 'diwali' %}
-      <div class="position-relative " style="z-index: 1;">
-        <div class="position-absolute end-0 bottom-0 diwali_kolam1_right_top">
-          <img loading="lazy"  id="diwali_kolam1_right" draggable="false" src="{% static 'diwali/decor/kolam1_right_half.png' %}" alt="">
-      </div>
-      </div>
-      {% endif %}
-  </div> 
- 
-</section>
-
-
-
-<section id="about-core" class="about-core">
-    <div class="container1 container ">
-      {% if current_theme == 'diwali' %}
-      <div class="position-relative " style="z-index: 1;">
-        <div class="position-absolute start-0 top-0 diwali_kolam2_left_top" >
-          <img loading="lazy"  id="diwali_kolam2_left"  draggable="false" src="{% static 'diwali/decor/kolam2_left_half.png' %}" alt="">
-      </div>
-      </div>
-      {% endif %}
-      {% if current_theme == 'pongal' %}
-      <h4 class="pongal_text_theme mt-3 text-start" style="color: transparent;"><b>//What is a CORE Software ..?</b></h4>
-      {% elif current_theme == 'vishu' %}
-      <h4 class="vishu_text_bg1 mt-3 text-start" style="color: transparent;"><b>//What is a CORE Software ..?</b></h4>
-      {% elif current_theme == 'xmas' %}
-      <h4 class="xmas_text text-light mt-3 text-start"><b>//What is a CORE Software ..?</b></h4>
-      {% else %}
-      <h4 class="text-start mt-3" style=" color: #e3e3e3;"><b>//What is a CORE Software ..?</b></h4>
-      {% endif %}
-        <div class="container" id="container">
-          <p>CORE is Employee management software which is used to manage all employees from top level to bottom level. 
-            Several modules are associated with this BPM tool, allowing the work force to be divided into layers. This gives the authority to measure the ability of the employees and manage the time flow of work done effectively by transferring duties from one level to another. We offer a platform that is flexible and feature rich for controlling and managing an entire business from anywhere in the world. With our innovative solution, you will be able to integrate real-time data on a 
-              reliable basis and let your organization reach its full potential.</p>
-      
-        </div>
-        <a 
-        {% if current_theme == 'pongal' %} 
-        class="card2" style="color: transparent;" 
-        {% elif current_theme == 'vishu' %} 
-        class="card3" style="color: transparent;" 
-        {% elif current_theme == 'easter' %} 
-        class="card4"
-        {% elif current_theme == 'xmas' %} 
-        class="card5"
-        {% elif current_theme == 'republic' %} 
-        class="card6"
-        {% elif current_theme == 'onam' %} 
-        class="card7"
-        {% elif current_theme == 'diwali' %} 
-        class="card8"
-        {% elif current_theme == 'ramadan' %} 
-        class="card9"
-        {% else %} 
-        class="card1" 
-        {% endif %} >
-          <h5>Task/Project Management</h5>
-          <p class="small">With our BPM tool, Tasks can be created for you or a member of your team, and you can use notifications as reminders if needed. 
-            By using the CORE tasks functionality, you can set calendar-synchronized reminders for your customers. Keeps you organized and ensures 
-            that you never miss a sale or unfinished task.</p>
-            <div 
-            {% if current_theme == 'pongal' %} 
-            class="go-corner2" style="color: transparent;" 
-            {% elif current_theme == 'vishu' %} 
-            class="go-corner3" style="color: transparent;" 
-            {% elif current_theme == 'easter' %} 
-            class="go-corner4"
-            {% elif current_theme == 'xmas' %} 
-            class="go-corner5"
-            {% elif current_theme == 'republic' %} 
-            class="go-corner6"
-            {% elif current_theme == 'onam' %} 
-            class="go-corner7"
-            {% elif current_theme == 'diwali' %} 
-            class="go-corner8"
-            {% elif current_theme == 'ramadan' %} 
-            class="go-corner9"
-            {% else %} 
-            class="go-corner" 
-            {% endif %}  href="#">
-              <div 
-              {% if current_theme == 'pongal' %} 
-              class="go-arrow2" 
-              {% elif current_theme == 'vishu' %} 
-              class="go-arrow3" 
-              {% elif current_theme == 'easter' %} 
-              class="go-arrow4" 
-              {% elif current_theme == 'xmas' %} 
-              class="go-arrow5"
-              {% elif current_theme == 'republic' %} 
-              class="go-arrow6" 
-              {% elif current_theme == 'onam' %} 
-              class="go-arrow7"
-              {% elif current_theme == 'diwali' %} 
-              class="go-arrow8"
-              {% else %} 
-              class="go-arrow" 
-              {% endif %}>
-                →
-              </div>
-            </div>
-        </a>
-        {% if current_theme == 'xmas' %} 
-        <div class="position-relative" style="z-index: 1;">
-          <div class="position-absolute end-0 bottom-0 xmas_sm_tree_top" >
-            <img loading="lazy" width="80rem" draggable="false" src="{% static 'xmas/decor/CARTOON_CHRISTMAS_TREE_1.png' %}" alt="">
-        </div>
-        </div>
-        {% endif %}
-        <a 
-        {% if current_theme == 'pongal' %} 
-        class="card2" style="color: transparent;" 
-        {% elif current_theme == 'vishu' %} 
-        class="card3" style="color: transparent;" 
-        {% elif current_theme == 'easter' %} 
-        class="card4" style="color: transparent;" 
-        {% elif current_theme == 'xmas' %} 
-        class="card5"
-        {% elif current_theme == 'republic' %} 
-        class="card6" 
-        {% elif current_theme == 'onam' %} 
-        class="card7"
-        {% elif current_theme == 'diwali' %} 
-        class="card8"
-        {% elif current_theme == 'ramadan' %} 
-        class="card9"
-        {% else %} 
-        class="card1" 
-        {% endif %}>
-            <h5>Collaboration</h5>
-            <p class="small">The goal of the collaboration module in CORE is to streamline workflows and processes by utilizing organizational 
-                structures and hierarchies. It also facilitates communication between managers,
-                 supervisors, and employees with respect to concepts, ideas, workloads, and tasks.</p>
-            <div 
-            {% if current_theme == 'pongal' %} 
-            class="go-corner2" style="color: transparent;" 
-            {% elif current_theme == 'vishu' %} 
-            class="go-corner3" style="color: transparent;" 
-            {% elif current_theme == 'easter' %} 
-            class="go-corner4"
-            {% elif current_theme == 'xmas' %} 
-            class="go-corner5"
-            {% elif current_theme == 'republic' %} 
-            class="go-corner6"
-            {% elif current_theme == 'onam' %} 
-            class="go-corner7"
-            {% elif current_theme == 'diwali' %} 
-            class="go-corner8"
-            {% elif current_theme == 'ramadan' %} 
-            class="go-corner9"
-            {% else %} 
-            class="go-corner" 
-            {% endif %}  href="#">
-              <div 
-              {% if current_theme == 'pongal' %} 
-              class="go-arrow2" 
-              {% elif current_theme == 'vishu' %} 
-              class="go-arrow3" 
-              {% elif current_theme == 'easter' %} 
-              class="go-arrow4" 
-              {% elif current_theme == 'xmas' %} 
-              class="go-arrow5"
-              {% elif current_theme == 'republic' %} 
-              class="go-arrow6" 
-              {% elif current_theme == 'onam' %} 
-              class="go-arrow7"
-              {% elif current_theme == 'diwali' %} 
-              class="go-arrow8" 
-              {% else %} 
-              class="go-arrow" 
-              {% endif %}>
-                →
-              </div>
-            </div>
-        </a>
-        {% if current_theme == 'xmas' %} 
-        <div class="position-relative" style="z-index: 1;">
-          <div class="position-absolute end-0 bottom-0 xmas_sm_tree_top" >
-            <img loading="lazy" width="80rem" draggable="false" src="{% static 'xmas/decor/CARTOON_CHRISTMAS_TREE_1.png' %}" alt="">
-        </div>
-        </div>
-        {% endif %}
-        <a 
-        {% if current_theme == 'pongal' %} 
-        class="card2" style="color: transparent;" 
-        {% elif current_theme == 'vishu' %} 
-        class="card3" style="color: transparent;" 
-        {% elif current_theme == 'easter' %} 
-        class="card4" style="color: transparent;" 
-        {% elif current_theme == 'xmas' %} 
-        class="card5"
-        {% elif current_theme == 'republic' %} 
-        class="card6" 
-        {% elif current_theme == 'onam' %} 
-        class="card7"
-        {% elif current_theme == 'diwali' %} 
-        class="card8"
-        {% elif current_theme == 'ramadan' %} 
-        class="card9" 
-        {% else %} 
-        class="card1" 
-        {% endif %}>
-            <h5>Time Management</h5>
-            <p class="small">It is crucial that you manage your time effectively to succeed in your business journey and 
-                increase the number of customers that you are satisfied with. By enabling it, Tasks are completed faster and more efficiently, 
-                which allows you to devote more time and efforts to other activities.</p>
-            <div 
-            {% if current_theme == 'pongal' %} 
-            class="go-corner2" style="color: transparent;" 
-            {% elif current_theme == 'vishu' %} 
-            class="go-corner3" style="color: transparent;" 
-            {% elif current_theme == 'easter' %} 
-            class="go-corner4"
-            {% elif current_theme == 'xmas' %} 
-            class="go-corner5"
-            {% elif current_theme == 'republic' %} 
-            class="go-corner6"
-            {% elif current_theme == 'onam' %} 
-            class="go-corner7"
-            {% elif current_theme == 'diwali' %} 
-            class="go-corner8"
-            {% elif current_theme == 'ramadan' %} 
-            class="go-corner9"
-            {% else %} 
-            class="go-corner" 
-            {% endif %}  href="#">
-              <div 
-              {% if current_theme == 'pongal' %} 
-              class="go-arrow2" 
-              {% elif current_theme == 'vishu' %} 
-              class="go-arrow3" 
-              {% elif current_theme == 'easter' %} 
-              class="go-arrow4" 
-              {% elif current_theme == 'xmas' %} 
-              class="go-arrow5"
-              {% elif current_theme == 'republic' %} 
-              class="go-arrow6" 
-              {% elif current_theme == 'onam' %} 
-              class="go-arrow7"
-              {% elif current_theme == 'diwali' %} 
-              class="go-arrow8" 
-              {% else %} 
-              class="go-arrow" 
-              {% endif %}>
-                →
-              </div>
-            </div>
-        </a>
-        {% if current_theme == 'xmas' %} 
-        <div class="position-relative" style="z-index: 1;">
-          <div class="position-absolute end-0 bottom-0 xmas_sm_tree_top" >
-            <img loading="lazy" width="80rem" draggable="false" src="{% static 'xmas/decor/CARTOON_CHRISTMAS_TREE_1.png' %}" alt="">
-        </div>
-        </div>
-        {% endif %}
-        <a 
-        {% if current_theme == 'pongal' %} 
-        class="card2" style="color: transparent;" 
-        {% elif current_theme == 'vishu' %} 
-        class="card3" style="color: transparent;" 
-        {% elif current_theme == 'easter' %} 
-        class="card4" style="color: transparent;" 
-        {% elif current_theme == 'xmas' %} 
-        class="card5"
-        {% elif current_theme == 'republic' %} 
-        class="card6" 
-        {% elif current_theme == 'onam' %} 
-        class="card7"
-        {% elif current_theme == 'diwali' %} 
-        class="card8"
-        {% elif current_theme == 'ramadan' %} 
-        class="card9" 
-        {% else %} 
-        class="card1" 
-        {% endif %}>
-            <h5>File Management</h5>
-            <p class="small">The business will be able to get rid of all their paperwork and have everything in one location, which may be very advantageous. 
-                You can attach and store any documents using the facility. PNG, PDF, JPEG, and CSV are just a few of the supported file types.</p>
-            <div 
-            {% if current_theme == 'pongal' %} 
-            class="go-corner2" style="color: transparent;" 
-            {% elif current_theme == 'vishu' %} 
-            class="go-corner3" style="color: transparent;" 
-            {% elif current_theme == 'easter' %} 
-            class="go-corner4"
-            {% elif current_theme == 'xmas' %} 
-            class="go-corner5"
-            {% elif current_theme == 'republic' %} 
-            class="go-corner6"
-            {% elif current_theme == 'onam' %} 
-            class="go-corner7"
-            {% elif current_theme == 'diwali' %} 
-            class="go-corner8"
-            {% elif current_theme == 'ramadan' %} 
-            class="go-corner9"
-            {% else %} 
-            class="go-corner" 
-            {% endif %}  href="#">
-              <div 
-              {% if current_theme == 'pongal' %} 
-              class="go-arrow2" 
-              {% elif current_theme == 'vishu' %} 
-              class="go-arrow3" 
-              {% elif current_theme == 'easter' %} 
-              class="go-arrow4" 
-              {% elif current_theme == 'xmas' %} 
-              class="go-arrow5"
-              {% elif current_theme == 'republic' %} 
-              class="go-arrow6" 
-              {% elif current_theme == 'onam' %} 
-              class="go-arrow7"
-              {% elif current_theme == 'diwali' %} 
-              class="go-arrow8" 
-              {% else %} 
-              class="go-arrow" 
-              {% endif %}>
-                →
-              </div>
-            </div>
-        </a>
-        {% if current_theme == 'xmas' %} 
-        <div class="position-relative" style="z-index: 1;">
-          <div class="position-absolute end-0 bottom-0 xmas_sm_tree_top" >
-            <img loading="lazy" width="80rem" draggable="false" src="{% static 'xmas/decor/CARTOON_CHRISTMAS_TREE_1.png' %}" alt="">
-        </div>
-        </div>
-        {% endif %}
-        <a 
-        {% if current_theme == 'pongal' %} 
-        class="card2" style="color: transparent;" 
-        {% elif current_theme == 'vishu' %} 
-        class="card3" style="color: transparent;" 
-        {% elif current_theme == 'easter' %} 
-        class="card4" style="color: transparent;" 
-        {% elif current_theme == 'xmas' %} 
-        class="card5"
-        {% elif current_theme == 'republic' %} 
-        class="card6" 
-        {% elif current_theme == 'onam' %} 
-        class="card7"
-        {% elif current_theme == 'diwali' %} 
-        class="card8"
-        {% elif current_theme == 'ramadan' %} 
-        class="card9" 
-        {% else %} 
-        class="card1" 
-        {% endif %}>
-            <h5>Employee Management</h5>
-            <p class="small">By using this system, the company and employees' professional and personal details are protected. HRs and business managers undergo less pressure and workload thanks to the employee management system. 
-                A BPM tool such as this will provide you with a wide range of solutions that will simplify and expedite your work.</p>
-            <div 
-            {% if current_theme == 'pongal' %} 
-            class="go-corner2" style="color: transparent;" 
-            {% elif current_theme == 'vishu' %} 
-            class="go-corner3" style="color: transparent;" 
-            {% elif current_theme == 'easter' %} 
-            class="go-corner4"
-            {% elif current_theme == 'xmas' %} 
-            class="go-corner5"
-            {% elif current_theme == 'republic' %} 
-            class="go-corner6"
-            {% elif current_theme == 'onam' %} 
-            class="go-corner7"
-            {% elif current_theme == 'diwali' %} 
-            class="go-corner8"
-            {% elif current_theme == 'ramadan' %} 
-            class="go-corner9"
-            {% else %} 
-            class="go-corner" 
-            {% endif %}  href="#">
-              <div 
-              {% if current_theme == 'pongal' %} 
-              class="go-arrow2" 
-              {% elif current_theme == 'vishu' %} 
-              class="go-arrow3" 
-              {% elif current_theme == 'easter' %} 
-              class="go-arrow4" 
-              {% elif current_theme == 'xmas' %} 
-              class="go-arrow5"
-              {% elif current_theme == 'republic' %} 
-              class="go-arrow6" 
-              {% elif current_theme == 'onam' %} 
-              class="go-arrow7"
-              {% elif current_theme == 'diwali' %} 
-              class="go-arrow8" 
-              {% else %} 
-              class="go-arrow" 
-              {% endif %}>
-                →
-              </div>
-            </div>
-        </a>
-        {% if current_theme == 'xmas' %} 
-        <div class="position-relative" style="z-index: 1;">
-          <div class="position-absolute end-0 bottom-0 xmas_sm_tree_top" >
-            <img loading="lazy" width="80rem" draggable="false" src="{% static 'xmas/decor/CARTOON_CHRISTMAS_TREE_1.png' %}" alt="">
-        </div>
-        </div>
-        {% endif %}
-        <a 
-        {% if current_theme == 'pongal' %} 
-        class="card2" style="color: transparent;" 
-        {% elif current_theme == 'vishu' %} 
-        class="card3" style="color: transparent;" 
-        {% elif current_theme == 'easter' %} 
-        class="card4" style="color: transparent;" 
-        {% elif current_theme == 'xmas' %} 
-        class="card5"
-        {% elif current_theme == 'republic' %} 
-        class="card6" 
-        {% elif current_theme == 'onam' %} 
-        class="card7"
-        {% elif current_theme == 'diwali' %} 
-        class="card8"
-        {% elif current_theme == 'ramadan' %} 
-        class="card9" 
-        {% else %} 
-        class="card1" 
-        {% endif %}>
-            <h5>Finance Auditing </h5>
-            <p class="small">By reducing gaps in data and removing processes that waste time and resources, a comprehensive CRM audit will enable you to take full advantage of your CRM. 
-                This analysis helps you identify the flaws and issues in order to create a sound business plan for the future.</p>
-            <div 
-            {% if current_theme == 'pongal' %} 
-            class="go-corner2" style="color: transparent;" 
-            {% elif current_theme == 'vishu' %} 
-            class="go-corner3" style="color: transparent;" 
-            {% elif current_theme == 'easter' %} 
-            class="go-corner4"
-            {% elif current_theme == 'xmas' %} 
-            class="go-corner5"
-            {% elif current_theme == 'republic' %} 
-            class="go-corner6"
-            {% elif current_theme == 'onam' %} 
-            class="go-corner7"
-            {% elif current_theme == 'diwali' %} 
-            class="go-corner8"
-            {% elif current_theme == 'ramadan' %} 
-            class="go-corner9"
-            {% else %} 
-            class="go-corner" 
-            {% endif %}  href="#">
-              <div 
-              {% if current_theme == 'pongal' %} 
-              class="go-arrow2" 
-              {% elif current_theme == 'vishu' %} 
-              class="go-arrow3" 
-              {% elif current_theme == 'easter' %} 
-              class="go-arrow4" 
-              {% elif current_theme == 'xmas' %} 
-              class="go-arrow5"
-              {% elif current_theme == 'republic' %} 
-              class="go-arrow6" 
-              {% elif current_theme == 'onam' %} 
-              class="go-arrow7"
-              {% elif current_theme == 'diwali' %} 
-              class="go-arrow8" 
-              {% else %} 
-              class="go-arrow" 
-              {% endif %}>
-                →
-              </div>
-            </div>
-        </a>
-        {% if current_theme == 'xmas' %} 
-        <div class="position-relative" style="z-index: 1;">
-          <div class="position-absolute end-0 bottom-0 xmas_sm_tree_top" >
-            <img loading="lazy" width="80rem" draggable="false" src="{% static 'xmas/decor/CARTOON_CHRISTMAS_TREE_1.png' %}" alt="">
-        </div>
-        </div>
-        {% endif %}
-        <a 
-        {% if current_theme == 'pongal' %} 
-        class="card2" style="color: transparent;" 
-        {% elif current_theme == 'vishu' %} 
-        class="card3" style="color: transparent;" 
-        {% elif current_theme == 'easter' %} 
-        class="card4" style="color: transparent;" 
-        {% elif current_theme == 'xmas' %} 
-        class="card5"
-        {% elif current_theme == 'republic' %} 
-        class="card6" 
-        {% elif current_theme == 'onam' %} 
-        class="card7"
-        {% elif current_theme == 'diwali' %} 
-        class="card8"
-        {% elif current_theme == 'ramadan' %} 
-        class="card9" 
-        {% else %} 
-        class="card1" 
-        {% endif %}>
-            <h5>Payroll Management </h5>
-            <p class="small">Payroll is also a crucial system to the operation of your company. Although it might be your largest expense, it is an essential process that must be completed accurately and on time. Besides disburses employees' 
-                salaries, this software aids in office administration and manages payroll for your business.</p>
-            <div 
-            {% if current_theme == 'pongal' %} 
-            class="go-corner2" style="color: transparent;" 
-            {% elif current_theme == 'vishu' %} 
-            class="go-corner3" style="color: transparent;" 
-            {% elif current_theme == 'easter' %} 
-            class="go-corner4"
-            {% elif current_theme == 'xmas' %} 
-            class="go-corner5"
-            {% elif current_theme == 'republic' %} 
-            class="go-corner6"
-            {% elif current_theme == 'onam' %} 
-            class="go-corner7"
-            {% elif current_theme == 'diwali' %} 
-            class="go-corner8"
-            {% elif current_theme == 'ramadan' %} 
-            class="go-corner9"
-            {% else %} 
-            class="go-corner" 
-            {% endif %}  href="#">
-              <div 
-              {% if current_theme == 'pongal' %} 
-              class="go-arrow2" 
-              {% elif current_theme == 'vishu' %} 
-              class="go-arrow3" 
-              {% elif current_theme == 'easter' %} 
-              class="go-arrow4" 
-              {% elif current_theme == 'xmas' %} 
-              class="go-arrow5"
-              {% elif current_theme == 'republic' %} 
-              class="go-arrow6" 
-              {% elif current_theme == 'onam' %} 
-              class="go-arrow7"
-              {% elif current_theme == 'diwali' %} 
-              class="go-arrow8" 
-              {% else %} 
-              class="go-arrow" 
-              {% endif %}>
-                →
-              </div>
-            </div>
-        </a>
-        {% if current_theme == 'xmas' %} 
-        <div class="position-relative" style="z-index: 1;">
-          <div class="position-absolute end-0 bottom-0 xmas_sm_tree_top" >
-            <img loading="lazy" width="80rem" draggable="false" src="{% static 'xmas/decor/CARTOON_CHRISTMAS_TREE_1.png' %}" alt="">
-        </div>
-        </div>
-        {% endif %}
-        <a 
-        {% if current_theme == 'pongal' %} 
-        class="card2" style="color: transparent;" 
-        {% elif current_theme == 'vishu' %} 
-        class="card3" style="color: transparent;" 
-        {% elif current_theme == 'easter' %} 
-        class="card4" style="color: transparent;" 
-        {% elif current_theme == 'xmas' %} 
-        class="card5"
-        {% elif current_theme == 'republic' %} 
-        class="card6" 
-        {% elif current_theme == 'onam' %} 
-        class="card7"
-        {% elif current_theme == 'diwali' %} 
-        class="card8"
-        {% elif current_theme == 'ramadan' %} 
-        class="card9" 
-        {% else %} 
-        class="card1" 
-        {% endif %}>
-            <h5>Client Management </h5>
-            <p class="small">The goal of every business is to develop a long-term relationship with its clients. It allows you to define time intervals, set a scale for transactions based on the quality 
-                and quantity of the products, increase productivity, and facilitate data collection and analysis in real time.</p>
-            <div 
-            {% if current_theme == 'pongal' %} 
-            class="go-corner2" style="color: transparent;" 
-            {% elif current_theme == 'vishu' %} 
-            class="go-corner3" style="color: transparent;" 
-            {% elif current_theme == 'easter' %} 
-            class="go-corner4"
-            {% elif current_theme == 'xmas' %} 
-            class="go-corner5"
-            {% elif current_theme == 'republic' %} 
-            class="go-corner6"
-            {% elif current_theme == 'onam' %} 
-            class="go-corner7"
-            {% elif current_theme == 'diwali' %} 
-            class="go-corner8"
-            {% elif current_theme == 'ramadan' %} 
-            class="go-corner9"
-            {% else %} 
-            class="go-corner" 
-            {% endif %}  href="#">
-              <div 
-              {% if current_theme == 'pongal' %} 
-              class="go-arrow2" 
-              {% elif current_theme == 'vishu' %} 
-              class="go-arrow3" 
-              {% elif current_theme == 'easter' %} 
-              class="go-arrow4" 
-              {% elif current_theme == 'xmas' %} 
-              class="go-arrow5"
-              {% elif current_theme == 'republic' %} 
-              class="go-arrow6" 
-              {% elif current_theme == 'onam' %} 
-              class="go-arrow7"
-              {% elif current_theme == 'diwali' %} 
-              class="go-arrow8" 
-              {% else %} 
-              class="go-arrow" 
-              {% endif %}>
-                →
-              </div>
-            </div>
-        </a>
-        {% if current_theme == 'xmas' %} 
-        <div class="position-relative" style="z-index: 1;">
-          <div class="position-absolute end-0 bottom-0 xmas_sm_tree_top" >
-            <img loading="lazy" width="80rem" draggable="false" src="{% static 'xmas/decor/CARTOON_CHRISTMAS_TREE_1.png' %}" alt="">
-        </div>
-        </div>
-        {% endif %}
-        <a 
-        {% if current_theme == 'pongal' %} 
-        class="card2" style="color: transparent;" 
-        {% elif current_theme == 'vishu' %} 
-        class="card3" style="color: transparent;" 
-        {% elif current_theme == 'easter' %} 
-        class="card4" style="color: transparent;" 
-        {% elif current_theme == 'xmas' %} 
-        class="card5"
-        {% elif current_theme == 'republic' %} 
-        class="card6" 
-        {% elif current_theme == 'onam' %} 
-        class="card7"
-        {% elif current_theme == 'diwali' %} 
-        class="card8"
-        {% elif current_theme == 'ramadan' %} 
-        class="card9" 
-        {% else %} 
-        class="card1" 
-        {% endif %}>
-            <h5>Progress Tracking </h5>
-            <p class="small">CRM software simplifies tracking and taking actions to solve any issues by integrating project details, product reports, and contacts for prospects and customers. It allows you to track progress of your employees, thereby identifying their 
-                efficiency and assigning work to them accordingly. Result in improving the overall performance of your team.</p>
-            <div 
-            {% if current_theme == 'pongal' %} 
-            class="go-corner2" style="color: transparent;" 
-            {% elif current_theme == 'vishu' %} 
-            class="go-corner3" style="color: transparent;" 
-            {% elif current_theme == 'easter' %} 
-            class="go-corner4"
-            {% elif current_theme == 'xmas' %} 
-            class="go-corner5"
-            {% elif current_theme == 'republic' %} 
-            class="go-corner6"
-            {% elif current_theme == 'onam' %} 
-            class="go-corner7"
-            {% elif current_theme == 'diwali' %} 
-            class="go-corner8"
-            {% elif current_theme == 'ramadan' %} 
-            class="go-corner9"
-            {% else %} 
-            class="go-corner" 
-            {% endif %}  href="#">
-              <div 
-              {% if current_theme == 'pongal' %} 
-              class="go-arrow2" 
-              {% elif current_theme == 'vishu' %} 
-              class="go-arrow3" 
-              {% elif current_theme == 'easter' %} 
-              class="go-arrow4" 
-              {% elif current_theme == 'xmas' %} 
-              class="go-arrow5"
-              {% elif current_theme == 'republic' %} 
-              class="go-arrow6" 
-              {% elif current_theme == 'onam' %} 
-              class="go-arrow7"
-              {% elif current_theme == 'diwali' %} 
-              class="go-arrow8" 
-              {% else %} 
-              class="go-arrow" 
-              {% endif %}>
-                →
-              </div>
-            </div>
-        </a>
-        {% if current_theme == 'xmas' %} 
-        <div class="position-relative" style="z-index: 1;">
-          <div class="position-absolute end-0 bottom-0 xmas_sm_tree_top" >
-            <img loading="lazy" width="80rem" draggable="false" src="{% static 'xmas/decor/CARTOON_CHRISTMAS_TREE_1.png' %}" alt="">
-        </div>
-        </div>
-        {% endif %}
-        <a 
-        {% if current_theme == 'pongal' %} 
-        class="card2" style="color: transparent;" 
-        {% elif current_theme == 'vishu' %} 
-        class="card3" style="color: transparent;" 
-        {% elif current_theme == 'easter' %} 
-        class="card4" style="color: transparent;" 
-        {% elif current_theme == 'xmas' %} 
-        class="card5"
-        {% elif current_theme == 'republic' %} 
-        class="card6" 
-        {% elif current_theme == 'onam' %} 
-        class="card7"
-        {% elif current_theme == 'diwali' %} 
-        class="card8"
-        {% elif current_theme == 'ramadan' %} 
-        class="card9" 
-        {% else %} 
-        class="card1" 
-        {% endif %}>
-            <h5>Reports and Analytics</h5>
-            <p class="small">Providing in-depth details about sales, customer service, and marketing processes is the primary advantage of the Report and Analysis module. Using the CORE, you will be able to generate a custom report that shows profitability, 
-                sales forecasts according to the budget, and sales conversion, helping you surpass your competitors.</p>
-            <div 
-            {% if current_theme == 'pongal' %} 
-            class="go-corner2" style="color: transparent;" 
-            {% elif current_theme == 'vishu' %} 
-            class="go-corner3" style="color: transparent;" 
-            {% elif current_theme == 'easter' %} 
-            class="go-corner4"
-            {% elif current_theme == 'xmas' %} 
-            class="go-corner5"
-            {% elif current_theme == 'republic' %} 
-            class="go-corner6"
-            {% elif current_theme == 'onam' %} 
-            class="go-corner7"
-            {% elif current_theme == 'diwali' %} 
-            class="go-corner8"
-            {% elif current_theme == 'ramadan' %} 
-            class="go-corner9"
-            {% else %} 
-            class="go-corner" 
-            {% endif %}  href="#">
-              <div 
-              {% if current_theme == 'pongal' %} 
-              class="go-arrow2" 
-              {% elif current_theme == 'vishu' %} 
-              class="go-arrow3" 
-              {% elif current_theme == 'easter' %} 
-              class="go-arrow4" 
-              {% elif current_theme == 'xmas' %} 
-              class="go-arrow5"
-              {% elif current_theme == 'republic' %} 
-              class="go-arrow6" 
-              {% elif current_theme == 'onam' %} 
-              class="go-arrow7"
-              {% elif current_theme == 'diwali' %} 
-              class="go-arrow8" 
-              {% else %} 
-              class="go-arrow" 
-              {% endif %}>
-                →
-              </div>
-            </div>
-        </a>
-        {% if current_theme == 'xmas' %} 
-        <div class="position-relative" style="z-index: 1;">
-          <div class="position-absolute end-0 bottom-0 xmas_sm_tree_top" >
-            <img loading="lazy" width="80rem" draggable="false" src="{% static 'xmas/decor/CARTOON_CHRISTMAS_TREE_1.png' %}" alt="">
-        </div>
-        </div>
-        {% endif %}
-        <a 
-        {% if current_theme == 'pongal' %} 
-        class="card2" style="color: transparent;" 
-        {% elif current_theme == 'vishu' %} 
-        class="card3" style="color: transparent;" 
-        {% elif current_theme == 'easter' %} 
-        class="card4" style="color: transparent;" 
-        {% elif current_theme == 'xmas' %} 
-        class="card5"
-        {% elif current_theme == 'republic' %} 
-        class="card6" 
-        {% elif current_theme == 'onam' %} 
-        class="card7"
-        {% elif current_theme == 'diwali' %} 
-        class="card8"
-        {% elif current_theme == 'ramadan' %} 
-        class="card9" 
-        {% else %} 
-        class="card1" 
-        {% endif %}>
-            <h5>Easy Documentation </h5>
-            <p class="small">Having access to the business data from anywhere within seconds transforms a business into a major player. The documentation of each transaction and 
-                project information will allow you to review past transactions and create new strategies in line with them.</p>
-            <div 
-            {% if current_theme == 'pongal' %} 
-            class="go-corner2" style="color: transparent;" 
-            {% elif current_theme == 'vishu' %} 
-            class="go-corner3" style="color: transparent;" 
-            {% elif current_theme == 'easter' %} 
-            class="go-corner4"
-            {% elif current_theme == 'xmas' %} 
-            class="go-corner5"
-            {% elif current_theme == 'republic' %} 
-            class="go-corner6"
-            {% elif current_theme == 'onam' %} 
-            class="go-corner7"
-            {% elif current_theme == 'diwali' %} 
-            class="go-corner8"
-            {% elif current_theme == 'ramadan' %} 
-            class="go-corner9"
-            {% else %} 
-            class="go-corner" 
-            {% endif %}  href="#">
-              <div 
-              {% if current_theme == 'pongal' %} 
-              class="go-arrow2" 
-              {% elif current_theme == 'vishu' %} 
-              class="go-arrow3" 
-              {% elif current_theme == 'easter' %} 
-              class="go-arrow4" 
-              {% elif current_theme == 'xmas' %} 
-              class="go-arrow5"
-              {% elif current_theme == 'republic' %} 
-              class="go-arrow6" 
-              {% elif current_theme == 'onam' %} 
-              class="go-arrow7"
-              {% elif current_theme == 'diwali' %} 
-              class="go-arrow8" 
-              {% else %} 
-              class="go-arrow" 
-              {% endif %}>
-                →
-              </div>
-            </div>
-        </a>
-        {% if current_theme == 'xmas' %} 
-        <div class="position-relative" style="z-index: 1;">
-          <div class="position-absolute end-0 bottom-0 xmas_sm_tree_top" >
-            <img loading="lazy" width="80rem" draggable="false" src="{% static 'xmas/decor/CARTOON_CHRISTMAS_TREE_1.png' %}" alt="">
-        </div>
-        </div>
-        {% elif current_theme == 'diwali' %}
-        <div class="position-relative " style="z-index: 1;">
-          <div class="position-absolute end-0 bottom-0 diwali_kolam2_right_top" >
-            <img loading="lazy"  id="diwali_kolam2_right" draggable="false" src="{% static 'diwali/decor/kolam2_right_half.png' %}" alt="">
-        </div>
-        </div>
-        {% endif %}
     </div>
- 
-</section>
+  </section>
+
+  <section class="pt-0">
+    <div class="container mt-3">
+      <div class="row  g-3 content-boxs-parent border-0 rounded-4">
+        <!-- <div class=" col-lg-6 col-sm-12 col-md-6">
+          <div class="content-boxs">
+            <h2>ERP </h2>
+          <p>Accounting, inventory management, customer relationship management, 
+            and other modules are all included in our ERP system. Together, these modules give you a complete picture of your company's operations, including its finances, customer interactions, and everything in between. Additionally, our software may be modified to meet the particular requirements of your company, ensuring that it is adapted to your particular industry and demands.</p>
+            <p>Moreover, your staff will have no trouble using and navigating our ERP software because of its user-friendly design. With the help of our software, you may automate routine processes, lower error rates, and boost productivity.
+          </p>
+          </div>
+          
+        </div> -->
+
+        {% if current_theme == 'xmas' %}
+        <div class="position-relative hide_this_for_desk" style="z-index: 1;">
+          <div class="position-absolute end-0 santa_peek22_top">
+            <img loading="lazy" id="santa_peek22" draggable="false" src="{% static 'xmas/decor/xmaspap_peek_left.png' %}" alt="">
+        </div>
+        </div>
+        {% elif current_theme == 'ramadan' %}
+        <div class="position-relative hide_this_for_desk" style="z-index: 1;">
+          <div class="position-absolute end-0 ramdan_right_character_top">
+            <img loading="lazy" id="ramdan_right_character" draggable="false" src="{% static 'ramadan/decor/peeking_characters/peeking_characters2.png' %}" alt="">
+        </div>
+        </div>
+        {% endif %}
+
+        <div class="col-lg-6 col-sm-12 col-md-6 px-4 d-flex align-items-center">
+          <div class="img-box-tech image-visible">
+            <!-- <h4 class="hide-head">CRM</h4> -->
+            {% if current_theme == 'pongal' %}
+            <img loading="lazy" src="static/pongal/img/billingsoftwareimg2.png" alt="BillingSoftwware" />
+            {% elif current_theme == 'vishu' %}
+              <img loading="lazy" src="static/vishu/img/billingsoftwareimg2.png" alt="BillingSoftwware" /> 
+            {% elif current_theme == 'easter' %}
+              <img loading="lazy" src="static/easter/img/billingsoftwareimg2.png" alt="BillingSoftwware" /> 
+            {% elif current_theme == 'xmas' %}
+              <div class="position-relative" style="z-index: 1;">
+                <img loading="lazy" src="static/img/team/billingsoftwareimg2.png" alt="BillingSoftwware" />
+                <div class="position-absolute bottom-0">
+                  <img loading="lazy" draggable="false" src="{% static 'xmas/decor/lights/light2_full.png' %}" alt="">
+              </div>
+              </div>
+            {% elif current_theme == 'republic' %}
+              <img loading="lazy" src="static/republic/img/billingsoftwareimg2.png" alt="BillingSoftwware" /> 
+            {% elif current_theme == 'onam' %}
+              <img loading="lazy" src="static/onam/img/billingsoftwareimg2.png" alt="BillingSoftwware" /> 
+            {% elif current_theme == 'diwali' %}
+              <img loading="lazy"  src="static/diwali/img/billingsoftwareimg2.png" alt="BillingSoftwware" /> 
+            {% elif current_theme == 'ramadan' %}
+              <img loading="lazy"  src="static/ramadan/img/billingsoftwareimg2.png" alt="BillingSoftwware" /> 
+            {% else %}
+            <img loading="lazy" src="static/img/team/billingsoftwareimg2.png" alt="BillingSoftwware" />
+            {% endif %}
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12 col-md-6 px-3">
+          <div class="content-boxs border-0 rounded-4">
+          {% if current_theme == 'pongal' %}
+          <h2 class="pongal_text_theme" style="color: transparent;">Billing Software </h2>
+          {% elif current_theme == 'vishu' %}
+          <h2 class="vishu_text_bg1" style="color: transparent;">Billing Software </h2>
+          {% elif current_theme == 'easter' %}
+          <h2 class="easter_text_bg1" style="color: transparent;">Billing Software </h2>
+          {% elif current_theme == 'xmas' %}
+          <h2 class="xmas_text text-light">Billing Software </h2>
+          {% elif current_theme == 'onam' %}
+          <h2 style="color: orange;">Billing Software </h2>
+          {% else %}
+          <h2>Billing Software </h2>
+          {% endif %}
+          <div class="img-box-tech image-hidden">
+            {% if current_theme == 'pongal' %}
+            <img loading="lazy" src="static/pongal/img/billingsoftwareimg2.png" alt="BillingSoftwware" />
+            {% elif current_theme == 'vishu' %}
+              <img loading="lazy" src="static/vishu/img/billingsoftwareimg2.png" alt="BillingSoftwware" /> 
+            {% elif current_theme == 'easter' %}
+              <img loading="lazy" src="static/easter/img/billingsoftwareimg2.png" alt="BillingSoftwware" /> 
+            {% elif current_theme == 'xmas' %}
+              <div class="position-relative" style="z-index: 1;">
+                <img loading="lazy" src="static/img/team/billingsoftwareimg2.png" alt="BillingSoftwware" />
+                <div class="position-absolute bottom-0">
+                  <img loading="lazy" draggable="false" src="{% static 'xmas/decor/lights/light2_full.png' %}" alt="">
+              </div>
+              </div>
+            {% elif current_theme == 'republic' %}
+              <img loading="lazy" src="static/republic/img/billingsoftwareimg2.png" alt="BillingSoftwware" /> 
+            {% elif current_theme == 'onam' %}
+              <img loading="lazy" src="static/onam/img/billingsoftwareimg2.png" alt="BillingSoftwware" /> 
+            {% elif current_theme == 'diwali' %}
+              <img loading="lazy"  src="static/diwali/img/billingsoftwareimg2.png" alt="BillingSoftwware" /> 
+            {% elif current_theme == 'ramadan' %}
+              <img loading="lazy"  src="static/ramadan/img/billingsoftwareimg2.png" alt="BillingSoftwware" /> 
+            {% else %}
+            <img loading="lazy" src="static/img/team/billingsoftwareimg2.png" alt="BillingSoftwware" />
+            {% endif %}
+          </div>
+          <p>It offers a streamlined and efficient solution for managing your billing needs. With user-friendly features and intuitive design, Altos Billing Soft simplifies the billing process, allowing you to focus on your business. Generate invoices, track payments, and manage expenses seamlessly with Altos Billing Soft. Stay organized and in control of your finances with Altos Billing Soft's advanced features. From customizable invoice templates to detailed reporting capabilities, Altos Billing Soft provides everything you need to manage your billing operations efficiently.
+          Experience the convenience and reliability of Altos Billing Soft – the ultimate billing software for businesses of all sizes. Enhance your financial management processes and take your business to the next level with Altos Billing Soft. Try it today and see the difference it can make for your organization!
+          </p>
+          </div>
+
+          {% if current_theme == 'xmas' %}
+          <div class="position-relative hide_for_mob">
+            <div class="position-absolute" style="margin-left: 5.4rem;margin-top: -1.5rem;">
+              <img loading="lazy" width="100rem" draggable="false" src="{% static 'xmas/decor/xmaspap_peek_left.png' %}" alt="">
+            </div>
+          </div>
+          {% elif current_theme == 'ramadan' %}
+          <div class="position-relative hide_for_mob">
+            <div class="position-absolute" style="margin-left: 6.4rem;margin-top: -1rem;">
+              <img loading="lazy" width="90rem" draggable="false" src="{% static 'ramadan/decor/peeking_characters/peeking_characters2.png' %}" alt="">
+            </div>
+          </div>
+          {% endif %}
+          
+          <div class="km-button my-4"><a role="button" href="/billingsoftware" 
+            {% if current_theme == 'pongal' %}
+             class="knowmore-button1" 
+            {% elif current_theme == 'vishu' %}
+              class="knowmore-button2"
+            {% elif current_theme == 'easter' %}
+               class="knowmore-button3"
+            {% elif current_theme == 'xmas' %}
+              class="knowmore-button4"
+            {% elif current_theme == 'republic' %}
+              class="knowmore-button5"
+            {% elif current_theme == 'onam' %}
+              class="knowmore-button6"
+            {% elif current_theme == 'diwali' %}
+            class="knowmore-button7"
+            {% elif current_theme == 'ramadan' %}
+            class="knowmore-button8"
+            {% else %} 
+             class="knowmore-button text-white" 
+            {% endif %}>
+             Know More</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 <section class="pb-0">

@@ -94,6 +94,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .navbar li:hover>.hover_anchor {
     color: #189aa6;
   }
+ .custom-list {
+list-style-type: none;
+padding-left: 0;
+              }
+
 </style>
   
 <style>
@@ -1248,6 +1253,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </style>
 
 
+
+<style>
+  .ResponsiveYTPlayer { 
+      position: relative;
+      padding-bottom: 42.25%; 
+      height: 0; overflow: hidden; max-width: 100%; } 
+      .ResponsiveYTPlayer iframe, 
+      .ResponsiveYTPlayer object, 
+      .ResponsiveYTPlayer embed { 
+          position: absolute; 
+          top: 0; left: 0; 
+          width: 100%; height: 100%; }
+
+  @media (max-width:732px)
+  {
+      .ResponsiveYTPlayer { 
+        
+          padding-bottom: 62.25%; 
+      }  
+  }
+  @media (max-width:532px)
+  {
+      .ResponsiveYTPlayer { 
+        
+          padding-bottom: 95.25%; 
+      }  
+  }
+ </style>
+
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RLTXDEGMP"></script>
@@ -1733,6 +1767,15 @@ gtag('config', 'G-3RLTXDEGMP');
     position: relative;
     padding-top: 2vh;
     background: rgb(153 153 153 / 27%);
+    display: inline-block;
+    width: calc(33.33% - 20px); /* Adjust width as needed */
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    vertical-align: top;
+    height: 700px; /* Set the height to your desired value */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   .box-contents box-contents {
@@ -1750,6 +1793,8 @@ gtag('config', 'G-3RLTXDEGMP');
     font-family: Hind Siliguri;
     font-size: 22px;
     margin-bottom: 1em;
+    
+    
   }
 
   .box-service .icon {
@@ -1762,6 +1807,7 @@ gtag('config', 'G-3RLTXDEGMP');
     line-height: 1.7em;
     text-align: center;
   }
+
 
   #containet-top-head .section-title {
     margin-top: 1em;
@@ -2053,7 +2099,7 @@ window.addEventListener('resize', handleResize);
 <div class="container-fluid">
   <section id="whatsapp_market">
     <div id="containet-top-head">
-      <br><br><br>
+      <br>
       <div class="section-title">
         {% if current_theme == 'pongal' %}
         <p data-aos="fade-up" data-aos-duration="750" class="d-none d-sm-block"> <span class="pongal_text_theme" style="font-size: 5vh;color: transparent;">Improve Your Audience with</span> <br> <span style="font-size: 10vh; color:rgb(62, 199, 206)"> ALT Whatsapp Module </span></p>
@@ -2107,13 +2153,15 @@ window.addEventListener('resize', handleResize);
           <br> <span style="font-size: 10vh;"> ALT Whatsapp Module </span></p>
         <p data-aos="fade-up" data-aos-duration="750" class="d-lg-none d-md-none ramadan_text1" style="color: transparent;">Improve Your Audience with</span> <br> <span class="text-light"> ALT Whatsapp Module </span></p>
         {% else %}
-        <p data-aos="fade-up" data-aos-duration="750" class="d-none d-sm-block"> <span style="font-size: 5vh;">Improve Your Audience with</span> <br> <span style="font-size: 10vh; color:rgb(62, 199, 206)"> ALT Whatsapp Module </span></p>
-        <p data-aos="fade-up" data-aos-duration="750" class="d-lg-none d-md-none" >Improve Your Audience with</span> <br> <span style="color:rgb(62, 199, 206)"> ALT Whatsapp Module </span></p>
+        <p data-aos="fade-up" data-aos-duration="750" class="d-none d-sm-block"> <span style="font-size: 5vh;">Introducing Altos Connect</span> <br> <span style="font-size: 7vh; color:rgb(62, 199, 206)"> The Ultimate Solution for Powerful & Efficient </span></p>
+        <p data-aos="fade-up" data-aos-duration="750" class="d-lg-none d-md-none" >Introducing Altos Connect</span> <br> <span style="color:rgb(62, 199, 206)"> The Ultimate Solution for Powerful & Efficient </span></p>
+        <p data-aos="fade-up" data-aos-duration="750" class="" > <span style=" font-size: 7vh; color:rgb(62, 199, 206)"> Whatsapp Marketing! </span></p>
+
         {% endif %}
-        <br><br>
+        <br>
         
         <div data-aos="fade-up" data-aos-duration="750" >
-          <span class="text-white" style="font-size: large;">Get the Best ALT Whatsapp Module for Your Business Today</span>
+          <span class="text-white" style="font-size: large;">Unlock the fut potence of WhatsApp marketing with at WhatsApp the engagement With a robust set of features, Alt WhatsAdo empowers your business to reach new heights in communication and efficiency.</span>
         </div>
         <br>
         
@@ -2141,6 +2189,22 @@ window.addEventListener('resize', handleResize);
       
       <br><br>
 
+      
+<section id="aboutus-section-2" class="" style="margin-top: -1rem; margin-left: 5vw;">
+  <div class="row aboutus-content container" style="background-color: transparent;">
+    <div class="col-12 ">
+
+      <h5 class="sub-head text-center mb-3">
+          
+      </h5>
+      <div class='ResponsiveYTPlayer'>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pOvMaOTddlw?si=bs8YtvX-3VeGsBmd&amp;controls=1&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+      </div>
+
+    </div>
+  </div>
+ </section>
+
       <div class="container">
 
       <section class="pb-0">
@@ -2157,74 +2221,73 @@ window.addEventListener('resize', handleResize);
 
             <div class="section-title ">  
               {% if current_theme == 'pongal' %}
-              <p class="pongal_text_theme" style="color: transparent;">Any best points to highlight <br> about module</p>
+              <p class="pongal_text_theme" style="color: transparent;">Why Altos Connect?</p>
               {% elif current_theme == 'vishu' %} 
-              <p class="vishu_text_bg1" style="color: transparent;">Any best points to highlight <br> about module</p>
+              <p class="vishu_text_bg1" style="color: transparent;">Why Altos Connect?</p>
               {% elif current_theme == 'easter' %} 
-              <p class="easter_text_bg1" style="color: transparent;">Any best points to highlight <br> about module</p>
+              <p class="easter_text_bg1" style="color: transparent;">Why Altos Connect? </p>
               {% elif current_theme == 'xmas' %} 
-              <p class="xmas_text text-light">Any best points to highlight <br> about module</p>
+              <p class="xmas_text text-light">Why Altos Connect? </p>
               {% elif current_theme == 'republic' %}
               <p>
-                <span class="fg_republic" style="color: transparent;">Any </span>
-                <span class="fg_republic" style="color: transparent;">best </span>
-                <span class="fg_republic" style="color: transparent;">points </span>
-                <span class="fg_republic" style="color: transparent;">to </span>
-                <span class="fg_republic" style="color: transparent;">highlight </span>
-                     <br> 
-                     <span class="fg_republic" style="color: transparent;">about </span>
-                     <span class="fg_republic" style="color: transparent;">module </span> </p>
+                <span class="fg_republic" style="color: transparent;">Why </span>
+                <span class="fg_republic" style="color: transparent;">Altos </span>
+                <span class="fg_republic" style="color: transparent;">Connect? </span>
+                    
               {% elif current_theme == 'ramadan' %} 
-              <p class="ramadan_text1" style="color: transparent;">Any best points to highlight <br> about module</p>
+              <p class="ramadan_text1" style="color: transparent;">Why Altos Connect? </p>
               {% else %}
-              <p>Any best points to highlight <br> about module</p>
+              <p>Why Altos Connect?</p>
               {% endif %}
             </div>
             <div class="col-lg-6 col-sm-12 col-md-6 px-3 mt-5">
               <div class="content-boxs border-0 rounded-4 background_img1">
                 <div class="img-box-tech image-hidden">
                   {% if current_theme == 'pongal' %}
-                  <img loading="lazy" src="/static/pongal/img/erp.png" alt="ERP" />
+                  <img loading="lazy" src="/static/pongal/img/connectimg.png" alt="AltosConnect" />
                   {% elif current_theme == 'vishu' %} 
-                  <img loading="lazy" src="/static/vishu/img/erp.png" alt="ERP" />
+                  <img loading="lazy" src="/static/vishu/img/connectimg.png" alt="AltosConnect" />
                   {% elif current_theme == 'easter' %} 
-                  <img loading="lazy" src="/static/easter/img/erp.png" alt="ERP" />
+                  <img loading="lazy" src="/static/easter/img/connectimg.png" alt="AltosConnect" />
                   {% elif current_theme == 'republic' %} 
-                  <img loading="lazy" src="/static/republic/img/erp.png" alt="ERP" />
+                  <img loading="lazy" src="/static/republic/img/connectimg.png" alt="AltosConnect" />
                   {% elif current_theme == 'onam' %} 
-                  <img loading="lazy" src="/static/onam/img/erp.png" alt="ERP" />
+                  <img loading="lazy" src="/static/onam/img/erp.connectimg" alt="AltosConnect" />
                   {% elif current_theme == 'diwali' %} 
-                  <img loading="lazy"  src="/static/diwali/img/erp.png" alt="ERP" />
+                  <img loading="lazy"  src="/static/diwali/img/connectimg.png" alt="AltosConnect" />
                   {% elif current_theme == 'ramadan' %} 
-                  <img loading="lazy"  src="/static/ramadan/img/erp.png" alt="ERP" />
+                  <img loading="lazy"  src="/static/ramadan/img/connectimg.png" alt="AltosConnect" />
                   {% else %}
-                  <img loading="lazy" src="/static/img/team/erp.png" alt="ERP" />
+                  <img loading="lazy" src="/static/img/team/connectimg.png" alt="ERP" />
                   {% endif %}
                 </div>
+                <h5 class="text-light" ><b>Broadcasting and Retargeting</b></h5>
                 <p class="text-light" style="font-size: larger; text-align: justify;">
-                  Our ALT Whatsapp Module are made of high-quality materials to ensure durability and reliability. 
-                  We offer products that are designed to meet the needs of our clients and provide the best possible value for their money.
+                  Amplify your reach through powerful broadcasting capabilities. With Altos Connect, you can broadcast messages to multiple recipients and retarget your audience strategically for enhanced engagement.
                 </p>
+                <h5 class="text-light" ><b>Import Contacts from CSV or TXT</b></h5>
+                <p class="text-light" style="font-size: larger; text-align: justify;">
+                  Simplify your contact management by importing contacts seamlessly from CSV or TXT files, ensuring accuracy and efficiency.</p>
               </div>
             </div>
             <div class="col-lg-6 col-sm-12 col-md-6 px-4 d-flex align-items-center mt-5">
               <div class="img-box-tech image-visible" style="height: 75%; margin-top: -10vh;">
                 {% if current_theme == 'pongal' %}
-                <img loading="lazy" src="/static/pongal/img/erp.png" alt="ERP" />
+                <img loading="lazy" src="/static/pongal/img/connectimg.png" alt="AltosConnect" />
                 {% elif current_theme == 'vishu' %} 
-                  <img loading="lazy" src="/static/vishu/img/erp.png" alt="ERP" />
+                  <img loading="lazy" src="/static/vishu/img/connectimg.png" alt="AltosConnect" />
                 {% elif current_theme == 'easter' %} 
-                  <img loading="lazy" src="/static/easter/img/erp.png" alt="ERP" />
+                  <img loading="lazy" src="/static/easter/img/connectimg.png" alt="AltosConnect" />
                 {% elif current_theme == 'republic' %} 
-                  <img loading="lazy" src="/static/republic/img/erp.png" alt="ERP" />
+                  <img loading="lazy" src="/static/republic/img/connectimg.png" alt="AltosConnect" />
                 {% elif current_theme == 'onam' %} 
-                  <img loading="lazy" src="/static/onam/img/erp.png" alt="ERP" />
+                  <img loading="lazy" src="/static/onam/img/connectimg.png" alt="AltosConnect" />
                 {% elif current_theme == 'diwali' %} 
-                  <img loading="lazy"  src="/static/diwali/img/erp.png" alt="ERP" />
+                  <img loading="lazy"  src="/static/diwali/img/connectimg.png" alt="AltosConnect" />
                 {% elif current_theme == 'ramadan' %} 
-                <img loading="lazy"  src="/static/ramadan/img/erp.png" alt="ERP" />
+                <img loading="lazy"  src="/static/ramadan/img/connectimg.png" alt="AltosConnect" />
                 {% else %}
-                <img loading="lazy" src="/static/img/team/erp.png" alt="ERP" />
+                <img loading="lazy" src="/static/img/team/connectimg.png" alt="AltosConnect" />
                 {% endif %}
               </div>
             </div>
@@ -2247,21 +2310,21 @@ window.addEventListener('resize', handleResize);
             <div class="col-lg-6 col-sm-12 col-md-6 px-4 d-flex align-items-center">
               <div class="img-box-tech image-visible" style="height: 75%; margin-top: -10vh;">
                 {% if current_theme == 'pongal' %}
-                <img loading="lazy" src="/static/pongal/img/crm.png" alt="CRM" />
+                <img loading="lazy" src="/static/pongal/img/connectimg.png" alt="BillingSoftware" />
                 {% elif current_theme == 'vishu' %} 
-                <img loading="lazy" src="/static/vishu/img/crm.png" alt="CRM" />
+                <img loading="lazy" src="/static/vishu/img/connectimg.png" alt="BillingSoftware" />
                 {% elif current_theme == 'easter' %} 
-                <img loading="lazy" src="/static/easter/img/crm.png" alt="CRM" />
+                <img loading="lazy" src="/static/easter/img/connectimg.png" alt="BillingSoftware" />
                 {% elif current_theme == 'republic' %}
-                <img loading="lazy" src="/static/republic/img/crm.png" alt="CRM" />
+                <img loading="lazy" src="/static/republic/connectimg/connectimg.png" alt="BillingSoftware" />
                 {% elif current_theme == 'onam' %}
-                <img loading="lazy" src="/static/onam/img/crm.png" alt="CRM" />
+                <img loading="lazy" src="/static/onam/img/connectimg.png" alt="BillingSoftware" />
                 {% elif current_theme == 'diwali' %}
-                <img loading="lazy"  src="/static/diwali/img/crm.png" alt="CRM" />
+                <img loading="lazy"  src="/static/diwali/img/connectimg.png" alt="BillingSoftware" />
                 {% elif current_theme == 'ramadan' %}
-                <img loading="lazy"  src="/static/ramadan/img/crm.png" alt="CRM" />
+                <img loading="lazy"  src="/static/ramadan/img/connectimg.png" alt="BillingSoftware" />
                 {% else %}
-                <img loading="lazy" src="/static/img/team/crm.png" alt="CRM" />
+                <img loading="lazy" src="/static/img/team/connectimg.png" alt="BillingSoftware" />
                 {% endif %}
               </div>
             </div>
@@ -2269,27 +2332,30 @@ window.addEventListener('resize', handleResize);
               <div class="content-boxs border-0 rounded-4">
                 <div class="img-box-tech image-hidden" >
                   {% if current_theme == 'pongal' %}
-                  <img loading="lazy" src="/static/pongal/img/crm.png" alt="CRM" />
+                  <img loading="lazy" src="/static/pongal/img/connectimg.png" alt="BillingSoftware" />
                   {% elif current_theme == 'vishu' %} 
-                  <img loading="lazy" src="/static/vishu/img/crm.png" alt="CRM" />
+                  <img loading="lazy" src="/static/vishu/img/connectimg.png" alt="BillingSoftware" />
                   {% elif current_theme == 'easter' %} 
-                  <img loading="lazy" src="/static/easter/img/crm.png" alt="CRM" />
+                  <img loading="lazy" src="/static/easter/img/connectimg.png" alt="BillingSoftware" />
                   {% elif current_theme == 'republic' %}
-                  <img loading="lazy" src="/static/republic/img/crm.png" alt="CRM" />
+                  <img loading="lazy" src="/static/republic/img/connectimg.png" alt="BillingSoftware" />
                   {% elif current_theme == 'onam' %}
-                  <img loading="lazy" src="/static/onam/img/crm.png" alt="CRM" />
+                  <img loading="lazy" src="/static/onam/img/connectimg.png" alt="BillingSoftware" />
                   {% elif current_theme == 'diwali' %}
-                  <img loading="lazy"  src="/static/diwali/img/crm.png" alt="CRM" />
+                  <img loading="lazy"  src="/static/diwali/img/connectimg.png" alt="BillingSoftware" />
                   {% elif current_theme == 'ramadan' %}
-                  <img loading="lazy"  src="/static/ramadan/img/crm.png" alt="CRM" />
+                  <img loading="lazy"  src="/static/ramadan/img/connectimg.png" alt="BillingSoftware" />
                   {% else %}
-                  <img loading="lazy" src="/static/img/team/crm.png" alt="CRM" />
+                  <img loading="lazy" src="/static/img/team/connectimg.png" alt="BillingSoftware" />
                   {% endif %}
                 </div>
+                <h5 class="text-white"><b>Attach Files, Images, or High- Resolution Videos</b></h5>
                 <p class="text-white" style="font-size: larger; text-align: justify;">
-                  We understand the importance of timely delivery of products to our clients. 
-                  That's why we offer fast and reliable shipping services to ensure that you receive your ALT Whatsapp Module on time.
+                  Enrich your communication with multimedia content. Alt Whatsapp allows you to attach files, images, or high-resolution videos, making your messages more engaging and impactful.
                 </p>
+                <h5 class="text-white"><b>Button Message Sending</b></h5>
+                <p class="text-white" style="font-size: larger; text-align: justify;">
+                  Drive user interaction with button message sending. Create clear calls-to-action that prompt immediate responses from your audience.                </p>
               </div>
             </div>
           </div>
@@ -2298,6 +2364,343 @@ window.addEventListener('resize', handleResize);
 
       <br><br>
       
+  
+      <section id="more-about-you" style="z-index: 3;">
+        <br><br>
+        <div class="row">
+          {% if current_theme == 'diwali' %}
+          <div class="position-relative">
+            <div class="position-absolute start-50 translate-middle-x fire_cracker3_top">
+              <img loading="lazy" id="fire_cracker3"  src="{% static 'diwali/gif/fire_cracker3.gif' %}" alt="">
+            </div>
+          </div>
+          {% endif %}
+          <div class="col-12">
+            {% if current_theme == 'pongal' %}
+            <p class=" more-head text- d-none d-sm-none pongal_text_theme"  style="font-size: 1.7em;color: transparent;"><b>Revolutionizing Business Marketing </b></p>
+            <p  class=" more-head text- d-lg-block pongal_text_theme"  style="font-size: 3rem;color: transparent;"><b>Revolutionizing Business Marketing </b></p>
+            {% elif current_theme == 'vishu' %} 
+            <p class=" more-head text- d-none d-sm-none vishu_text_bg1"  style="font-size: 1.7em;color: transparent;"><b>Revolutionizing Business Marketing </b></p>
+            <p  class=" more-head text- d-lg-block vishu_text_bg1"  style="font-size: 3rem;color: transparent;"><b>Revolutionizing Business Marketing </b></p>
+            {% elif current_theme == 'easter' %} 
+            <p class=" more-head text- d-none d-sm-none easter_text_bg1"  style="font-size: 1.7em;color: transparent;"><b>Revolutionizing Business Marketing </b></p>
+            <p  class=" more-head text- d-lg-block easter_text_bg1"  style="font-size: 3rem;color: transparent;"><b>Revolutionizing Business Marketing </b></p>
+            {% elif current_theme == 'xmas' %} 
+            <p class=" more-head text- d-none d-sm-none xmas_text text-light"  style="font-size: 1.7em;"><b>Revolutionizing Business Marketing </b></p>
+            <p  class=" more-head text- d-lg-block xmas_text text-light"  style="font-size: 3rem;"><b>Revolutionizing Business Marketing </b></p>
+            {% elif current_theme == 'republic' %}
+            <p class=" more-head text- d-none d-sm-none"  style="font-size: 1.7em;"><b>
+              <span class="fg_republic" style="color: transparent;">Revolutionizisng </span>
+              <span class="fg_republic" style="color: transparent;">Business </span>
+              <span class="fg_republic" style="color: transparent;">Marketing </span>   </b></p>
+            <p  class=" more-head text-white d-lg-block"  style="font-size: 3rem;"><b>
+              <span class="fg_republic" style="color: transparent;">Revolutionizisng </span>
+              <span class="fg_republic" style="color: transparent;">Business </span>
+              <span class="fg_republic" style="color: transparent;">Marketing </span>
+            </b></p>
+            {% elif current_theme == 'ramadan' %} 
+            <p class=" more-head text- d-none d-sm-none ramadan_text1"  style="font-size: 1.7em;color: transparent;"><b>Revolutionizing Business Marketing </b></p>
+            <p  class=" more-head text- d-lg-block ramadan_text1"  style="font-size: 3rem;color: transparent;"><b>Revolutionizing Business Marketing </b></p>
+            {% else %}
+            <p class=" more-head text-white d-none d-sm-none"  style="font-size: 1.7em;"><b>Ready to take your WhatsApp marketing to the next level? </b></p>
+            <p  class=" more-head text-white d-lg-block"  style="font-size: 3rem;"><b>Ready to take your WhatsApp marketing to the next level? </b></p>
+            {% endif %}
+            <div class="row">
+              <div class="col-md-3"></div>
+              <div class="col-md-6">
+                <br>
+                  <p class="text-white " style="font-size: larger; text-align: justify;">
+                 Unleash the potential of Altos Connect and transform the way you connect with your audience! Elevate your marketing game with unlimited age logins, smart audience segmentation, and powerful broadcasting features. Boost engagement, streamline communication, and conquer your goals effortlessly.
+                </p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <br><br><br><br><br><br><br>
+
+
+      <div class="container service-box ">
+        <div class="dig-mark-container ">
+          {% if current_theme == 'pongal' %}
+          <p class="text- mb-3 pongal_text_theme1" style="color: transparent;" id="price-head"><b>Plan and Pricing</b></p>
+          {% elif current_theme == 'vishu' %} 
+          <p class="text- mb-3 vishu_text_bg1" style="color: transparent;" id="price-head"><b>Plan and Pricing</b></p>
+          {% elif current_theme == 'easter' %} 
+          <p class="text- mb-3 easter_text_bg1" style="color: transparent;" id="price-head"><b>Plan and Pricing</b></p>
+          {% elif current_theme == 'xmas' %} 
+          <p class="text- mb-3 xmas_text text-light" style="color: transparent;" id="price-head"><b>Plan and Pricing</b></p>
+          {% elif current_theme == 'republic' %}
+          <p class="text-white mb-3" id="price-head"><b>
+            <span class="fg_republic" style="color: transparent;">Plan </span>
+            <span class="fg_republic" style="color: transparent;">and </span>
+            <span class="fg_republic" style="color: transparent;">Pricing </span>
+              </b></p>
+          {% elif current_theme == 'ramadan' %} 
+          <p class="text- mb-3 ramadan_text1" style="color: transparent;" id="price-head"><b>Plan and Pricing</b></p>
+          {% else %}
+          <p class="text-white mb-3 pongal_text_theme" style="color: transparent;" id="price-head"><b>Plan and Pricing</b></p>
+          {% endif %}
+          <div class="container" id="sub-content"></div>
+          <br><br>
+          
+          <div class="box-service " 
+          {% if current_theme == 'ramadan' %}
+          style="margin-bottom: 3vh; padding: 1em 1.7em; width: 320px;
+          background-image: url('/static/ramadan/decor/whatsapp_frame/whatsapp_frame.png');
+          background-size: 100% 100%"
+          {% else %}
+          style="margin-bottom: 3vh; padding: 1em 1.7em; width: 320px; border-radius: 1vw;"
+          {% endif %}>
+
+            {% if current_theme == 'pongal' %}
+            <div class="position-relative">
+              <div class="position-absolute start-0 top-0 pongal_whatsapp_frame_top">
+                <img loading="lazy" id="pongal_whatsapp_frame" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+              </div>
+            </div>
+            {% elif current_theme == 'vishu' %} 
+            <div class="position-relative">
+              <div class="position-absolute start-0 top-0 vishu_whatsapp_frame_top" >
+                <img loading="lazy" id="vishu_whatsapp_frame" src="{% static 'vishu/decor/frame_decor/gallery_frame3.png' %}" alt="">
+              </div>
+            </div>
+            {% elif current_theme == 'easter' %} 
+            <div class="position-relative" style="z-index: 10;">
+              <div class="position-absolute start-0 top-0 easter_whatsapp_frame_top">
+                <img loading="lazy" class="easter_whatsapp_frame" src="{% static 'easter/decor/frame/whatsapp_frame.png' %}" alt="">
+              </div>
+            </div>
+            {% elif current_theme == 'diwali' %} 
+            <div class="position-relative">
+              <div class="position-absolute start-0 top-0 vishu_whatsapp_frame_top" >
+                <img loading="lazy"  id="vishu_whatsapp_frame" src="{% static 'diwali/decor/whatsapp_frame/diwali_whatsapp_frame.png' %}" alt="">
+              </div>
+            </div>
+            {% endif %}
+            
+            <div class="box-contents" style="height: 50%;">
+              {% if current_theme == 'xmas' %}
+              <div class="position-relative" style="z-index: 1;">
+                <div class="position-absolute blue_top_top">
+                  <img loading="lazy" id="blue_top" draggable="false" src="{% static 'xmas/decor/new_ribbons/blue_ribbon_top.png' %}" alt="">
+                </div>
+              </div>
+              {% elif current_theme == 'republic' %}
+              <div class="position-relative">
+                <div class="position-absolute" style="margin-left: -2.2rem;margin-top: 2.2rem;">
+                  <img loading="lazy" width="220rem" src="{% static 'republic/decor/frames/normal_frame/frame_top_left.png' %}" alt="">
+                </div>
+              </div>
+              {% elif current_theme == 'onam' %}
+              <div class="position-relative">
+                <div class="position-absolute" style="margin-left: -1.8rem;margin-top: 2.2rem;">
+                  <img loading="lazy" class="onam_frame" src="{% static 'onam/decor/frame6/onam_whatsapp_frame.png' %}" alt="">
+                </div>
+              </div>
+              {% endif %}
+              <h1 style="color:rgb(62, 199, 206)">
+                <span class="plan-icon text-center text-9xl text-[#205846] transition-all">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"></path>
+                    </svg>
+                </span>
+            </h1>
+            <div style="text-align: justify;"> 
+                <ul class="flex items-center flex-col whitespace-nowrap gap-4 text-xs text-white custom-list">
+                    <h4 class="text-2xl font-bold mt-5 whitespace-nowrap text-center ">Basic Plan</h4>
+                    <li class="flex gap-2"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"></path></svg>Unlimited agent logins</li><br>
+                    <li class="flex gap-2"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"></path></svg>Template message APIs</li><br>
+                    <li class="flex gap-2"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"></path></svg>Send bulk text message directly from pc</li><br>
+                    <li class="flex gap-2"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"></path></svg>Import contacts from excel sheet</li>
+                </ul>
+            </div>
+            
+            </div>
+
+
+            {% if current_theme == 'republic' %}
+            <div class="position-relative">
+              <div class="position-absolute bottom-0 end-0" style="margin-right: -2.2rem;margin-bottom: -1.4rem;">
+                <img loading="lazy" width="220rem" src="{% static 'republic/decor/frames/normal_frame/frame_bottom_right.png' %}" alt="">
+              </div>
+            </div>
+            {% endif %}
+
+          </div>
+
+          <div class="box-service" 
+          {% if current_theme == 'ramadan' %}
+          style="margin-bottom: 3vh; padding: 1em 1.7em; width: 350px;
+          background-image: url('/static/ramadan/decor/whatsapp_frame/whatsapp_frame.png');
+          background-size: 100% 100%"
+          {% else %}
+          style="margin-bottom: 3vh; padding: 1em 1.7em; width: 350px; border-radius: 1vw;" 
+          {% endif %}>
+
+            {% if current_theme == 'pongal' %}
+            <div class="position-relative">
+              <div class="position-absolute start-0 top-0 pongal_whatsapp_frame_top">
+                <img loading="lazy" id="pongal_whatsapp_frame" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+              </div>
+            </div>
+            {% elif current_theme == 'vishu' %} 
+            <div class="position-relative">
+              <div class="position-absolute start-0 top-0 vishu_whatsapp_frame_top">
+                <img loading="lazy" id="vishu_whatsapp_frame" src="{% static 'vishu/decor/frame_decor/gallery_frame3.png' %}" alt="">
+              </div>
+            </div>
+            {% elif current_theme == 'easter' %} 
+            <div class="position-relative" style="z-index: 10;">
+              <div class="position-absolute start-0 top-0 easter_whatsapp_frame_top">
+                <img loading="lazy" class="easter_whatsapp_frame" src="{% static 'easter/decor/frame/whatsapp_frame.png' %}" alt="">
+              </div>
+            </div>
+            {% elif current_theme == 'onam' %}
+              <div class="position-relative">
+                <div class="position-absolute" style="margin-left: -1.8rem;margin-top: 13.3rem;">
+                  <img loading="lazy" class="onam_frame" src="{% static 'onam/decor/frame6/onam_whatsapp_frame.png' %}" alt="">
+                </div>
+              </div>
+              {% elif current_theme == 'diwali' %} 
+            <div class="position-relative">
+              <div class="position-absolute start-0 top-0 vishu_whatsapp_frame_top" >
+                <img loading="lazy"  id="vishu_whatsapp_frame" src="{% static 'diwali/decor/whatsapp_frame/diwali_whatsapp_frame.png' %}" alt="">
+              </div>
+            </div>
+            {% endif %}
+
+            <div class="box-contents" style="height: 50%;">
+              {% if current_theme == 'xmas' %}
+              <div class="position-relative" style="z-index: 1;">
+                <div class="position-absolute blue_top_top">
+                  <img loading="lazy" id="blue_top" draggable="false" src="{% static 'xmas/decor/new_ribbons/blue_ribbon_top.png' %}" alt="">
+                </div>
+              </div>
+              {% elif current_theme == 'republic' %}
+              <div class="position-relative">
+                <div class="position-absolute" style="margin-left: -2.2rem;margin-top:  13.3rem;">
+                  <img loading="lazy" width="220rem" src="{% static 'republic/decor/frames/normal_frame/frame_top_left.png' %}" alt="">
+                </div>
+              </div>
+              {% endif %}
+              <h1 style="color:rgb(62, 199, 206)">
+                <span class="plan-icon text-center text-9xl text-[#205846]"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3.414 13.778 2 15.192l4.949 2.121 2.122 4.95 1.414-1.414-.707-3.536L13.091 14l3.61 7.704 1.339-1.339-1.19-10.123 2.828-2.829a2 2 0 1 0-2.828-2.828l-2.903 2.903L3.824 6.297 2.559 7.563l7.644 3.67-3.253 3.253-3.536-.708z"></path></svg></span>
+            </h1>
+            <div style="text-align: justify;"> 
+                <ul class="flex items-center flex-col whitespace-nowrap gap-4 text-xs text-white custom-list">
+                    <h4 class="text-2xl font-bold mt-5 whitespace-nowrap text-center ">Standard Plan</h4>
+                    <li class="flex gap-2"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"></path></svg>Unlimited agent logins</li><br>
+                    <li class="flex gap-2"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"></path></svg>Template message APIs</li><br>
+                    <li class="flex gap-2"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"></path></svg>Send bulk text message directly from pc</li><br>
+                    <li class="flex gap-2"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"></path></svg>Import contacts from excel sheet</li><br>
+                    <li class="flex gap-2"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"></path></svg>Attach files, image or high resolution video</li><br>
+                    <li class="flex gap-2"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"></path></svg>Button message sending</li><br>
+                    <li class="flex gap-2"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"></path></svg>Can send attachments</li>
+                </ul>
+                
+            </div>
+            </div>
+            
+            {% if current_theme == 'republic' %}
+            <div class="position-relative">
+              <div class="position-absolute bottom-0 end-0" style="margin-right: -2.2rem;margin-bottom: -1.4rem;">
+                <img loading="lazy" width="220rem" src="{% static 'republic/decor/frames/normal_frame/frame_bottom_right.png' %}" alt="">
+              </div>
+            </div>
+            {% endif %}
+
+          </div>
+
+          <div class="box-service"
+          {% if current_theme == 'ramadan' %}
+          style="margin-bottom: 3vh; padding: 1em 1.7em; width: 350px;
+          background-image: url('/static/ramadan/decor/whatsapp_frame/whatsapp_frame.png');
+          background-size: 100% 100%"
+          {% else %}
+          style="margin-bottom: 3vh; padding: 1em 1.7em; width: 350px; border-radius: 1vw;"
+          {% endif %}
+          >
+
+            {% if current_theme == 'pongal' %}
+            <div class="position-relative">
+              <div class="position-absolute start-0 top-0 pongal_whatsapp_frame_top">
+                <img loading="lazy" id="pongal_whatsapp_frame" src="{% static 'pongal/frame/frame3.png' %}" alt="">
+              </div>
+            </div>
+            {% elif current_theme == 'vishu' %} 
+            <div class="position-relative">
+              <div class="position-absolute start-0 top-0 vishu_whatsapp_frame_top">
+                <img loading="lazy" id="vishu_whatsapp_frame" src="{% static 'vishu/decor/frame_decor/gallery_frame3.png' %}" alt="">
+              </div>
+            </div>
+            {% elif current_theme == 'easter' %} 
+            <div class="position-relative" style="z-index: 10;">
+              <div class="position-absolute start-0 top-0 easter_whatsapp_frame_top">
+                <img loading="lazy" class="easter_whatsapp_frame" src="{% static 'easter/decor/frame/whatsapp_frame.png' %}" alt="">
+              </div>
+            </div>
+            {% elif current_theme == 'diwali' %} 
+            <div class="position-relative">
+              <div class="position-absolute start-0 top-0 vishu_whatsapp_frame_top" >
+                <img loading="lazy"  id="vishu_whatsapp_frame" src="{% static 'diwali/decor/whatsapp_frame/diwali_whatsapp_frame.png' %}" alt="">
+              </div>
+            </div>
+            {% endif %}
+
+            <div class="box-contents" style="height: 50%;" >
+              {% if current_theme == 'xmas' %}
+              <div class="position-relative" style="z-index: 1;">
+                <div class="position-absolute blue_top_top">
+                  <img loading="lazy" id="blue_top" draggable="false" src="{% static 'xmas/decor/new_ribbons/blue_ribbon_top.png' %}" alt="">
+                </div>
+              </div>
+              {% elif current_theme == 'republic' %}
+              <div class="position-relative">
+                <div class="position-absolute" style="margin-left: -2.2rem;margin-top: 20.3rem;">
+                  <img loading="lazy" width="220rem" src="{% static 'republic/decor/frames/normal_frame/frame_top_left.png' %}" alt="">
+                </div>
+              </div>
+              {% elif current_theme == 'onam' %}
+              <div class="position-relative">
+                <div class="position-absolute" style="margin-left: -1.8rem;margin-top: 20.3rem;">
+                  <img loading="lazy" class="onam_frame" src="{% static 'onam/decor/frame6/onam_whatsapp_frame.png' %}" alt="">
+                </div>
+              </div>
+              {% endif %}
+              <h1 style="color:rgb(62, 199, 206)">
+                <span class="plan-icon text-center text-9xl text-[#205846]"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12.17 9.53c2.307-2.592 3.278-4.684 3.641-6.218.21-.887.214-1.58.16-2.065a3.578 3.578 0 0 0-.108-.563 2.22 2.22 0 0 0-.078-.23V.453c-.073-.164-.168-.234-.352-.295a2.35 2.35 0 0 0-.16-.045 3.797 3.797 0 0 0-.57-.093c-.49-.044-1.19-.03-2.08.188-1.536.374-3.618 1.343-6.161 3.604l-2.4.238h-.006a2.552 2.552 0 0 0-1.524.734L.15 7.17a.512.512 0 0 0 .433.868l1.896-.271c.28-.04.592.013.955.132.232.076.437.16.655.248l.203.083c.196.816.66 1.58 1.275 2.195.613.614 1.376 1.08 2.191 1.277l.082.202c.089.218.173.424.249.657.118.363.172.676.132.956l-.271 1.9a.512.512 0 0 0 .867.433l2.382-2.386c.41-.41.668-.949.732-1.526l.24-2.408Zm.11-3.699c-.797.8-1.93.961-2.528.362-.598-.6-.436-1.733.361-2.532.798-.799 1.93-.96 2.528-.361.599.599.437 1.732-.36 2.531Z"></path><path d="M5.205 10.787a7.632 7.632 0 0 0 1.804 1.352c-1.118 1.007-4.929 2.028-5.054 1.903-.126-.127.737-4.189 1.839-5.18.346.69.837 1.35 1.411 1.925Z"></path></svg></span>            </h1>
+            <div style="text-align: justify;"> 
+                <ul class="flex items-center flex-col whitespace-nowrap gap-4 text-xs text-white custom-list">
+                    <h4 class="text-2xl font-bold mt-5 whitespace-nowrap text-center ">Advanced Plan</h4>
+                    <li class="flex gap-2"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"></path></svg>Unlimited agent logins</li><br>
+                    <li class="flex gap-2"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"></path></svg>Template message APIs</li><br>
+                    <li class="flex gap-2"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"></path></svg>Send bulk text message directly from pc</li><br>
+                    <li class="flex gap-2"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"></path></svg>Import contacts from excel sheet</li><br>
+                    <li class="flex gap-2"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"></path></svg>Attach files, image or high resolution video</li><br>
+                    <li class="flex gap-2"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"></path></svg>Button message sending</li><br>
+                    <li class="flex gap-2"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"></path></svg>Can send attachments</li>
+                    <li class="flex gap-2"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"></path></svg>Smart audience segmentation</li><br>
+                    <li class="flex gap-2"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"></path></svg>Broadcasting and retargeting</li><br>
+                    <li class="flex gap-2"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"></path></svg>Downloadable reports</li>
+                </ul>
+                
+            </div>
+            </div>
+
+            {% if current_theme == 'republic' %}
+            <div class="position-relative">
+              <div class="position-absolute bottom-0 end-0" style="margin-right: -2.2rem;margin-bottom: -1.4rem;">
+                <img loading="lazy" width="220rem" src="{% static 'republic/decor/frames/normal_frame/frame_bottom_right.png' %}" alt="">
+              </div>
+            </div>
+            {% endif %}
+
+          </div>
+        </div>
+      </div>
+
       <div class="container mt-5" style="background-color: #00000099;"  >
         {% if current_theme == 'ramadan' %}
         <div class="position-relative"> 
@@ -2353,305 +2756,9 @@ window.addEventListener('resize', handleResize);
         {% endif %}
       </div>
 
-      <section id="more-about-you" style="z-index: 3;">
-        <br><br><br><br><br><br><br>
-        <div class="row">
-          {% if current_theme == 'diwali' %}
-          <div class="position-relative">
-            <div class="position-absolute start-50 translate-middle-x fire_cracker3_top">
-              <img loading="lazy" id="fire_cracker3"  src="{% static 'diwali/gif/fire_cracker3.gif' %}" alt="">
-            </div>
-          </div>
-          {% endif %}
-          <div class="col-12">
-            {% if current_theme == 'pongal' %}
-            <p class=" more-head text- d-none d-sm-none pongal_text_theme"  style="font-size: 1.7em;color: transparent;"><b>Revolutionizing Business Marketing </b></p>
-            <p  class=" more-head text- d-lg-block pongal_text_theme"  style="font-size: 3rem;color: transparent;"><b>Revolutionizing Business Marketing </b></p>
-            {% elif current_theme == 'vishu' %} 
-            <p class=" more-head text- d-none d-sm-none vishu_text_bg1"  style="font-size: 1.7em;color: transparent;"><b>Revolutionizing Business Marketing </b></p>
-            <p  class=" more-head text- d-lg-block vishu_text_bg1"  style="font-size: 3rem;color: transparent;"><b>Revolutionizing Business Marketing </b></p>
-            {% elif current_theme == 'easter' %} 
-            <p class=" more-head text- d-none d-sm-none easter_text_bg1"  style="font-size: 1.7em;color: transparent;"><b>Revolutionizing Business Marketing </b></p>
-            <p  class=" more-head text- d-lg-block easter_text_bg1"  style="font-size: 3rem;color: transparent;"><b>Revolutionizing Business Marketing </b></p>
-            {% elif current_theme == 'xmas' %} 
-            <p class=" more-head text- d-none d-sm-none xmas_text text-light"  style="font-size: 1.7em;"><b>Revolutionizing Business Marketing </b></p>
-            <p  class=" more-head text- d-lg-block xmas_text text-light"  style="font-size: 3rem;"><b>Revolutionizing Business Marketing </b></p>
-            {% elif current_theme == 'republic' %}
-            <p class=" more-head text- d-none d-sm-none"  style="font-size: 1.7em;"><b>
-              <span class="fg_republic" style="color: transparent;">Revolutionizisng </span>
-              <span class="fg_republic" style="color: transparent;">Business </span>
-              <span class="fg_republic" style="color: transparent;">Marketing </span>   </b></p>
-            <p  class=" more-head text-white d-lg-block"  style="font-size: 3rem;"><b>
-              <span class="fg_republic" style="color: transparent;">Revolutionizisng </span>
-              <span class="fg_republic" style="color: transparent;">Business </span>
-              <span class="fg_republic" style="color: transparent;">Marketing </span>
-            </b></p>
-            {% elif current_theme == 'ramadan' %} 
-            <p class=" more-head text- d-none d-sm-none ramadan_text1"  style="font-size: 1.7em;color: transparent;"><b>Revolutionizing Business Marketing </b></p>
-            <p  class=" more-head text- d-lg-block ramadan_text1"  style="font-size: 3rem;color: transparent;"><b>Revolutionizing Business Marketing </b></p>
-            {% else %}
-            <p class=" more-head text-white d-none d-sm-none"  style="font-size: 1.7em;"><b>Revolutionizing Business Marketing </b></p>
-            <p  class=" more-head text-white d-lg-block"  style="font-size: 3rem;"><b>Revolutionizing Business Marketing </b></p>
-            {% endif %}
-            <div class="row">
-              <div class="col-md-3"></div>
-              <div class="col-md-6">
-                <br>
-                  <p class="text-white " style="font-size: larger; text-align: justify;">
-                  Revolutionize your business marketing strategies with Alt Whatsapp! Seamlessly connect with your audience, streamline communication, and unlock
-                  new possibilities for growth. Elivate your brand's presence and engagement on whatsapp like never before. 
-                </p>
-                </div>
-              </div>
-          </div>
-        </div>
-      </section>
-
-      <br><br><br><br><br><br><br>
-
-      <div class="container service-box">
-        <div class="dig-mark-container">
-          {% if current_theme == 'pongal' %}
-          <p class="text- mb-3 pongal_text_theme1" style="color: transparent;" id="price-head"><b>Plan and Pricing</b></p>
-          {% elif current_theme == 'vishu' %} 
-          <p class="text- mb-3 vishu_text_bg1" style="color: transparent;" id="price-head"><b>Plan and Pricing</b></p>
-          {% elif current_theme == 'easter' %} 
-          <p class="text- mb-3 easter_text_bg1" style="color: transparent;" id="price-head"><b>Plan and Pricing</b></p>
-          {% elif current_theme == 'xmas' %} 
-          <p class="text- mb-3 xmas_text text-light" style="color: transparent;" id="price-head"><b>Plan and Pricing</b></p>
-          {% elif current_theme == 'republic' %}
-          <p class="text-white mb-3" id="price-head"><b>
-            <span class="fg_republic" style="color: transparent;">Plan </span>
-            <span class="fg_republic" style="color: transparent;">and </span>
-            <span class="fg_republic" style="color: transparent;">Pricing </span>
-              </b></p>
-          {% elif current_theme == 'ramadan' %} 
-          <p class="text- mb-3 ramadan_text1" style="color: transparent;" id="price-head"><b>Plan and Pricing</b></p>
-          {% else %}
-          <p class="text-white mb-3 pongal_text_theme" style="color: transparent;" id="price-head"><b>Plan and Pricing</b></p>
-          {% endif %}
-          <div class="container" id="sub-content"></div>
-          <br><br>
-          
-          <div class="box-service" 
-          {% if current_theme == 'ramadan' %}
-          style="margin-bottom: 3vh; padding: 1em 1.7em; width: 270px;
-          background-image: url('/static/ramadan/decor/whatsapp_frame/whatsapp_frame.png');
-          background-size: 100% 100%"
-          {% else %}
-          style="margin-bottom: 3vh; padding: 1em 1.7em; width: 270px;"
-          {% endif %}>
-
-            {% if current_theme == 'pongal' %}
-            <div class="position-relative">
-              <div class="position-absolute start-0 top-0 pongal_whatsapp_frame_top">
-                <img loading="lazy" id="pongal_whatsapp_frame" src="{% static 'pongal/frame/frame3.png' %}" alt="">
-              </div>
-            </div>
-            {% elif current_theme == 'vishu' %} 
-            <div class="position-relative">
-              <div class="position-absolute start-0 top-0 vishu_whatsapp_frame_top" >
-                <img loading="lazy" id="vishu_whatsapp_frame" src="{% static 'vishu/decor/frame_decor/gallery_frame3.png' %}" alt="">
-              </div>
-            </div>
-            {% elif current_theme == 'easter' %} 
-            <div class="position-relative" style="z-index: 10;">
-              <div class="position-absolute start-0 top-0 easter_whatsapp_frame_top">
-                <img loading="lazy" class="easter_whatsapp_frame" src="{% static 'easter/decor/frame/whatsapp_frame.png' %}" alt="">
-              </div>
-            </div>
-            {% elif current_theme == 'diwali' %} 
-            <div class="position-relative">
-              <div class="position-absolute start-0 top-0 vishu_whatsapp_frame_top" >
-                <img loading="lazy"  id="vishu_whatsapp_frame" src="{% static 'diwali/decor/whatsapp_frame/diwali_whatsapp_frame.png' %}" alt="">
-              </div>
-            </div>
-            {% endif %}
-            
-            <div class="box-contents" style="height: 50%;">
-              {% if current_theme == 'xmas' %}
-              <div class="position-relative" style="z-index: 1;">
-                <div class="position-absolute blue_top_top">
-                  <img loading="lazy" id="blue_top" draggable="false" src="{% static 'xmas/decor/new_ribbons/blue_ribbon_top.png' %}" alt="">
-                </div>
-              </div>
-              {% elif current_theme == 'republic' %}
-              <div class="position-relative">
-                <div class="position-absolute" style="margin-left: -2.2rem;margin-top: -1.4rem;">
-                  <img loading="lazy" width="220rem" src="{% static 'republic/decor/frames/normal_frame/frame_top_left.png' %}" alt="">
-                </div>
-              </div>
-              {% elif current_theme == 'onam' %}
-              <div class="position-relative">
-                <div class="position-absolute" style="margin-left: -1.8rem;margin-top: -1.2rem;">
-                  <img loading="lazy" class="onam_frame" src="{% static 'onam/decor/frame6/onam_whatsapp_frame.png' %}" alt="">
-                </div>
-              </div>
-              {% endif %}
-              <h4 style="color:rgb(62, 199, 206)">1</span> </h4>
-              <p style="text-align: justify;"> Describe your service here. What makes it great? Use short catchy text to tell people what you offer, and the benefits they will receive. 
-                A great description gets readers in the mood, and makes them more likely to go ahead and book.
-              </p>
-            </div>
-
-            {% if current_theme == 'republic' %}
-            <div class="position-relative">
-              <div class="position-absolute bottom-0 end-0" style="margin-right: -2.2rem;margin-bottom: -1.4rem;">
-                <img loading="lazy" width="220rem" src="{% static 'republic/decor/frames/normal_frame/frame_bottom_right.png' %}" alt="">
-              </div>
-            </div>
-            {% endif %}
-
-          </div>
-
-          <div class="box-service" 
-          {% if current_theme == 'ramadan' %}
-          style="margin-bottom: 3vh; padding: 1em 1.7em; width: 270px;
-          background-image: url('/static/ramadan/decor/whatsapp_frame/whatsapp_frame.png');
-          background-size: 100% 100%"
-          {% else %}
-          style="margin-bottom: 3vh; padding: 1em 1.7em; width: 270px;"
-          {% endif %}>
-
-            {% if current_theme == 'pongal' %}
-            <div class="position-relative">
-              <div class="position-absolute start-0 top-0 pongal_whatsapp_frame_top">
-                <img loading="lazy" id="pongal_whatsapp_frame" src="{% static 'pongal/frame/frame3.png' %}" alt="">
-              </div>
-            </div>
-            {% elif current_theme == 'vishu' %} 
-            <div class="position-relative">
-              <div class="position-absolute start-0 top-0 vishu_whatsapp_frame_top">
-                <img loading="lazy" id="vishu_whatsapp_frame" src="{% static 'vishu/decor/frame_decor/gallery_frame3.png' %}" alt="">
-              </div>
-            </div>
-            {% elif current_theme == 'easter' %} 
-            <div class="position-relative" style="z-index: 10;">
-              <div class="position-absolute start-0 top-0 easter_whatsapp_frame_top">
-                <img loading="lazy" class="easter_whatsapp_frame" src="{% static 'easter/decor/frame/whatsapp_frame.png' %}" alt="">
-              </div>
-            </div>
-            {% elif current_theme == 'onam' %}
-              <div class="position-relative">
-                <div class="position-absolute" style="margin-left: -1.8rem;margin-top: -1.2rem;">
-                  <img loading="lazy" class="onam_frame" src="{% static 'onam/decor/frame6/onam_whatsapp_frame.png' %}" alt="">
-                </div>
-              </div>
-              {% elif current_theme == 'diwali' %} 
-            <div class="position-relative">
-              <div class="position-absolute start-0 top-0 vishu_whatsapp_frame_top" >
-                <img loading="lazy"  id="vishu_whatsapp_frame" src="{% static 'diwali/decor/whatsapp_frame/diwali_whatsapp_frame.png' %}" alt="">
-              </div>
-            </div>
-            {% endif %}
-
-            <div class="box-contents" style="height: 50%;">
-              {% if current_theme == 'xmas' %}
-              <div class="position-relative" style="z-index: 1;">
-                <div class="position-absolute blue_top_top">
-                  <img loading="lazy" id="blue_top" draggable="false" src="{% static 'xmas/decor/new_ribbons/blue_ribbon_top.png' %}" alt="">
-                </div>
-              </div>
-              {% elif current_theme == 'republic' %}
-              <div class="position-relative">
-                <div class="position-absolute" style="margin-left: -2.2rem;margin-top: -1.4rem;">
-                  <img loading="lazy" width="220rem" src="{% static 'republic/decor/frames/normal_frame/frame_top_left.png' %}" alt="">
-                </div>
-              </div>
-              {% endif %}
-              <h4 style="color:rgb(62, 199, 206)">2 </span> </h4>
-              <p style="text-align: justify;">
-                Describe your service here. What makes it great? Use short catchy text to tell people what you offer, and the benefits they will receive.
-                A great description gets readers in the mood, and makes them more likely to go ahead and book.
-              </p>
-            </div>
-            
-            {% if current_theme == 'republic' %}
-            <div class="position-relative">
-              <div class="position-absolute bottom-0 end-0" style="margin-right: -2.2rem;margin-bottom: -1.4rem;">
-                <img loading="lazy" width="220rem" src="{% static 'republic/decor/frames/normal_frame/frame_bottom_right.png' %}" alt="">
-              </div>
-            </div>
-            {% endif %}
-
-          </div>
-
-          <div class="box-service"
-          {% if current_theme == 'ramadan' %}
-          style="margin-bottom: 3vh; padding: 1em 1.7em; width: 270px;
-          background-image: url('/static/ramadan/decor/whatsapp_frame/whatsapp_frame.png');
-          background-size: 100% 100%"
-          {% else %}
-          style="margin-bottom: 3vh; padding: 1em 1.7em; width: 270px;"
-          {% endif %}
-          >
-
-            {% if current_theme == 'pongal' %}
-            <div class="position-relative">
-              <div class="position-absolute start-0 top-0 pongal_whatsapp_frame_top">
-                <img loading="lazy" id="pongal_whatsapp_frame" src="{% static 'pongal/frame/frame3.png' %}" alt="">
-              </div>
-            </div>
-            {% elif current_theme == 'vishu' %} 
-            <div class="position-relative">
-              <div class="position-absolute start-0 top-0 vishu_whatsapp_frame_top">
-                <img loading="lazy" id="vishu_whatsapp_frame" src="{% static 'vishu/decor/frame_decor/gallery_frame3.png' %}" alt="">
-              </div>
-            </div>
-            {% elif current_theme == 'easter' %} 
-            <div class="position-relative" style="z-index: 10;">
-              <div class="position-absolute start-0 top-0 easter_whatsapp_frame_top">
-                <img loading="lazy" class="easter_whatsapp_frame" src="{% static 'easter/decor/frame/whatsapp_frame.png' %}" alt="">
-              </div>
-            </div>
-            {% elif current_theme == 'diwali' %} 
-            <div class="position-relative">
-              <div class="position-absolute start-0 top-0 vishu_whatsapp_frame_top" >
-                <img loading="lazy"  id="vishu_whatsapp_frame" src="{% static 'diwali/decor/whatsapp_frame/diwali_whatsapp_frame.png' %}" alt="">
-              </div>
-            </div>
-            {% endif %}
-
-            <div class="box-contents" style="height: 50%;" >
-              {% if current_theme == 'xmas' %}
-              <div class="position-relative" style="z-index: 1;">
-                <div class="position-absolute blue_top_top">
-                  <img loading="lazy" id="blue_top" draggable="false" src="{% static 'xmas/decor/new_ribbons/blue_ribbon_top.png' %}" alt="">
-                </div>
-              </div>
-              {% elif current_theme == 'republic' %}
-              <div class="position-relative">
-                <div class="position-absolute" style="margin-left: -2.2rem;margin-top: -1.4rem;">
-                  <img loading="lazy" width="220rem" src="{% static 'republic/decor/frames/normal_frame/frame_top_left.png' %}" alt="">
-                </div>
-              </div>
-              {% elif current_theme == 'onam' %}
-              <div class="position-relative">
-                <div class="position-absolute" style="margin-left: -1.8rem;margin-top: -1.2rem;">
-                  <img loading="lazy" class="onam_frame" src="{% static 'onam/decor/frame6/onam_whatsapp_frame.png' %}" alt="">
-                </div>
-              </div>
-              {% endif %}
-              <h4 style="color:rgb(62, 199, 206)">3</span> </h4>
-              <p style="text-align: justify;">
-                Describe your service here. What makes it great? Use short catchy text to tell people what you offer, and the benefits they will receive. 
-                A great description gets readers in the mood, and makes them more likely to go ahead and book.
-              </p>
-            </div>
-
-            {% if current_theme == 'republic' %}
-            <div class="position-relative">
-              <div class="position-absolute bottom-0 end-0" style="margin-right: -2.2rem;margin-bottom: -1.4rem;">
-                <img loading="lazy" width="220rem" src="{% static 'republic/decor/frames/normal_frame/frame_bottom_right.png' %}" alt="">
-              </div>
-            </div>
-            {% endif %}
-
-          </div>
-        </div>
-      </div>
   </section>
 </div>
+
 
 {% if current_theme == "easter" %}
   <div class="d-flex" style="overflow: auto;background-color: #151515;z-index: inherit;margin-bottom: -2rem;">

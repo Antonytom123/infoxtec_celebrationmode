@@ -713,6 +713,61 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       transform: translate(-50%,1%);
     }
   }
+
+  @media (max-width:280px){
+    .other-branches .card{
+      height: fit-content;
+      margin-left: 0rem;
+      margin-right: 0rem;
+    }
+  }
+
+  @media (max-width:768px){
+    #services-items .card{
+      margin: 1em auto;
+      width: 85%;
+    }
+    .other-branches .card{
+    height: fit-content;
+
+  }
+  }
+
+  .other-branches .card{
+    background: #024f5c99;
+    text-align: center;
+    /* height: 48vh; */
+    height: 100%;
+    margin: 1em;
+    padding: 0.4em 1.2em 1em;
+
+  }
+  .other-branches .card .card-title {
+    margin-bottom: 0.8em;
+  }
+  .other-branches .card h3{
+    font-size: 2em;
+  }
+  @media (max-width:280px){
+    .reset_pad_margin{
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .reset_pad_margin{
+    margin-top: 1rem;
+  }
+  .knowmore-button{
+      font-size: 1em;
+      padding: 1em;
+      /* background: #29d5e5c9; */
+      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(55,237,226,1) 0%, rgba(21,244,233,1) 0%, rgba(20,172,166,1) 35%, rgba(70,110,119,1) 100%);
+      font-weight: 600;
+      border: none;
+      border-radius: 4px;
+    }
+
+
 </style>
 
 <!-- republic -->
@@ -1676,6 +1731,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 Contact
               </a>
             </li>
+{% comment %} 
+            <li>
+              <a 
+              {% if current_theme == 'pongal' %}
+              class="nav-link scrollto cont hover_anchor_pongal" 
+              {% elif current_theme == 'vishu' %}
+              class="nav-link scrollto cont hover_anchor_vishu"
+              {% elif current_theme == 'easter' %}
+                class="nav-link scrollto cont easter_text_sm_bg1_hover"
+              {% elif current_theme == 'xmas' %}
+                class="nav-link scrollto cont xmas_nav_text"
+              {% elif current_theme == 'republic' %}
+                class="nav-link scrollto cont republic_nav_text"
+              {% elif current_theme == 'onam' %}
+                class="nav-link scrollto cont onam_hover"
+              {% elif current_theme == 'diwali' %}
+                class="nav-link scrollto cont diwali_nav"
+              {% elif current_theme == 'ramadan' %}
+                class="nav-link scrollto cont ramadan_nav_text"
+              {% else %}
+              class="nav-link scrollto cont hover_anchor" 
+              {% endif %}
+              href="{% url 'crm' %}">
+                Crm
+              </a>
+            </li> {% endcomment %}
+            
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
@@ -1708,6 +1790,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         background-size:fill;
         position: relative; 
    
+    }
+
+    .container-fluids {
+      max-height: 120vh;
+      overflow-y: scroll;
+      background: fixed;
+      padding: 0;
+      background: url("static/img/bg1.gif") top center;
+      background-size: fill;
+      margin-bottom: auto;
+      margin-top: auto;
+      position: relative;
+    }
+    .container-fluids section {
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      color: #222;
+
+      padding: 4.5em 1em;
+
+      background: #00000099;
+      color: beige;
+      width: 100%;
+    }
+    .container-fluids section:nth-of-type(2n) {
+      color: beige;
+      background: #00000099;
     }
 
       /*--------------------------------------------------------------*/
@@ -3040,6 +3152,30 @@ position:relative
           </div>
     </div>
   </div>
+  <br>
+  <p style="color: black;">Altos Eduhub is the best software training company in Kochi, Kerala, owned by Altos Technologies. Our company provides on-the-job training to ensure that learners gain practical experience and are job-ready.Join us now for an unparalleled learning experience and take the first step towards a successful future!</p>
+  <div class="km-button my-4"><a role="button" target="_blank" href="https://www.altoseduhub.com" 
+    {% if current_theme == 'pongal' %}
+     class="knowmore-button1" 
+    {% elif current_theme == 'vishu' %}
+      class="knowmore-button2"
+    {% elif current_theme == 'easter' %}
+       class="knowmore-button3"
+    {% elif current_theme == 'xmas' %}
+      class="knowmore-button4"
+    {% elif current_theme == 'republic' %}
+      class="knowmore-button5"
+    {% elif current_theme == 'onam' %}
+      class="knowmore-button6"
+    {% elif current_theme == 'diwali' %}
+    class="knowmore-button7"
+    {% elif current_theme == 'ramadan' %}
+    class="knowmore-button8"
+    {% else %} 
+     class="knowmore-button text-white" 
+    {% endif %}>
+     Join With Us</a>
+    </div>
 </section>
 
 
