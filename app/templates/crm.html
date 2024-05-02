@@ -145,7 +145,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .img-box-tech.image-hidden{
     display: none;
   }
-  @media screen and (max-width:768px) {
+  @media screen and (max-width:767px) {
   .img-box-tech.image-hidden{
     display: block;
     max-width: 100%;
@@ -515,6 +515,11 @@ h5 {
       background-clip: text;
       -webkit-background-clip: text;
     }
+    
+    .pongal_text_theme subs {
+  font-size: smaller; 
+  vertical-align: sub; 
+}
     .card2 {
     display: block;
     position: relative;
@@ -631,6 +636,14 @@ h5 {
       margin-top: -12rem;
     }
   }
+
+  @media only screen and (max-width: 600px) {
+      .pongal-theme {
+          margin-top: 14vw !important;
+          color: #00838d;
+      }
+  }
+
 </style>
 
 <!-- vishu -->
@@ -655,6 +668,11 @@ h5 {
     background-clip: text;
     -webkit-background-clip: text;
   }
+
+  .vishu_text_bg1 subs {
+  font-size: smaller; 
+  vertical-align: sub; 
+}
   .knowmore-button2{
     font-size: 1em;
     padding: 1em;
@@ -763,6 +781,23 @@ h5 {
       margin-top: -12rem;
     }
   }
+
+  #multi_peacock_feather{
+    width: 7rem;
+  }
+  .multi_peacock_feather_top{
+    margin-top: 16.5rem;
+    margin-left: 10.5rem;
+  }
+  @media screen and (max-width:280px) {
+    #multi_peacock_feather{
+    width: 7rem;
+  }
+  .multi_peacock_feather_top{
+    margin-top: 21.5rem;
+    margin-left: 7.5rem;
+  }
+  }
 </style>
 <!-- easter -->
 
@@ -776,6 +811,10 @@ h5 {
     -webkit-background-clip: text;
     text-shadow: 0px 0px 10px rgba(132, 0, 255, 0.374);
   }
+  .easter_text_bg1 subs {
+  font-size: smaller; 
+  vertical-align: sub; 
+}
   .easter_text_sm_bg1{
     background-image: url('/static/easter/bg/text_bg1.png');
     /* background-image: linear-gradient(45deg,rgb(194, 63, 255),rgb(71, 71, 255),rgb(181, 83, 255),rgb(65, 65, 255),rgb(160, 83, 255)); */
@@ -1294,6 +1333,28 @@ h5 {
           margin-right: -9rem;
         }
       }
+
+      #red_top{
+        width: 7rem;
+      }
+      .red_top_top{
+        margin-left: -2rem;
+        margin-top: -1.45rem;
+      }
+      #red_bottom{
+        width: 10rem;
+      }
+      .red_bottom_top{
+        margin-left: 6.6rem;
+        margin-top: 17.5rem;
+      }
+      .navbar a:hover,
+      .navbar .active,
+      .navbar .active:focus,
+      .navbar li:hover>.xmas_nav_text {
+        color: red;
+        text-shadow: 0px 0px 10px rgba(132, 0, 255, 0.374);
+      }
 </style>
 
 <!-- republic -->
@@ -1615,28 +1676,28 @@ h5 {
   }
   .diwali_kolam1_left_top{
     margin-left: -6.65rem;
-    margin-top: 4.3rem;
+    margin-top: 1.3rem;
   }
   #diwali_kolam1_right{
     width: 6.7rem;
   }
   .diwali_kolam1_right_top{
     margin-right: -7.65rem;
-    margin-top: 4.3rem;
+    margin-top: 1.3rem;
   }
   #diwali_kolam2_left{
     width: 6.7rem;
   }
   .diwali_kolam2_left_top{
     margin-left: -37rem;
-    margin-top: 4.3rem;
+    margin-top: 1.3rem;
   }
   #diwali_kolam2_right{
     width: 6.7rem;
   }
   .diwali_kolam2_right_top{
     margin-right: -21rem;
-    margin-top: 4.3rem;
+    margin-top: 1.3rem;
   }
   @media screen and (max-width:1500px) {
       #diwali_kolam1_left{
@@ -1885,6 +1946,12 @@ h5 {
     color: transparent;
     text-shadow: 0px 0px 10px rgba(132, 0, 255, 0.374);
   }
+  
+  .ramadan_text1 subs {
+  font-size: smaller; 
+  vertical-align: sub; 
+}
+
   #ramadan_footer_decor{
     width: 15rem;
   }
@@ -2119,7 +2186,7 @@ h5 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 65%;
 }
 
   @media (max-width:732px)
@@ -2297,146 +2364,855 @@ h5 {
 
 </style>
 
-<!--  FAQs-->
+<!-- FAQs -->
+
 <style>
-  
-  #FAQs p{
-    color: white;
-  }
-  
-  .faqs .accordion .card {
-    border: none;
-    margin-bottom: 30px;
-    position: relative;
-    z-index: 1;
-  }
-  .faqs .our-faq-wrapper .btn-link {
-    display: block;
-    width: 100%;
-    text-align: left;
-    position: relative;
-    background: #242c42;
-    color: #fff;
-    border-radius: 0;
-    padding: 7px 55px 7px 10px;
-    font-size: 16px;
-    overflow: hidden;
-    border: none;
-    font-weight:600;  
-  }
-  .faqs .our-faq-wrapper .btn-link:hover, .faqs .our-faq-wrapper .btn-link:focus {
-    text-decoration: none;
-  }
-  .faqs .our-faq-wrapper .btn-link:after {
-    position: absolute;
-    content: '-';
-    right: 15px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    font-family: fontawesome;
-  }
-  .faqs .our-faq-wrapper .btn-link.collapsed:after {
-    content: '+';
-  
-  }
-  .faqs .our-faq-wrapper .btn-link:before {
-    position: absolute;
-    content: '';
-    background: #00838d;
-    -webkit-transform: skew(-35deg);
-    transform: skew(-35deg);
-    height: 100%;
-    width: 50%;
-    left: 90%;
-    top: 0;
-  }
-  .faqs .card-header {
-    padding: 0;
-    background: transparent;
-    border-bottom: none;
-  }
-  .faqs .card-body {
-    position: relative;
-    background: #c6c7c6;
-  }
-  .faqs .card-body:after {
-    position: absolute;
-    content: '';
-    height: 4px;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    background: #00838d;
-  }
-  .faqs .card-body:before {
-    position: absolute;
-    content: '';
-    height: 4px;
-    width: 50%;
-    left: 0;
-    bottom: 0;
-    background: #00838d;
-    z-index: 1;
-  }
-  
-  section {
-    padding: 20px 0;
-    overflow: hidden;
+
+  /* xmas */
+
+   .btn-link-xmas {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+    .faqs .our-faq-wrapper .btn-link-xmas {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+     .btn-link-xmas:hover, .faqs .our-faq-wrapper .btn-link-xmas:focus {
+      text-decoration: none;
+    }
+    .btn-link-xmas:after {
+      position: absolute;
+      content: '-';
+      right: 15px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      font-family: fontawesome;
+    }
+    .faqs .our-faq-wrapper .btn-link-xmas.collapsed:after {
+      content: '+';
     
-  }
+    }
+    
+    .btn-link-xmas:before {
+      position: absolute;
+      content: '';
+      background: linear-gradient(
+          45deg,
+          #840000,
+          rgb(187, 0, 0),
+          #5c0404 100%
+          );
+      -webkit-transform: skew(-35deg);
+      transform: skew(-35deg);
+      height: 100%;
+      width: 50%;
+      left: 90%;
+      top: 0;
+    }
+
+    .faqs .card-body-xmas:after {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background: linear-gradient(
+          45deg,
+          #840000,
+          rgb(187, 0, 0),
+          #5c0404 100%
+          );
+    }
+    .faqs .card-body-xmas:before {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 50%;
+      left: 0;
+      bottom: 0;
+      background: linear-gradient(
+          45deg,
+          #840000,
+          rgb(187, 0, 0),
+          #5c0404 100%
+          );
+      z-index: 1;
+    }
+    
+
+  /* xmas */
+
+
+    /* onam */
+
+    .btn-link-onam {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+    .faqs .our-faq-wrapper .btn-link-onam {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+     .btn-link-onam:hover, .faqs .our-faq-wrapper .btn-link-onam:focus {
+      text-decoration: none;
+    }
+    .btn-link-onam:after {
+      position: absolute;
+      content: '-';
+      right: 15px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      font-family: fontawesome;
+    }
+    .faqs .our-faq-wrapper .btn-link-onam.collapsed:after {
+      content: '+';
+    
+    }
+    
+    .btn-link-onam:before {
+      position: absolute;
+      content: '';
+      background: orange;
+      -webkit-transform: skew(-35deg);
+      transform: skew(-35deg);
+      height: 100%;
+      width: 50%;
+      left: 90%;
+      top: 0;
+    }
+
+    .faqs .card-body-onam:after {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background: orange;
+    }
+    .faqs .card-body-onam:before {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 50%;
+      left: 0;
+      bottom: 0;
+      background: orange;
+      z-index: 1;
+    }
+    
+
+  /* onam */
+
+       /* diwali */
+
+       .btn-link-diwali {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+    .faqs .our-faq-wrapper .btn-link-diwali {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+     .btn-link-diwali:hover, .faqs .our-faq-wrapper .btn-link-diwali:focus {
+      text-decoration: none;
+    }
+    .btn-link-diwali:after {
+      position: absolute;
+      content: '-';
+      right: 15px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      font-family: fontawesome;
+    }
+    .faqs .our-faq-wrapper .btn-link-diwali.collapsed:after {
+      content: '+';
+    
+    }
+    
+    .btn-link-diwali:before {
+      position: absolute;
+      content: '';
+      background: linear-gradient(to right,rgb(255, 63, 63),rgb(240, 125, 125));
+      -webkit-transform: skew(-35deg);
+      transform: skew(-35deg);
+      height: 100%;
+      width: 50%;
+      left: 90%;
+      top: 0;
+    }
+
+    .faqs .card-body-diwali:after {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background: linear-gradient(to right,rgb(255, 63, 63),rgb(240, 125, 125));
+    }
+    .faqs .card-body-diwali:before {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 50%;
+      left: 0;
+      bottom: 0;
+      background: linear-gradient(to right,rgb(255, 63, 63),rgb(240, 125, 125));
+      z-index: 1;
+    }
+    
+
+  /* diwali */
+
+  /* pongal */
+
+  .btn-link-pongal {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+    .faqs .our-faq-wrapper .btn-link-pongal {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+     .btn-link-pongal:hover, .faqs .our-faq-wrapper .btn-link-pongal:focus {
+      text-decoration: none;
+    }
+    .btn-link-pongal:after {
+      position: absolute;
+      content: '-';
+      right: 15px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      font-family: fontawesome;
+      font: bolder;
+      font-size: 1.5rem;
+    color: black;
+    }
+    .faqs .our-faq-wrapper .btn-link-pongal.collapsed:after {
+      content: '+';
+      font: bolder;
+      font-size: 1.5rem;
+    color: black;
+    font-family: fontawesome;
+    }
+    
+    .btn-link-pongal:before {
+      position: absolute;
+      content: '';
+   background-image: url('/static/pongal/bg/bg_fire.png');
+      -webkit-transform: skew(-35deg);
+      transform: skew(-35deg);
+      height: 100%;
+      width: 50%;
+      left: 90%;
+      top: 0;
+    }
+
+    .faqs .card-body-pongal:after {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background-image: url('/static/pongal/bg/bg_fire.png');
+    }
+    .faqs .card-body-pongal:before {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 50%;
+      left: 0;
+      bottom: 0;
+      background-image: url('/static/pongal/bg/bg_fire.png');
+      z-index: 1;
+    }
+    
+
+  /* pongal */
+
+   /* vishu */
+
+   .btn-link-vishu {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+    .faqs .our-faq-wrapper .btn-link-vishu {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+     .btn-link-vishu:hover, .faqs .our-faq-wrapper .btn-link-vishu:focus {
+      text-decoration: none;
+    }
+    .btn-link-vishu:after {
+      position: absolute;
+      content: '-';
+      right: 15px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      font-family: fontawesome;
+      font: bolder;
+      font-size: 1.5rem;
+
+    }
+    .faqs .our-faq-wrapper .btn-link-vishu.collapsed:after {
+      content: '+';
+      font: bolder;
+      font-size: 1.5rem;
+ 
+    font-family: fontawesome;
+    }
+    
+    .btn-link-vishu:before {
+      position: absolute;
+      content: '';
+      background-image: url('/static/vishu/bg/text_bg1.jpg');
+      -webkit-transform: skew(-35deg);
+      transform: skew(-35deg);
+      height: 100%;
+      width: 50%;
+      left: 90%;
+      top: 0;
+    }
+
+    .faqs .card-body-vishu:after {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background-image: url('/static/vishu/bg/text_bg1.jpg');
+    }
+    .faqs .card-body-vishu:before {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 50%;
+      left: 0;
+      bottom: 0;
+      background-image: url('/static/vishu/bg/text_bg1.jpg');
+      z-index: 1;
+    }
+    
+
+  /* vishu */
+
+       /* easter */
+
+       .btn-link-easter {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+    .faqs .our-faq-wrapper .btn-link-easter {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+     .btn-link-easter:hover, .faqs .our-faq-wrapper .btn-link-easter:focus {
+      text-decoration: none;
+    }
+    .btn-link-easter:after {
+      position: absolute;
+      content: '-';
+      right: 15px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      font-family: fontawesome;
+      font: bolder;
+      font-size: 1.5rem;
+
+    }
+    .faqs .our-faq-wrapper .btn-link-easter.collapsed:after {
+      content: '+';
+      font: bolder;
+      font-size: 1.5rem;
+ 
+    font-family: fontawesome;
+    }
+    
+    .btn-link-easter:before {
+      position: absolute;
+      content: '';
+      background-image: linear-gradient(45deg,rgb(194, 63, 255),rgb(71, 71, 255),rgb(181, 83, 255),rgb(65, 65, 255),rgb(160, 83, 255));
+      -webkit-transform: skew(-35deg);
+      transform: skew(-35deg);
+      height: 100%;
+      width: 50%;
+      left: 90%;
+      top: 0;
+    }
+
+    .faqs .card-body-easter:after {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background-image: linear-gradient(45deg,rgb(194, 63, 255),rgb(71, 71, 255),rgb(181, 83, 255),rgb(65, 65, 255),rgb(160, 83, 255));
+    }
+    .faqs .card-body-easter:before {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 50%;
+      left: 0;
+      bottom: 0;
+      background-image: linear-gradient(45deg,rgb(194, 63, 255),rgb(71, 71, 255),rgb(181, 83, 255),rgb(65, 65, 255),rgb(160, 83, 255));
+      z-index: 1;
+    }
+    
+
+  /* easter */
+
+
+   /* republic */
+
+   .btn-link-republic {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+    .faqs .our-faq-wrapper .btn-link-republic {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+     .btn-link-republic:hover, .faqs .our-faq-wrapper .btn-link-republic:focus {
+      text-decoration: none;
+    }
+    .btn-link-republic:after {
+      position: absolute;
+      content: '-';
+      right: 15px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      font-family: fontawesome;
+      font: bolder;
+      font-size: 1.5rem;
+
+    }
+    .faqs .our-faq-wrapper .btn-link-republic.collapsed:after {
+      content: '+';
+      font: bolder;
+      font-size: 1.5rem;
+ 
+    font-family: fontawesome;
+    }
+    
+    .btn-link-republic:before {
+      position: absolute;
+      content: '';
+      background-image: url('/static/republic/decor/text_theme1.png');
+      -webkit-transform: skew(-35deg);
+      transform: skew(-35deg);
+      height: 100%;
+      width: 50%;
+      left: 90%;
+      top: 0;
+    }
+
+    .faqs .card-body-republic:after {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background-image: url('/static/republic/decor/text_theme1.png');
+    }
+    .faqs .card-body-republic:before {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 50%;
+      left: 0;
+      bottom: 0;
+      background-image: url('/static/republic/decor/text_theme1.png');
+      z-index: 1;
+    }
+    
+
+  /* republic */
+
+
+  /* ramadan */
+
+  .btn-link-ramadan {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+    .faqs .our-faq-wrapper .btn-link-ramadan {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+     .btn-link-ramadan:hover, .faqs .our-faq-wrapper .btn-link-ramadan:focus {
+      text-decoration: none;
+    }
+    .btn-link-ramadan:after {
+      position: absolute;
+      content: '-';
+      right: 15px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      font-family: fontawesome;
+      font: bolder;
+      font-size: 1.5rem;
+
+    }
+    .faqs .our-faq-wrapper .btn-link-ramadan.collapsed:after {
+      content: '+';
+      font: bolder;
+      font-size: 1.5rem;
+ 
+    font-family: fontawesome;
+    }
+    
+    .btn-link-ramadan:before {
+      position: absolute;
+      content: '';
+      background: linear-gradient(to right,rgb(11, 151, 1),rgb(139, 255, 123));
+      -webkit-transform: skew(-35deg);
+      transform: skew(-35deg);
+      height: 100%;
+      width: 50%;
+      left: 90%;
+      top: 0;
+    }
+
+    .faqs .card-body-ramadan:after {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background: linear-gradient(to right,rgb(11, 151, 1),rgb(139, 255, 123));
+    }
+    .faqs .card-body-ramadan:before {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 50%;
+      left: 0;
+      bottom: 0;
+      background: linear-gradient(to right,rgb(11, 151, 1),rgb(139, 255, 123));
+      z-index: 1;
+    }
+    
+
+  /* ramadan */
+
+
   
-  .section-bg {
-    background: #00000099;
-    /* background: linear-gradient(180deg, #f2f6fa 0%, #fff 100%); */
-    margin-bottom: 3vw;
-  }
-  
-  .section-title {
-    text-align: center;
-    padding-bottom: 30px;
-  }
-  
-  .section-title h2 {
-    font-size: 32px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    position: relative;
-    font-family: "Poppins", sans-serif;
-    color: #00838d;
-  }
-  
-  .section-title h2::before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 120px;
-    height: 1px;
-    background: #00838d;
-    bottom: 1px;
-    left: calc(50% - 60px);
-  }
-  
-  .section-title h2::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 40px;
-    height: 3px;
-    background: #00838d;
-    bottom: 0;
-    left: calc(50% - 20px);
-  }
-  
-  .section-title p {
-    margin-bottom: 0;
-  }
-  
-  
-  </style>
-  
+    #FAQs p{
+      color: white;
+    }
+    
+    .faqs .accordion .card {
+      border: none;
+      margin-bottom: 30px;
+      position: relative;
+      z-index: 1;
+    }
+    .faqs .our-faq-wrapper .btn-link {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+    .faqs .our-faq-wrapper .btn-link:hover, .faqs .our-faq-wrapper .btn-link:focus {
+      text-decoration: none;
+    }
+    .faqs .our-faq-wrapper .btn-link:after {
+      position: absolute;
+      content: '-';
+      right: 15px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      font-family: fontawesome;
+    }
+    .faqs .our-faq-wrapper .btn-link.collapsed:after {
+      content: '+';
+    
+    }
+    
+    .btn-link:before {
+      position: absolute;
+      content: '';
+      background: #00838d;
+      -webkit-transform: skew(-35deg);
+      transform: skew(-35deg);
+      height: 100%;
+      width: 50%;
+      left: 90%;
+      top: 0;
+    }
+    .faqs .card-header {
+      padding: 0;
+      background: transparent;
+      border-bottom: none;
+    }
+    .faqs .card-body {
+      position: relative;
+      background: #c6c7c6;
+    }
+    .faqs .card-body:after {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background: #00838d;
+    }
+    .faqs .card-body:before {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 50%;
+      left: 0;
+      bottom: 0;
+      background: #00838d;
+      z-index: 1;
+    }
+    
+    section {
+      padding: 20px 0;
+      overflow: hidden;
+    }
+    
+    .section-bg {
+      background: #00000099;
+      margin-bottom: 3vw;
+      margin-top: 2vw;
+      /* background: linear-gradient(180deg, #f2f6fa 0%, #fff 100%); */
+    }
+    
+    .section-title {
+      text-align: center;
+      padding-bottom: 30px;
+    }
+    
+    .section-title h2 {
+      font-size: 32px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+ 
+      font-family: "Poppins", sans-serif;
+      color: #00838d;
+    }
+    
+    .section-title h2::before {
+      content: '';
+      position: absolute;
+      display: none;
+      width: 120px;
+      height: 1px;
+      background: #00838d;
+      bottom: 1px;
+      left: calc(50% - 60px);
+      
+    }
+    
+    .section-title h2::after {
+      content: '';
+      position: absolute;
+      display: none;
+      width: 40px;
+      height: 3px;
+      background: #00838d;
+      bottom: 0;
+      left: calc(50% - 20px);
+    }
+    
+    .section-title p {
+      margin-bottom: 0;
+    }
+    
+    
+    </style>
 
 
 <body>
@@ -2911,27 +3687,48 @@ h5 {
         <div class="col-lg-6 col-sm-12 col-md-6 px-3 ">
           <div class="content-boxs border-0 rounded-4">
 
-          {% if current_theme == 'pongal' %}
-          <h2 class="pongal_text_theme" style="color: transparent;">CRM</h2>
-          {% elif current_theme == 'vishu' %}
-          <h2 class="vishu_text_bg1" style="color: transparent;">CRM</h2>
-          {% elif current_theme == 'easter' %}
-          <h2 class="easter_text_bg1" style="color: transparent;">CRM</h2>
-          {% elif current_theme == 'xmas' %}
-          <h2 class="xmas_text text-light">CRM</h2>
-          {% elif current_theme == 'onam' %}
-          <h2 style="color: orange;">CRM</h2>
-          {% else %}
-          <h2 style="color: #00838d">CRM</h2>
-          {% endif %}
-  
+            {% if current_theme == 'pongal' %}
+      <h2 class="pongal_text_theme" style="color: transparent; "><b>CRM</b></h2>
+      {% elif current_theme == 'vishu' %}
+      <h2 class="vishu_text_bg1" style="color: transparent;"><b>CRM</b></h2>
+      {% elif current_theme == 'easter' %}
+      <h2 class="easter_text_bg1" style="color: transparent;"><b>CRM</b></h2>
+      {% elif current_theme == 'xmas' %}
+      <h2 class="xmas_text text-light"><b>CRM</b></h2>
+      {% elif current_theme == 'onam' %}
+      <h2 style="color: orange;"><b>CRM</b></h2>
+      {% elif current_theme == 'diwali' %}
+      <h2 style="color: rgb(255, 63, 63)"><b>CRM</b></h2>
+      {% elif current_theme == 'republic' %}
+      <h2 style="color: transparent;"><span class="fg_republic"><b>CRM</b></h2>
+      {% elif current_theme == 'ramadan' %}
+      <h2 style="color: transparent;"><span class="ramadan_text1"><b>CRM</b></h2>
+      {% else %}
+      <h2 class="text-start mt-3" style=" color: #00838d;"><b>CRM</b></h2>
+      {% endif %}
+
             <div class="img-box-tech image-hidden">
             {% if current_theme == 'pongal' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/pongal/img/billingsoftware.png" alt="BillingSoftwware" />
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 15vw; margin-left: -1vw;" src="{% static 'pongal/decor/pongal_about1.png' %}" alt="">
+            </div>
+            </div>  
             {% elif current_theme == 'vishu' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/vishu/img/billingsoftware.png" alt="BillingSoftwware" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 15vw; margin-left: -1vw;" src="{% static 'vishu/decor/happy_vishu4.png' %}" alt="">
+            </div>
+            </div>  
             {% elif current_theme == 'easter' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/easter/img/billingsoftware.png" alt="BillingSoftwware" />
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 15vw; margin-left: -1vw;" src="{% static 'easter/decor/bunny2.png' %}" alt="">
+            </div>
+            </div> 
             {% elif current_theme == 'xmas' %}
               <div class="position-relative" style="z-index: 1;">
                 <img loading="lazy" src="static/img/team/billingsoftware.png" alt="BillingSoftwware" />
@@ -2940,13 +3737,33 @@ h5 {
               </div>
               </div>
             {% elif current_theme == 'republic' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/republic/img/crmimg1.jpg" alt="crm" />
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 15vw; margin-left: -1vw;" src="{% static 'republic/decor/objects.png' %}" alt="">
+            </div>
+            </div> 
             {% elif current_theme == 'onam' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/onam/img/crmimg1.jpg" alt="crm" />
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 15vw; margin-left: -1vw;" src="{% static 'onam/decor/maveli.png' %}" alt="">
+            </div>
+            </div>   
             {% elif current_theme == 'diwali' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy"  src="static/diwali/img/crmimg1.jpg" alt="crm" />
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 15vw; margin-left: -1vw;" src="{% static 'diwali/decor/diwali_character2_no_bg.png' %}" alt="">
+            </div>
+            </div>
             {% elif current_theme == 'ramadan' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy"  src="static/ramadan/img/crmimg1.jpg" alt="crm" />
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 15vw; margin-left: -1vw;" src="{% static 'ramadan/decor/church.png' %}" alt="">
+            </div>
+            </div>
             {% else %}
               <img loading="lazy" src="static/img/team/crmimg1.jpg" alt="crm" />
             {% endif %}
@@ -2956,17 +3773,17 @@ h5 {
           </div>
 
           {% if current_theme == 'xmas' %}
-          <div class="position-relative hide_for_mob">
-            <div class="position-absolute" style="margin-left: 5.4rem;margin-top: 0.2rem;">
+          <!-- <div class="position-relative hide_for_mob">
+            <div class="position-absolute" style="margin-left: -1.8rem;margin-top: -1.9rem;">
               <img loading="lazy" width="100rem" draggable="false" src="{% static 'xmas/decor/xmaspap_peek_left.png' %}" alt="">
             </div>
-          </div>
+          </div> -->
           {% elif current_theme == 'ramadan' %}
-          <div class="position-relative hide_for_mob">
-            <div class="position-absolute" style="margin-left: 6.4rem;margin-top: 0.6rem;">
+          <!-- <div class="position-relative hide_for_mob">
+            <div class="position-absolute" style="margin-left: -1.2rem;margin-top: -1.9rem;">
               <img loading="lazy" width="90rem" draggable="false" src="{% static 'ramadan/decor/peeking_characters/peeking_characters1.png' %}" alt="">
             </div>
-          </div>
+          </div> -->
           {% endif %}
 
         </div>
@@ -2974,11 +3791,26 @@ h5 {
           <div class="img-box-tech image-visible">
             <!-- <h4 class="hide-head">ERP</h4> -->
             {% if current_theme == 'pongal' %}
-            <img loading="lazy" src="static/pongal/img/crmimg1.jpg" alt="crm"/>
+            <div class="position-relative" style="z-index: 1;">
+              <img loading="lazy" src="static/pongal/img/crmimg1.jpg" alt="crm"/>
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 10vw; margin-left: -1vw;" src="{% static 'pongal/decor/pongal_about1.png' %}" alt="">
+            </div>
+            </div>
             {% elif current_theme == 'vishu' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/vishu/img/crmimg1.jpg" alt="crm" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 10vw; margin-left: -1vw;" src="{% static 'vishu/decor/happy_vishu4.png' %}" alt="">
+            </div>
+            </div>
             {% elif current_theme == 'easter' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/easter/img/crmimg1.jpg" alt="crm" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 10vw; margin-left: -1vw;" src="{% static 'easter/decor/bunny2.png' %}" alt="">
+            </div>
+            </div>
             {% elif current_theme == 'xmas' %}
               <div class="position-relative" style="z-index: 1;">
                 <img loading="lazy" src="static/img/team/crmimg1.jpg" alt="crm" />
@@ -2987,13 +3819,33 @@ h5 {
               </div>
               </div>
             {% elif current_theme == 'republic' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/republic/img/crmimg1.jpg" alt="crm" />
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 10vw; margin-left: -1vw;" src="{% static 'republic/decor/objects.png' %}" alt="">
+            </div>
+            </div>
             {% elif current_theme == 'onam' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/onam/img/crmimg1.jpg" alt="crm" />
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 10vw; margin-left: -1vw;" src="{% static 'onam/decor/maveli.png' %}" alt="">
+            </div>
+            </div> 
             {% elif current_theme == 'diwali' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy"  src="static/diwali/img/crmimg1.jpg" alt="crm" />
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 10vw; margin-left: -1vw;" src="{% static 'diwali/decor/diwali_character2_no_bg.png' %}" alt="">
+            </div>
+            </div>
             {% elif current_theme == 'ramadan' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy"  src="static/ramadan/img/crmimg1.jpg" alt="crm" />
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 10vw; margin-left: -1vw;" src="{% static 'ramadan/decor/church.png' %}" alt="">
+            </div>
+            </div>
             {% else %}
             <img loading="lazy"  src="static/img/team/crmimg1.jpg" alt="crm"/>
             {% endif %}
@@ -3026,11 +3878,26 @@ h5 {
           <div class="img-box-tech image-visible">
             <!-- <h4 class="hide-head">CRM</h4> -->
             {% if current_theme == 'pongal' %}
-            <img loading="lazy" src="static/pongal/img/crmimg.jpg" alt="CRM" />
+            <div class="position-relative" style="z-index: 1;">
+              <img loading="lazy" src="static/pongal/img/crmimg.jpg" alt="CRM" />
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 10vw; margin-left: -1vw;" src="{% static 'pongal/decor/pongal_home3.png' %}" alt="">
+            </div>
+            </div>
             {% elif current_theme == 'vishu' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/vishu/img/crmimg.jpg" alt="CRM" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 10vw; margin-left: -1vw;" src="{% static 'vishu/decor/happy_vishu.png' %}" alt="">
+            </div>
+            </div>
             {% elif current_theme == 'easter' %}
-              <img loading="lazy" src="static/easter/imgcrmimg.jpg" alt="CRM" /> 
+            <div class="position-relative" style="z-index: 1;">
+              <img loading="lazy" src="static/easter/img/crmimg.jpg" alt="CRM" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 10vw; margin-left: -1vw;" src="{% static 'easter/decor/bunny1.png' %}" alt="">
+            </div>
+            </div>
             {% elif current_theme == 'xmas' %}
               <div class="position-relative" style="z-index: 1;">
                 <img loading="lazy" src="static/img/team/crmimg.jpg" alt="CRM" />
@@ -3039,13 +3906,33 @@ h5 {
               </div>
               </div>
             {% elif current_theme == 'republic' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/republic/img/crmimg.jpg" alt="CRM" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 10vw; margin-left: -1vw;" src="{% static 'republic/decor/object2.png' %}" alt="">
+            </div>
+            </div>
             {% elif current_theme == 'onam' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/onam/img/crmimg.jpg" alt="CRM" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 10vw; margin-left: -1vw;" src="{% static 'onam/decor/maveli_2.png' %}" alt="">
+            </div>
+            </div>
             {% elif current_theme == 'diwali' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy"  src="static/diwali/img/crmimg.jpg" alt="CRM" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 10vw; margin-left: -1vw;" src="{% static 'diwali/decor/diwali_character_no_bg.png' %}" alt="">
+            </div>
+            </div>
             {% elif current_theme == 'ramadan' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy"  src="static/ramadan/img/crmimg.jpg" alt="CRM" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 10vw; margin-left: -1vw;" src="{% static 'ramadan/decor/ramadan_contact_img.png' %}" alt="">
+            </div>
+            </div>
             {% else %}
             <img loading="lazy" src="static/img/team/crmimg.jpg" alt="CRM" />
             {% endif %}
@@ -3053,26 +3940,48 @@ h5 {
         </div>
         <div class="col-lg-6 col-sm-12 col-md-6 px-3">
           <div class="content-boxs border-0 rounded-4">
-          {% if current_theme == 'pongal' %}
-          <h2 class="pongal_text_theme" style="color: transparent;">What is CRM? </h2>
-          {% elif current_theme == 'vishu' %}
-          <h2 class="vishu_text_bg1" style="color: transparent;">What is CRM? </h2>
-          {% elif current_theme == 'easter' %}
-          <h2 class="easter_text_bg1" style="color: transparent;">What is CRM? </h2>
-          {% elif current_theme == 'xmas' %}
-          <h2 class="xmas_text text-light">What is CRM? </h2>
-          {% elif current_theme == 'onam' %}
-          <h2 style="color: orange;">What is CRM? </h2>
-          {% else %}
-          <h2>What is CRM? </h2>
-          {% endif %}
+            {% if current_theme == 'pongal' %}
+      <h2 class="pongal_text_theme" style="color: transparent; "><b>What is CRM?</b></h2>
+      {% elif current_theme == 'vishu' %}
+      <h2 class="vishu_text_bg1" style="color: transparent;"><b>What is CRM?</b></h2>
+      {% elif current_theme == 'easter' %}
+      <h2 class="easter_text_bg1" style="color: transparent;"><b>What is CRM?</b></h2>
+      {% elif current_theme == 'xmas' %}
+      <h2 class="xmas_text text-light"><b>What is CRM?</b></h2>
+      {% elif current_theme == 'onam' %}
+      <h2 style="color: orange;"><b>What is CRM?</b></h2>
+      {% elif current_theme == 'diwali' %}
+      <h2 style="color: rgb(255, 63, 63)"><b>What is CRM?</b></h2>
+      {% elif current_theme == 'republic' %}
+      <h2 style="color: transparent;"><span class="fg_republic"><b>What is CRM?</b></h2>
+      {% elif current_theme == 'ramadan' %}
+      <h2 style="color: transparent;"><span class="ramadan_text1"><b>What is CRM?</b></h2>
+      {% else %}
+      <h2 class="text-start mt-3" style=" color: #00838d;"><b>What is CRM?</b></h2>
+      {% endif %}
+
           <div class="img-box-tech image-hidden">
             {% if current_theme == 'pongal' %}
-            <img loading="lazy" src="static/pongal/img/crmimg.jpg" alt="CRM" />
+            <div class="position-relative" style="z-index: 1;">
+              <img loading="lazy" src="static/pongal/img/crmimg.jpg" alt="CRM" />
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 15vw; margin-left: -1vw;" src="{% static 'pongal/decor/pongal_home3.png' %}" alt="">
+            </div>
+            </div>
             {% elif current_theme == 'vishu' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/vishu/img/crmimg.jpg" alt="CRM" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 15vw; margin-left: -1vw;" src="{% static 'vishu/decor/happy_vishu.png' %}" alt="">
+            </div>
+            </div>
             {% elif current_theme == 'easter' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/easter/img/crmimg.jpg" alt="CRM" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 15vw; margin-left: -1vw;" src="{% static 'easter/decor/bunny1.png' %}" alt="">
+            </div>
+            </div>
             {% elif current_theme == 'xmas' %}
               <div class="position-relative" style="z-index: 1;">
                 <img loading="lazy" src="static/img/team/crmimg.jpg" alt="CRM" />
@@ -3081,13 +3990,33 @@ h5 {
               </div>
               </div>
             {% elif current_theme == 'republic' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/republic/img/crmimg.jpg" alt="CRM" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 15vw; margin-left: -1vw;" src="{% static 'republic/decor/object2.png' %}" alt="">
+            </div>
+            </div>
             {% elif current_theme == 'onam' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/onam/img/crmimg.jpg" alt="CRM" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 15vw; margin-left: -1vw;" src="{% static 'onam/decor/maveli_2.png' %}" alt="">
+            </div>
+            </div>            
             {% elif current_theme == 'diwali' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy"  src="static/diwali/img/crmimg.jpg" alt="CRM" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 15vw; margin-left: -1vw;" src="{% static 'diwali/decor/diwali_character_no_bg.png' %}" alt="">
+            </div>
+            </div>
             {% elif current_theme == 'ramadan' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy"  src="static/ramadan/img/crmimg.jpg" alt="CRM" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 15vw; margin-left: -1vw;" src="{% static 'ramadan/decor/ramadan_contact_img.png' %}" alt="">
+            </div>
+            </div>
             {% else %}
             <img loading="lazy" src="static/img/team/crmimg.jpg" alt="CRM" />
             {% endif %}
@@ -3097,17 +4026,17 @@ h5 {
           </div>
 
           {% if current_theme == 'xmas' %}
-          <div class="position-relative hide_for_mob">
-            <div class="position-absolute" style="margin-left: 5.4rem;margin-top: -1.5rem;">
+          <!-- <div class="position-relative hide_for_mob">
+            <div class="position-absolute" style="margin-left: -1.8rem;margin-top: -2.9rem;">
               <img loading="lazy" width="100rem" draggable="false" src="{% static 'xmas/decor/xmaspap_peek_left.png' %}" alt="">
             </div>
-          </div>
+          </div> -->
           {% elif current_theme == 'ramadan' %}
-          <div class="position-relative hide_for_mob">
-            <div class="position-absolute" style="margin-left: 6.4rem;margin-top: -1rem;">
+          <!-- <div class="position-relative hide_for_mob">
+            <div class="position-absolute" style="margin-left: -1.2rem;margin-top: -2.9rem;">
               <img loading="lazy" width="90rem" draggable="false" src="{% static 'ramadan/decor/peeking_characters/peeking_characters2.png' %}" alt="">
             </div>
-          </div>
+          </div> -->
           {% endif %}
  
         </div>
@@ -3117,7 +4046,25 @@ h5 {
 
   <section id="digital-marketing">
     <div class="container dig-mark-container" >
+      {% if current_theme == 'pongal' %}
+      <h2 class="pongal_text_theme" style="color: transparent; "><b>Benefits of CRM</b></h2>
+      {% elif current_theme == 'vishu' %}
+      <h2 class="vishu_text_bg1" style="color: transparent;"><b>Benefits of CRM</b></h2>
+      {% elif current_theme == 'easter' %}
+      <h2 class="easter_text_bg1" style="color: transparent;"><b>Benefits of CRM</b></h2>
+      {% elif current_theme == 'xmas' %}
+      <h2 class="xmas_text text-light"><b>Benefits of CRM</b></h2>
+      {% elif current_theme == 'onam' %}
+      <h2 style="color: orange;"><b>Benefits of CRM</b></h2>
+      {% elif current_theme == 'diwali' %}
+      <h2 style="color: rgb(255, 63, 63)"><b>Benefits of CRM</b></h2>
+      {% elif current_theme == 'republic' %}
+      <h2 style="color: transparent;"><span class="fg_republic"><b>Benefits  of CRM</b></h2>
+      {% elif current_theme == 'ramadan' %}
+      <h2 style="color: transparent;"><span class="ramadan_text1"><b>Benefits of CRM</b></h2>
+      {% else %}
       <h2 class="text-start mt-3" style=" color: #00838d;"><b>Benefits of CRM</b></h2>
+      {% endif %}
       <div class="container" id="sub-content">
         <p>Improved Customer Relationships: CRM software allows you to gain a deeper understanding of your customers' needs and preferences. By analyzing customer data and interactions, you can personalize your approach, anticipate their needs, and provide better service.
         </p>
@@ -3125,7 +4072,7 @@ h5 {
 
       <div {% if current_theme == 'onam' %}
       class="box-service bg-light rounded"
-      style="height: 450px;background-image: url('/static/onam/decor/frame2/service_frame2.png');
+      style="height: 370px;background-image: url('/static/onam/decor/frame2/service_frame2.png');
       background-size: 100% 100%;
       background-repeat: no-repeat;"
       {% elif current_theme == 'pongal' %}
@@ -3140,7 +4087,7 @@ h5 {
       background-repeat: no-repeat;"
       {% elif current_theme == 'diwali' %}
       class="box-service bg-dark rounded"
-      style="height: 450px;background-image: url('/static/diwali/decor/service_frame/diwali_service_frame.png');
+      style="height: 370px;background-image: url('/static/diwali/decor/service_frame/diwali_service_frame.png');
       background-size: 100% 100%;
       background-repeat: no-repeat;"
       {% elif current_theme == 'ramadan' %}
@@ -3148,6 +4095,9 @@ h5 {
       style="height: 450px;background-image: url('/static/ramadan/decor/service_frame/ramadan_service_frame.png');
       background-size: 100% 100%;
       background-repeat: no-repeat;"
+      {% elif current_theme == 'vishu' %}
+      class="box-service bg-dark rounded"
+      style="height: 380px;"
       {% else %}
       class="box-service" style="height: 340px;"
       {% endif %}>
@@ -3168,7 +4118,7 @@ h5 {
           {% elif current_theme == 'easter' %}
           <div class="position-relative">
             <div class="position-absolute start-0 top-0" style="margin-top: -2rem;margin-left: -3.5rem;">
-              <img loading="lazy" style="width: 6.5rem;" src="{% static 'easter/decor/frame/service_frame1_1.png' %}" alt="">
+              <img loading="lazy" style="height:21rem; width: 6.5rem;" src="{% static 'easter/decor/frame/service_frame1_1.png' %}" alt="">
             </div>
           </div>
           {% elif current_theme == 'xmas' %}
@@ -3196,7 +4146,16 @@ h5 {
           </div> -->
           {% endif %}
 
-          <h4 class="text-center" {% if current_theme == 'onam' %} style="color: orange;" class="onam_ts" {% else %} style="color: #00838d;" {% endif %}>Increased Efficiency</h4>
+          {% if current_theme == 'onam' %} 
+          <h4 class="text-center" style="color: orange; margin-top: 1rem;" class="onam_ts">Increased Efficiency</h4>
+           {% elif  current_theme == 'pongal' %} 
+           <h4 class="text-center pongal-theme"  style="margin-top: 4vw; margin-left: 1vw; color: #00838d;">Increased Efficiency</h4>
+            {% elif  current_theme == 'republic' %} 
+            <h4 class="text-center" style="margin-top: 3rem; color: orange;" >Increased Efficiency</h4>
+            {% else %}
+            <h4 class="text-center" style="color: #00838d;">Increased Efficiency</h4>
+             {% endif %}
+
           <div class="overflow_for_card_p">
             <p {% if current_theme == 'onam' %} style="color: black;" {% endif %}>With CRM, you can automate repetitive tasks, streamline processes, and eliminate manual data entry. This frees up time for your team to focus on more valuable activities, such as building relationships and closing deals.
             </p>
@@ -3214,7 +4173,7 @@ h5 {
 
       <div {% if current_theme == 'onam' %}
       class="box-service bg-light rounded"
-      style="height: 450px;background-image: url('/static/onam/decor/frame2/service_frame2.png');
+      style="height: 370px;background-image: url('/static/onam/decor/frame2/service_frame2.png');
       background-size: 100% 100%;
       background-repeat: no-repeat;"
       {% elif current_theme == 'pongal' %}
@@ -3229,7 +4188,7 @@ h5 {
       background-repeat: no-repeat;"
       {% elif current_theme == 'diwali' %}
       class="box-service bg-dark rounded"
-      style="height: 450px;background-image: url('/static/diwali/decor/service_frame/diwali_service_frame.png');
+      style="height: 370px;background-image: url('/static/diwali/decor/service_frame/diwali_service_frame.png');
       background-size: 100% 100%;
       background-repeat: no-repeat;"
       {% elif current_theme == 'ramadan' %}
@@ -3237,6 +4196,9 @@ h5 {
       style="height: 450px;background-image: url('/static/ramadan/decor/service_frame/ramadan_service_frame.png');
       background-size: 100% 100%;
       background-repeat: no-repeat;"
+      {% elif current_theme == 'vishu' %}
+      class="box-service bg-dark rounded"
+      style="height: 380px;"
       {% else %}
       class="box-service" style="height: 340px;"
       {% endif %}>
@@ -3257,7 +4219,7 @@ h5 {
           {% elif current_theme == 'easter' %}
           <div class="position-relative">
             <div class="position-absolute start-0 top-0" style="margin-top: -2rem;margin-left: -3.5rem;">
-              <img loading="lazy" style="width: 6.5rem;" src="{% static 'easter/decor/frame/service_frame2_2.png' %}" alt="">
+              <img loading="lazy" style=" height:21rem; width: 6.5rem;" src="{% static 'easter/decor/frame/service_frame2_2.png' %}" alt="">
             </div>
           </div>
           {% elif current_theme == 'xmas' %}
@@ -3285,8 +4247,17 @@ h5 {
             </div>
           </div> -->
           {% endif %}
+
+          {% if current_theme == 'onam' %} 
+          <h4 class="text-center" style="color: orange; margin-top: 1rem;" class="onam_ts">Enhanced Collaboration</h4>
+           {% elif  current_theme == 'pongal' %} 
+           <h4 class="text-center pongal-theme"  style="margin-top: 4vw; margin-left: 1vw; color: #00838d;">Enhanced Collaboration</h4>
+            {% elif  current_theme == 'republic' %} 
+            <h4 class="text-center" style="margin-top: 3rem; color: orange;" >Enhanced <br>Collaboration</h4>
+            {% else %}
+            <h4 class="text-center" style="color: #00838d;">Enhanced Collaboration</h4>
+             {% endif %}
           
-          <h4 class="text-center" {% if current_theme == 'onam' %} style="color: orange;" class="onam_ts" {% else %} style="color: #00838d;" {% endif %}>Enhanced Collaboration</span> </h4>
           <div class="overflow_for_card_p">
             <p {% if current_theme == 'onam' %} style="color: black;" {% endif %}> CRM enables seamless collaboration across departments, such as sales, marketing, and customer service. By sharing customer data and insights, teams can work together more effectively to drive business growth.
 
@@ -3305,7 +4276,7 @@ h5 {
 
       <div {% if current_theme == 'onam' %}
       class="box-service bg-light rounded"
-      style="height: 450px;background-image: url('/static/onam/decor/frame2/service_frame2.png');
+      style="height: 370px;background-image: url('/static/onam/decor/frame2/service_frame2.png');
       background-size: 100% 100%;
       background-repeat: no-repeat;"
       {% elif current_theme == 'pongal' %}
@@ -3320,7 +4291,7 @@ h5 {
       background-repeat: no-repeat;"
       {% elif current_theme == 'diwali' %}
       class="box-service bg-dark rounded"
-      style="height: 450px;background-image: url('/static/diwali/decor/service_frame/diwali_service_frame.png');
+      style="height: 370px;background-image: url('/static/diwali/decor/service_frame/diwali_service_frame.png');
       background-size: 100% 100%;
       background-repeat: no-repeat;"
       {% elif current_theme == 'ramadan' %}
@@ -3328,6 +4299,9 @@ h5 {
       style="height: 450px;background-image: url('/static/ramadan/decor/service_frame/ramadan_service_frame.png');
       background-size: 100% 100%;
       background-repeat: no-repeat;"
+      {% elif current_theme == 'vishu' %}
+      class="box-service bg-dark rounded"
+      style="height: 380px;"
       {% else %}
       class="box-service" style="height: 340px;"
       {% endif %}>
@@ -3348,7 +4322,7 @@ h5 {
           {% elif current_theme == 'easter' %}
           <div class="position-relative">
             <div class="position-absolute start-0 top-0" style="margin-top: -2rem;margin-left: -3.5rem;">
-              <img loading="lazy" style="width: 6.5rem;" src="{% static 'easter/decor/frame/service_frame3_3.png' %}" alt="">
+              <img loading="lazy" style=" height:21rem; width: 6.5rem;" src="{% static 'easter/decor/frame/service_frame3_3.png' %}" alt="">
             </div>
           </div>
           {% elif current_theme == 'xmas' %}
@@ -3377,7 +4351,16 @@ h5 {
           </div> -->
           {% endif %}
 
-          <h4 {% if current_theme == 'onam' %} style="color: orange;" class="onam_ts" {% else %} style="color: #00838d;" {% endif %}>Better Decision Making</span></h4>
+          {% if current_theme == 'onam' %} 
+          <h4 class="text-center" style="color: orange; margin-top: 1rem;" class="onam_ts">Better Decision Making</h4>
+           {% elif  current_theme == 'pongal' %} 
+           <h4 class="text-center pongal-theme"  style="margin-top: 4vw; margin-left: 1vw; color: #00838d;">Better Decision Making</h4>
+            {% elif  current_theme == 'republic' %} 
+            <h4 class="text-center" style="margin-top: 3rem; color: orange;" >Better Decision<br> Making</h4>
+            {% else %}
+            <h4 class="text-center" style="color: #00838d;">Better Decision Making</h4>
+             {% endif %}
+
           <div class="overflow_for_card_p">
             <p {% if current_theme == 'onam' %} style="color: black;" {% endif %}>By providing real-time access to customer data and analytics, CRM empowers businesses to make informed decisions. Whether it's identifying new opportunities, optimizing marketing campaigns, or forecasting sales, CRM helps you stay ahead of the competition.
 
@@ -3396,7 +4379,7 @@ h5 {
 
       <div {% if current_theme == 'onam' %}
       class="box-service bg-light rounded"
-      style="height: 450px;background-image: url('/static/onam/decor/frame2/service_frame2.png');
+      style="height: 370px;background-image: url('/static/onam/decor/frame2/service_frame2.png');
       background-size: 100% 100%;
       background-repeat: no-repeat;"
       {% elif current_theme == 'pongal' %}
@@ -3411,7 +4394,7 @@ h5 {
       background-repeat: no-repeat;"
       {% elif current_theme == 'diwali' %}
       class="box-service bg-dark rounded"
-      style="height: 450px;background-image: url('/static/diwali/decor/service_frame/diwali_service_frame.png');
+      style="height: 350px;background-image: url('/static/diwali/decor/service_frame/diwali_service_frame.png');
       background-size: 100% 100%;
       background-repeat: no-repeat;"
       {% elif current_theme == 'ramadan' %}
@@ -3419,6 +4402,9 @@ h5 {
       style="height: 450px;background-image: url('/static/ramadan/decor/service_frame/ramadan_service_frame.png');
       background-size: 100% 100%;
       background-repeat: no-repeat;"
+        {% elif current_theme == 'vishu' %}
+        class="box-service bg-dark rounded"
+        style="height: 380px;"
       {% else %}
       class="box-service" style="height: 320px;"
       {% endif %}>
@@ -3439,7 +4425,7 @@ h5 {
           {% elif current_theme == 'easter' %}
           <div class="position-relative">
             <div class="position-absolute start-0 top-0" style="margin-top: -2rem;margin-left: -3.5rem;">
-              <img loading="lazy" style="width: 6.5rem;" src="{% static 'easter/decor/frame/service_frame5_5.png' %}" alt="">
+              <img loading="lazy" style=" height:21rem; width: 6.5rem;" src="{% static 'easter/decor/frame/service_frame5_5.png' %}" alt="">
             </div>
           </div>
           {% elif current_theme == 'xmas' %}
@@ -3467,7 +4453,16 @@ h5 {
           </div> -->
           {% endif %}
 
-          <h4 class="text-center" {% if current_theme == 'onam' %} style="color: orange;" class="onam_ts" {% else %} style="color: #00838d;" {% endif %}>Scalability</h4>
+          {% if current_theme == 'onam' %} 
+          <h4 class="text-center" style="color: orange; margin-top: 1rem;" class="onam_ts">Scalability</h4>
+           {% elif  current_theme == 'pongal' %} 
+           <h4 class="text-center pongal-theme"  style="margin-top: 4vw; margin-left: 1vw; color: #00838d;">Scalability</h4>
+            {% elif  current_theme == 'republic' %} 
+            <h4 class="text-center" style="margin-top: 3rem; color: orange;" >Scalability</h4>
+            {% else %}
+            <h4 class="text-center" style="color: #00838d;">Scalability</h4>
+             {% endif %}
+
           <div  class="overflow_for_card_p">
             <p {% if current_theme == 'onam' %} style="color: black;" {% endif %}> Our CRM solution is scalable, meaning it can grow with your business. Whether you're a small startup or a large enterprise, our flexible software can adapt to your changing needs and requirements.
             </p>
@@ -3495,15 +4490,28 @@ h5 {
       </div>
       </div>
       {% endif %}
+
       {% if current_theme == 'pongal' %}
-      <h4 class="pongal_text_theme mt-3 text-start" style="color: transparent;"><b>//What is a CORE Software ..?</b></h4>
+      <h4 class="pongal_text_theme" style="color: transparent; "><b>//What is a CORE Software ..?</b></h4>
       {% elif current_theme == 'vishu' %}
-      <h4 class="vishu_text_bg1 mt-3 text-start" style="color: transparent;"><b>//What is a CORE Software ..?</b></h4>
+      <h4 class="vishu_text_bg1" style="color: transparent;"><b>//What is a CORE Software ..?</b></h4>
+      {% elif current_theme == 'easter' %}
+      <h4 class="easter_text_bg1" style="color: transparent;"><b>//What is a CORE Software ..?</b></h4>
       {% elif current_theme == 'xmas' %}
-      <h4 class="xmas_text text-light mt-3 text-start"><b>//What is a CORE Software ..?</b></h4>
+      <h4 class="xmas_text text-light"><b>//What is a CORE Software ..?</b></h4>
+      {% elif current_theme == 'onam' %}
+      <h4 style="color: orange;"><b>//What is a CORE Software ..?</b></h4>
+      {% elif current_theme == 'diwali' %}
+      <h4 style="color: rgb(255, 63, 63)"><b>//What is a CORE Software ..?</b></h4>
+      {% elif current_theme == 'republic' %}
+      <h4 style="color: transparent;"><span class="fg_republic"><b>//What is a </b></span><span class="fg_republic"><b> CORE Software ..?</b></span></h4>
+      {% elif current_theme == 'ramadan' %}
+      <h4 style="color: transparent;"><span class="ramadan_text1"><b>//What is a CORE Software ..?</b></h4>
       {% else %}
       <h4 class="text-start mt-3" style=" color: #00838d;;"><b>//What is a CORE Software ..?</b></h4>
       {% endif %}
+
+
         <div class="container" id="container">
           <p>CORE is Employee management software which is used to manage all employees from top level to bottom level. 
             Several modules are associated with this BPM tool, allowing the work force to be divided into layers. This gives the authority to measure the ability of the employees and manage the time flow of work done effectively by transferring duties from one level to another. We offer a platform that is flexible and feature rich for controlling and managing an entire business from anywhere in the world. With our innovative solution, you will be able to integrate real-time data on a 
@@ -4316,13 +5324,9 @@ h5 {
 </section>
 
 
-<section id="aboutus-section-2" class="" style="margin-top: -1rem; margin-left: 5vw;">
+<section id="aboutus-section-2" class="" style="margin-top: -1rem; margin-left: 7vw;">
   <div class="row aboutus-content container" style="background-color: transparent;">
     <div class="col-12 ">
-
-      <h5 class="sub-head text-center mb-3">
-          
-      </h5>
 
       <div class="video-container ResponsiveYTPlayer">
         <video controls autoplay class="video">
@@ -4337,8 +5341,8 @@ h5 {
 
 
 
-<section class="core-content1">
-  <div class="container mt-3">
+<section class="core-content1" style="margin-top: -8rem;">
+  <div class="container mt-1">
       {% if current_theme == 'diwali' %}
       <div class="position-relative " style="z-index: 1;">
         <div class="position-absolute diwali_kolam1_left_top">
@@ -4357,6 +5361,10 @@ h5 {
         <h4 class="text-light xmas_text mb-5">//Smart CORE Software for Businesses</h4>
         {% elif current_theme == 'onam' %}
         <h4 style="color: orange;">//Smart CORE Software for Businesses</h4>
+        {% elif current_theme == 'diwali' %}
+        <h4 style="color: rgb(255, 63, 63)">//Ease of Work, Easy Work</h4>
+         {% elif current_theme == 'republic' %}
+      <h4 style="color: transparent;"><span class="fg_republic"><b>//Smart CORE </b></span><span class="fg_republic"><b>Software for</b></span> <span class="fg_republic"><b>Businesses</b></span></h4>
         {% else %}
         <h4 class="mb-5" style="color: #00838d;;">//Smart CORE Software for Businesses</h4>
         {% endif %}
@@ -4418,6 +5426,10 @@ h5 {
           <h4 class="xmas_text text-light">//Ease of Work, Easy Work</h4>
           {% elif current_theme == 'onam' %}
           <h4 style="color: orange;">//Ease of Work, Easy Work</h4>
+          {% elif current_theme == 'diwali' %}
+          <h4 style="color: rgb(255, 63, 63)">//Ease of Work, Easy Work</h4>
+          {% elif current_theme == 'republic' %}
+          <h4 style="color: transparent;"><span class="fg_republic"><b>//Ease of </b></span><span class="fg_republic"><b>Work,</b></span> <span class="fg_republic"><b> Easy Work</b></span></h4>
           {% else %}
           <h4 style="color: #00838d;;">//Ease of Work, Easy Work</h4>
           {% endif %}
@@ -4478,50 +5490,70 @@ h5 {
   </div>
 </section>
 
-    <!-- ======= FAQs Section ======= -->
-    <section id="FAQs" class=" container faqs section-bg">
+     <!-- ======= FAQs Section ======= -->
+     <section id="FAQs" class="container faqs section-bg">
 
-      <div class=" our-faq-wrapper">
+      <div class="our-faq-wrapper">
         <div class="container">
           <div class="section-title">
-            <h2 >FAQ<sub>s</sub></h2>
+            {% if current_theme == 'pongal' %}
+          <h2 class="pongal_text_theme" style="color: transparent; ">FAQ<subs>s</subs></h2>
+          {% elif current_theme == 'vishu' %}
+          <h2 class="vishu_text_bg1" style="color: transparent;">FAQ<subs>s</subs></h2>
+          {% elif current_theme == 'easter' %}
+          <h2 class="easter_text_bg1" style="color: transparent;">FAQ<subs>s</subs></h2>
+          {% elif current_theme == 'xmas' %}
+          <h2 class="xmas_text text-light">FAQ<sub>s</sub></h2>
+          {% elif current_theme == 'onam' %}
+          <h2 style="color: orange;">FAQ<sub>s</sub></h2>
+          {% elif current_theme == 'diwali' %}
+          <h2 style="color: rgb(255, 63, 63)">FAQ<sub>s</sub></h2>
+          {% elif current_theme == 'republic' %}
+          <p style="color: transparent;"><span class="fg_republic">FAQ<subs class="fg_republic">s</subs>  </span></p>
+          {% elif current_theme == 'ramadan' %}
+          <p style="color: transparent;"><span class="ramadan_text1">FAQ<subs class="ramadan_text1">s</subs>  </span></p>
+          {% else %}
+          <h2 >FAQ<sub>s</sub></h2>
+          {% endif %}
           </div>
 
+          {% if current_theme == 'xmas' %}
           <div class="row">
             <div class="col-lg-6">
               <div class="accordion" id="accordion">
                 <div class="card">
-                  <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> How does CRM benefit my business? </button>
-                    </h5>
-                  </div>
-                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
-                    <div class="card-body"> CRM helps businesses improve customer relationships, increase efficiency, enhance collaboration, make better decisions, and scale their operations effectively.
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link-xmas collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> How does CRM benefit my business? </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                      <div class="card-body-xmas"> CRM helps businesses improve customer relationships, increase efficiency, enhance collaboration, make better decisions, and scale their operations effectively.
+                      </div>
                     </div>
                   </div>
-                </div>
                 <div class="card">
                   <div class="card-header" id="headingTwo">
                     <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Is CRM suitable for small businesses?
+                      <button class="btn btn-link-xmas collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Is CRM suitable for small businesses?
                       </button>
                     </h5>
                   </div>
                   <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
-                    <div class="card-body"> Yes, CRM is beneficial for businesses of all sizes. Our solution is customizable to meet the needs of small startups, as well as large enterprises.
+                    <div class="card-body-xmas">Yes, CRM is beneficial for businesses of all sizes. Our solution is customizable to meet the needs of small startups, as well as large enterprises.
                     </div>
                   </div>
                 </div>
                 <div class="card">
                   <div class="card-header" id="headingThree">
                     <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> How long does it take to implement CRM?
+                      <button class="btn btn-link-xmas collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> How long does it take to implement CRM?
+
                       </button>
                     </h5>
                   </div>
                   <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
-                    <div class="card-body"> The implementation timeline depends on factors such as the size of your business, the complexity of your processes, and customization requirements. Our team will work closely with you to ensure a smooth and timely implementation process.
+                    <div class="card-body-xmas">The implementation timeline depends on factors such as the size of your business, the complexity of your processes, and customization requirements. Our team will work closely with you to ensure a smooth and timely implementation process.
                     </div>
                   </div>
                 </div>
@@ -4532,7 +5564,688 @@ h5 {
                 <div class="card">
                   <div class="card-header" id="heading4">
                     <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4"> Is CRM software user-friendly?
+                      <button class="btn btn-link-xmas collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Is CRM software user-friendly?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse4" class="collapse" aria-labelledby="heading4" data-bs-parent="#accordion2">
+                    <div class="card-body-xmas"> Yes, our CRM software is designed to be user-friendly and intuitive. We provide training and support to help your team get up to speed quickly.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading5">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-xmas collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">  Can CRM integrate with other software systems?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse5" class="collapse" aria-labelledby="heading5" data-bs-parent="#accordion2">
+                    <div class="card-body-xmas"> Yes, our CRM solution is capable of integrating with other software systems, such as ERP (Enterprise Resource Planning), marketing automation, and accounting software, to streamline your operations and improve data consistency.
+                       </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading6">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-xmas collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6"> How secure is my data with CRM?
+
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse6" class="collapse" aria-labelledby="heading6" data-bs-parent="#accordion2">
+                    <div class="card-body-xmas">  We take data security seriously and employ industry-standard measures to safeguard your information. Our CRM solution offers robust security features, such as encryption, access controls, and regular data backups, to ensure the confidentiality and integrity of your data.
+                      Ready to revolutionize the way you manage your customer relationships? Contact us today to schedule a personalized demo of our CRM solution. Discover how our intuitive software can help you streamline your processes, enhance customer interactions, and drive growth for your business. Don't wait any longer to unlock the full potential of your customer relationships. Let us partner with you on your journey to success. Reach out now and take the first step towards a brighter future with Altos CRM.                      
+                       </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% elif current_theme == 'onam' %}
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link-onam collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> How does CRM benefit my business? </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                      <div class="card-body-onam"> CRM helps businesses improve customer relationships, increase efficiency, enhance collaboration, make better decisions, and scale their operations effectively.
+                      </div>
+                    </div>
+                  </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-onam collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Is CRM suitable for small businesses?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                    <div class="card-body-onam">Yes, CRM is beneficial for businesses of all sizes. Our solution is customizable to meet the needs of small startups, as well as large enterprises.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-onam collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> How long does it take to implement CRM?
+
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                    <div class="card-body-onam">The implementation timeline depends on factors such as the size of your business, the complexity of your processes, and customization requirements. Our team will work closely with you to ensure a smooth and timely implementation process.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion2">
+                <div class="card">
+                  <div class="card-header" id="heading4">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-onam collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Is CRM software user-friendly?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse4" class="collapse" aria-labelledby="heading4" data-bs-parent="#accordion2">
+                    <div class="card-body-onam"> Yes, our CRM software is designed to be user-friendly and intuitive. We provide training and support to help your team get up to speed quickly.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading5">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-onam collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">  Can CRM integrate with other software systems?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse5" class="collapse" aria-labelledby="heading5" data-bs-parent="#accordion2">
+                    <div class="card-body-onam"> Yes, our CRM solution is capable of integrating with other software systems, such as ERP (Enterprise Resource Planning), marketing automation, and accounting software, to streamline your operations and improve data consistency.
+                       </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading6">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-onam collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6"> How secure is my data with CRM?
+
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse6" class="collapse" aria-labelledby="heading6" data-bs-parent="#accordion2">
+                    <div class="card-body-onam">  We take data security seriously and employ industry-standard measures to safeguard your information. Our CRM solution offers robust security features, such as encryption, access controls, and regular data backups, to ensure the confidentiality and integrity of your data.
+                      Ready to revolutionize the way you manage your customer relationships? Contact us today to schedule a personalized demo of our CRM solution. Discover how our intuitive software can help you streamline your processes, enhance customer interactions, and drive growth for your business. Don't wait any longer to unlock the full potential of your customer relationships. Let us partner with you on your journey to success. Reach out now and take the first step towards a brighter future with Altos CRM.                      
+                       </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {% elif current_theme == 'diwali' %}
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link-diwali collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> How does CRM benefit my business? </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                      <div class="card-body-diwali"> CRM helps businesses improve customer relationships, increase efficiency, enhance collaboration, make better decisions, and scale their operations effectively.
+                      </div>
+                    </div>
+                  </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-diwali collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Is CRM suitable for small businesses?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                    <div class="card-body-diwali">Yes, CRM is beneficial for businesses of all sizes. Our solution is customizable to meet the needs of small startups, as well as large enterprises.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-diwali collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> How long does it take to implement CRM?
+
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                    <div class="card-body-diwali">The implementation timeline depends on factors such as the size of your business, the complexity of your processes, and customization requirements. Our team will work closely with you to ensure a smooth and timely implementation process.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion2">
+                <div class="card">
+                  <div class="card-header" id="heading4">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-diwali collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Is CRM software user-friendly?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse4" class="collapse" aria-labelledby="heading4" data-bs-parent="#accordion2">
+                    <div class="card-body-diwali"> Yes, our CRM software is designed to be user-friendly and intuitive. We provide training and support to help your team get up to speed quickly.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading5">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-diwali collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">  Can CRM integrate with other software systems?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse5" class="collapse" aria-labelledby="heading5" data-bs-parent="#accordion2">
+                    <div class="card-body-diwali"> Yes, our CRM solution is capable of integrating with other software systems, such as ERP (Enterprise Resource Planning), marketing automation, and accounting software, to streamline your operations and improve data consistency.
+                       </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading6">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-diwali collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6"> How secure is my data with CRM?
+
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse6" class="collapse" aria-labelledby="heading6" data-bs-parent="#accordion2">
+                    <div class="card-body-diwali">  We take data security seriously and employ industry-standard measures to safeguard your information. Our CRM solution offers robust security features, such as encryption, access controls, and regular data backups, to ensure the confidentiality and integrity of your data.
+                      Ready to revolutionize the way you manage your customer relationships? Contact us today to schedule a personalized demo of our CRM solution. Discover how our intuitive software can help you streamline your processes, enhance customer interactions, and drive growth for your business. Don't wait any longer to unlock the full potential of your customer relationships. Let us partner with you on your journey to success. Reach out now and take the first step towards a brighter future with Altos CRM.                      
+                       </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% elif current_theme == 'pongal' %}
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link-pongal collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> How does CRM benefit my business? </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                      <div class="card-body-pongal"> CRM helps businesses improve customer relationships, increase efficiency, enhance collaboration, make better decisions, and scale their operations effectively.
+                      </div>
+                    </div>
+                  </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-pongal collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Is CRM suitable for small businesses?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                    <div class="card-body-pongal">Yes, CRM is beneficial for businesses of all sizes. Our solution is customizable to meet the needs of small startups, as well as large enterprises.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-pongal collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> How long does it take to implement CRM?
+
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                    <div class="card-body-pongal">The implementation timeline depends on factors such as the size of your business, the complexity of your processes, and customization requirements. Our team will work closely with you to ensure a smooth and timely implementation process.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion2">
+                <div class="card">
+                  <div class="card-header" id="heading4">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-pongal collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Is CRM software user-friendly?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse4" class="collapse" aria-labelledby="heading4" data-bs-parent="#accordion2">
+                    <div class="card-body-pongal"> Yes, our CRM software is designed to be user-friendly and intuitive. We provide training and support to help your team get up to speed quickly.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading5">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-pongal collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">  Can CRM integrate with other software systems?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse5" class="collapse" aria-labelledby="heading5" data-bs-parent="#accordion2">
+                    <div class="card-body-pongal"> Yes, our CRM solution is capable of integrating with other software systems, such as ERP (Enterprise Resource Planning), marketing automation, and accounting software, to streamline your operations and improve data consistency.
+                       </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading6">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-pongal collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6"> How secure is my data with CRM?
+
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse6" class="collapse" aria-labelledby="heading6" data-bs-parent="#accordion2">
+                    <div class="card-body-pongal">  We take data security seriously and employ industry-standard measures to safeguard your information. Our CRM solution offers robust security features, such as encryption, access controls, and regular data backups, to ensure the confidentiality and integrity of your data.
+                      Ready to revolutionize the way you manage your customer relationships? Contact us today to schedule a personalized demo of our CRM solution. Discover how our intuitive software can help you streamline your processes, enhance customer interactions, and drive growth for your business. Don't wait any longer to unlock the full potential of your customer relationships. Let us partner with you on your journey to success. Reach out now and take the first step towards a brighter future with Altos CRM.                      
+                       </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% elif current_theme == 'vishu' %}
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link-vishu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> How does CRM benefit my business? </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                      <div class="card-body-vishu"> CRM helps businesses improve customer relationships, increase efficiency, enhance collaboration, make better decisions, and scale their operations effectively.
+                      </div>
+                    </div>
+                  </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-vishu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Is CRM suitable for small businesses?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                    <div class="card-body-vishu">Yes, CRM is beneficial for businesses of all sizes. Our solution is customizable to meet the needs of small startups, as well as large enterprises.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-vishu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> How long does it take to implement CRM?
+
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                    <div class="card-body-vishu">The implementation timeline depends on factors such as the size of your business, the complexity of your processes, and customization requirements. Our team will work closely with you to ensure a smooth and timely implementation process.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion2">
+                <div class="card">
+                  <div class="card-header" id="heading4">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-vishu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Is CRM software user-friendly?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse4" class="collapse" aria-labelledby="heading4" data-bs-parent="#accordion2">
+                    <div class="card-body-vishu"> Yes, our CRM software is designed to be user-friendly and intuitive. We provide training and support to help your team get up to speed quickly.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading5">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-vishu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">  Can CRM integrate with other software systems?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse5" class="collapse" aria-labelledby="heading5" data-bs-parent="#accordion2">
+                    <div class="card-body-vishu"> Yes, our CRM solution is capable of integrating with other software systems, such as ERP (Enterprise Resource Planning), marketing automation, and accounting software, to streamline your operations and improve data consistency.
+                       </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading6">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-vishu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6"> How secure is my data with CRM?
+
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse6" class="collapse" aria-labelledby="heading6" data-bs-parent="#accordion2">
+                    <div class="card-body-vishu">  We take data security seriously and employ industry-standard measures to safeguard your information. Our CRM solution offers robust security features, such as encryption, access controls, and regular data backups, to ensure the confidentiality and integrity of your data.
+                      Ready to revolutionize the way you manage your customer relationships? Contact us today to schedule a personalized demo of our CRM solution. Discover how our intuitive software can help you streamline your processes, enhance customer interactions, and drive growth for your business. Don't wait any longer to unlock the full potential of your customer relationships. Let us partner with you on your journey to success. Reach out now and take the first step towards a brighter future with Altos CRM.                      
+                       </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% elif current_theme == 'easter' %}
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link-easter collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> How does CRM benefit my business? </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                      <div class="card-body-easter"> CRM helps businesses improve customer relationships, increase efficiency, enhance collaboration, make better decisions, and scale their operations effectively.
+                      </div>
+                    </div>
+                  </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-easter collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Is CRM suitable for small businesses?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                    <div class="card-body-easter">Yes, CRM is beneficial for businesses of all sizes. Our solution is customizable to meet the needs of small startups, as well as large enterprises.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-easter collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> How long does it take to implement CRM?
+
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                    <div class="card-body-easter">The implementation timeline depends on factors such as the size of your business, the complexity of your processes, and customization requirements. Our team will work closely with you to ensure a smooth and timely implementation process.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion2">
+                <div class="card">
+                  <div class="card-header" id="heading4">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-easter collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Is CRM software user-friendly?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse4" class="collapse" aria-labelledby="heading4" data-bs-parent="#accordion2">
+                    <div class="card-body-easter"> Yes, our CRM software is designed to be user-friendly and intuitive. We provide training and support to help your team get up to speed quickly.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading5">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-easter collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">  Can CRM integrate with other software systems?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse5" class="collapse" aria-labelledby="heading5" data-bs-parent="#accordion2">
+                    <div class="card-body-easter"> Yes, our CRM solution is capable of integrating with other software systems, such as ERP (Enterprise Resource Planning), marketing automation, and accounting software, to streamline your operations and improve data consistency.
+                       </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading6">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-easter collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6"> How secure is my data with CRM?
+
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse6" class="collapse" aria-labelledby="heading6" data-bs-parent="#accordion2">
+                    <div class="card-body-easter">  We take data security seriously and employ industry-standard measures to safeguard your information. Our CRM solution offers robust security features, such as encryption, access controls, and regular data backups, to ensure the confidentiality and integrity of your data.
+                      Ready to revolutionize the way you manage your customer relationships? Contact us today to schedule a personalized demo of our CRM solution. Discover how our intuitive software can help you streamline your processes, enhance customer interactions, and drive growth for your business. Don't wait any longer to unlock the full potential of your customer relationships. Let us partner with you on your journey to success. Reach out now and take the first step towards a brighter future with Altos CRM.                      
+                       </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% elif current_theme == 'republic' %}
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link-republic collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> How does CRM benefit my business? </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                      <div class="card-body-republic"> CRM helps businesses improve customer relationships, increase efficiency, enhance collaboration, make better decisions, and scale their operations effectively.
+                      </div>
+                    </div>
+                  </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-republic collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Is CRM suitable for small businesses?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                    <div class="card-body-republic">Yes, CRM is beneficial for businesses of all sizes. Our solution is customizable to meet the needs of small startups, as well as large enterprises.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-republic collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> How long does it take to implement CRM?
+
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                    <div class="card-body-republic">The implementation timeline depends on factors such as the size of your business, the complexity of your processes, and customization requirements. Our team will work closely with you to ensure a smooth and timely implementation process.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion2">
+                <div class="card">
+                  <div class="card-header" id="heading4">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-republic collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Is CRM software user-friendly?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse4" class="collapse" aria-labelledby="heading4" data-bs-parent="#accordion2">
+                    <div class="card-body-republic"> Yes, our CRM software is designed to be user-friendly and intuitive. We provide training and support to help your team get up to speed quickly.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading5">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-republic collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">  Can CRM integrate with other software systems?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse5" class="collapse" aria-labelledby="heading5" data-bs-parent="#accordion2">
+                    <div class="card-body-republic"> Yes, our CRM solution is capable of integrating with other software systems, such as ERP (Enterprise Resource Planning), marketing automation, and accounting software, to streamline your operations and improve data consistency.
+                       </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading6">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-republic collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6"> How secure is my data with CRM?
+
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse6" class="collapse" aria-labelledby="heading6" data-bs-parent="#accordion2">
+                    <div class="card-body-republic">  We take data security seriously and employ industry-standard measures to safeguard your information. Our CRM solution offers robust security features, such as encryption, access controls, and regular data backups, to ensure the confidentiality and integrity of your data.
+                      Ready to revolutionize the way you manage your customer relationships? Contact us today to schedule a personalized demo of our CRM solution. Discover how our intuitive software can help you streamline your processes, enhance customer interactions, and drive growth for your business. Don't wait any longer to unlock the full potential of your customer relationships. Let us partner with you on your journey to success. Reach out now and take the first step towards a brighter future with Altos CRM.                      
+                       </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% elif current_theme == 'ramadan' %}
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link-ramadan collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> How does CRM benefit my business? </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                      <div class="card-body-ramadan"> CRM helps businesses improve customer relationships, increase efficiency, enhance collaboration, make better decisions, and scale their operations effectively.
+                      </div>
+                    </div>
+                  </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-ramadan collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Is CRM suitable for small businesses?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                    <div class="card-body-ramadan">Yes, CRM is beneficial for businesses of all sizes. Our solution is customizable to meet the needs of small startups, as well as large enterprises.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-ramadan collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> How long does it take to implement CRM?
+
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                    <div class="card-body-ramadan">The implementation timeline depends on factors such as the size of your business, the complexity of your processes, and customization requirements. Our team will work closely with you to ensure a smooth and timely implementation process.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion2">
+                <div class="card">
+                  <div class="card-header" id="heading4">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-ramadan collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Is CRM software user-friendly?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse4" class="collapse" aria-labelledby="heading4" data-bs-parent="#accordion2">
+                    <div class="card-body-ramadan"> Yes, our CRM software is designed to be user-friendly and intuitive. We provide training and support to help your team get up to speed quickly.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading5">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-ramadan collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">  Can CRM integrate with other software systems?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse5" class="collapse" aria-labelledby="heading5" data-bs-parent="#accordion2">
+                    <div class="card-body-ramadan"> Yes, our CRM solution is capable of integrating with other software systems, such as ERP (Enterprise Resource Planning), marketing automation, and accounting software, to streamline your operations and improve data consistency.
+                       </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading6">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-ramadan collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6"> How secure is my data with CRM?
+
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse6" class="collapse" aria-labelledby="heading6" data-bs-parent="#accordion2">
+                    <div class="card-body-ramadan">  We take data security seriously and employ industry-standard measures to safeguard your information. Our CRM solution offers robust security features, such as encryption, access controls, and regular data backups, to ensure the confidentiality and integrity of your data.
+                      Ready to revolutionize the way you manage your customer relationships? Contact us today to schedule a personalized demo of our CRM solution. Discover how our intuitive software can help you streamline your processes, enhance customer interactions, and drive growth for your business. Don't wait any longer to unlock the full potential of your customer relationships. Let us partner with you on your journey to success. Reach out now and take the first step towards a brighter future with Altos CRM.                      
+                       </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% else %}
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> How does CRM benefit my business? </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                      <div class="card-body"> CRM helps businesses improve customer relationships, increase efficiency, enhance collaboration, make better decisions, and scale their operations effectively.
+                      </div>
+                    </div>
+                  </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Is CRM suitable for small businesses?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                    <div class="card-body">Yes, CRM is beneficial for businesses of all sizes. Our solution is customizable to meet the needs of small startups, as well as large enterprises.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> How long does it take to implement CRM?
+
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                    <div class="card-body">The implementation timeline depends on factors such as the size of your business, the complexity of your processes, and customization requirements. Our team will work closely with you to ensure a smooth and timely implementation process.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion2">
+                <div class="card">
+                  <div class="card-header" id="heading4">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Is CRM software user-friendly?
                       </button>
                     </h5>
                   </div>
@@ -4544,33 +6257,36 @@ h5 {
                 <div class="card">
                   <div class="card-header" id="heading5">
                     <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5"> Can CRM integrate with other software systems?
+                      <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">  Can CRM integrate with other software systems?
                       </button>
                     </h5>
                   </div>
                   <div id="collapse5" class="collapse" aria-labelledby="heading5" data-bs-parent="#accordion2">
-                    <div class="card-body">Yes, our CRM solution is capable of integrating with other software systems, such as ERP (Enterprise Resource Planning), marketing automation, and accounting software, to streamline your operations and improve data consistency.
-                    </div>
+                    <div class="card-body"> Yes, our CRM solution is capable of integrating with other software systems, such as ERP (Enterprise Resource Planning), marketing automation, and accounting software, to streamline your operations and improve data consistency.
+                       </div>
                   </div>
                 </div>
                 <div class="card">
                   <div class="card-header" id="heading6">
                     <h5 class="mb-0">
                       <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6"> How secure is my data with CRM?
+
                       </button>
                     </h5>
                   </div>
                   <div id="collapse6" class="collapse" aria-labelledby="heading6" data-bs-parent="#accordion2">
-                    <div class="card-body"> We take data security seriously and employ industry-standard measures to safeguard your information. Our CRM solution offers robust security features, such as encryption, access controls, and regular data backups, to ensure the confidentiality and integrity of your data.<br>
-                      Ready to revolutionize the way you manage your customer relationships? Contact us today to schedule a personalized demo of our CRM solution. Discover how our intuitive software can help you streamline your processes, enhance customer interactions, and drive growth for your business. Don't wait any longer to unlock the full potential of your customer relationships. Let us partner with you on your journey to success. Reach out now and take the first step towards a brighter future with Altos CRM.
+                    <div class="card-body">  We take data security seriously and employ industry-standard measures to safeguard your information. Our CRM solution offers robust security features, such as encryption, access controls, and regular data backups, to ensure the confidentiality and integrity of your data.
+                      Ready to revolutionize the way you manage your customer relationships? Contact us today to schedule a personalized demo of our CRM solution. Discover how our intuitive software can help you streamline your processes, enhance customer interactions, and drive growth for your business. Don't wait any longer to unlock the full potential of your customer relationships. Let us partner with you on your journey to success. Reach out now and take the first step towards a brighter future with Altos CRM.                      
                        </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          {% endif %}
         </div>
       </div>
+     
     </section>
     <!-- End FAQs Section -->
 

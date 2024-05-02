@@ -15,7 +15,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-    <title>CRM Software Development Company in Kerala | Custom CRM</title>
+    <title>CORE | Altos Technologies</title>
    
 <meta name="description" content="As a credible CRM software development company in India, our custom CRM with best interfaces will provide you in-built analysis & reports for business growth."/>
 
@@ -147,7 +147,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .img-box-tech.image-hidden{
     display: none;
   }
-  @media screen and (max-width:768px) {
+  @media screen and (max-width:767px) {
   .img-box-tech.image-hidden{
     display: block;
     max-width: 100%;
@@ -628,7 +628,69 @@ h5 {
       margin-top: -12rem;
     }
   }
+
+
+  
 </style>
+
+{% if current_theme == 'pongal' %}
+
+<style>
+  .position-absolute{
+        position: relative;
+        bottom: initial;
+        top: 0;
+        
+    }
+    
+  @media only screen and (max-width: 768px) {
+    .position-absolute.bottom-0 {
+        position: relative;
+        bottom: initial;
+        top: 0;
+    }
+}
+</style>
+
+{% elif current_theme == 'republic' %}
+
+<style>
+  .position-absolute{
+        position: relative;
+        bottom: initial;
+        top: 0;
+        
+    }
+    
+  @media only screen and (max-width: 768px) {
+    .position-absolute.bottom-0 {
+        position: relative;
+        bottom: initial;
+        top: 0;
+    }
+}
+</style>
+
+{% elif current_theme == 'ramadan' %}
+
+<style>
+  .position-absolute{
+        position: relative;
+        bottom: initial;
+        top: 0;
+        
+    }
+    
+  @media only screen and (max-width: 768px) {
+    .position-absolute.bottom-0 {
+        position: relative;
+        bottom: initial;
+        top: 0;
+    }
+}
+</style>
+
+{% endif %}
 
 <!-- vishu -->
 <style>
@@ -2585,6 +2647,12 @@ h5 {
             <h2 class="xmas_text text-light">ERP </h2>
             {% elif current_theme == 'onam' %}
             <h2 style="color: orange;">ERP </h2>
+            {% elif current_theme == 'diwali' %}
+            <h2 style="color: rgb(255, 63, 63)">ERP </h2>
+            {% elif current_theme == 'republic' %}
+            <h2 style="color: transparent;"><span class="fg_republic"><b>ERP</b></span> </h2>
+            {% elif current_theme == 'ramadan' %}
+            <h2 class="ramadan_text1" style="color: transparent;">ERP </h2>
             {% else %}
             <h2>ERP </h2>
             {% endif %}
@@ -2621,17 +2689,17 @@ h5 {
           </div>
 
           {% if current_theme == 'xmas' %}
-          <div class="position-relative hide_for_mob">
+          <!-- <div class="position-relative hide_for_mob">
             <div class="position-absolute" style="margin-left: 5.4rem;margin-top: 0.2rem;">
               <img loading="lazy" width="100rem" draggable="false" src="{% static 'xmas/decor/xmaspap_peek_left.png' %}" alt="">
             </div>
-          </div>
+          </div> -->
           {% elif current_theme == 'ramadan' %}
-          <div class="position-relative hide_for_mob">
+          <!-- <div class="position-relative hide_for_mob">
             <div class="position-absolute" style="margin-left: 6.4rem;margin-top: 0.6rem;">
               <img loading="lazy" width="90rem" draggable="false" src="{% static 'ramadan/decor/peeking_characters/peeking_characters1.png' %}" alt="">
             </div>
-          </div>
+          </div> -->
           {% endif %}
 
           <div class="km-button my-5"><a role="button" href="/erp" 
@@ -2760,6 +2828,12 @@ h5 {
           <h2 class="xmas_text text-light">CRM </h2>
           {% elif current_theme == 'onam' %}
           <h2 style="color: orange;">CRM </h2>
+          {% elif current_theme == 'diwali' %}
+          <h2 style="color: rgb(255, 63, 63)">CRM </h2>
+          {% elif current_theme == 'republic' %}
+          <h2 style="color: transparent;"><span class="fg_republic"><b>CRM</b></span> </h2>
+          {% elif current_theme == 'ramadan' %}
+          <h2 class="ramadan_text1" style="color: transparent;">CRM </h2>
           {% else %}
           <h2>CRM </h2>
           {% endif %}
@@ -2805,17 +2879,17 @@ h5 {
           </div>
 
           {% if current_theme == 'xmas' %}
-          <div class="position-relative hide_for_mob">
+          <!-- <div class="position-relative hide_for_mob">
             <div class="position-absolute" style="margin-left: 5.4rem;margin-top: -1.5rem;">
               <img loading="lazy" width="100rem" draggable="false" src="{% static 'xmas/decor/xmaspap_peek_left.png' %}" alt="">
             </div>
-          </div>
+          </div> -->
           {% elif current_theme == 'ramadan' %}
-          <div class="position-relative hide_for_mob">
+          <!-- <div class="position-relative hide_for_mob">
             <div class="position-absolute" style="margin-left: 6.4rem;margin-top: -1rem;">
               <img loading="lazy" width="90rem" draggable="false" src="{% static 'ramadan/decor/peeking_characters/peeking_characters2.png' %}" alt="">
             </div>
-          </div>
+          </div> -->
           {% endif %}
           
           <div class="km-button my-4"><a role="button" href="/crm" 
@@ -2877,16 +2951,37 @@ h5 {
             <h2 class="xmas_text text-light">Altos Connect  </h2>
             {% elif current_theme == 'onam' %}
             <h2 style="color: orange;">Altos Connect  </h2>
+            {% elif current_theme == 'diwali' %}
+            <h2 style="color: rgb(255, 63, 63)">Altos Connect </h2>
+            {% elif current_theme == 'republic' %}
+            <h2 style="color: transparent;"><span class="fg_republic"><b>Altos Connect </b></span> </h2>
+            {% elif current_theme == 'ramadan' %}
+            <h2 class="ramadan_text1" style="color: transparent;">Altos Connect </h2>
             {% else %}
             <h2>Altos Connect </h2>
             {% endif %}
             <div class="img-box-tech image-hidden">
             {% if current_theme == 'pongal' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/pongal/img/altosconnect.jpg" alt="AltosConnect" />
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 15vw; margin-left: -1vw;" src="{% static 'pongal/decor/pongal_about1.png' %}" alt="">
+            </div>
+            </div>  
             {% elif current_theme == 'vishu' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/vishu/img/altosconnect.jpg" alt="AltosConnect" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 15vw; margin-left: -1vw;" src="{% static 'vishu/decor/happy_vishu4.png' %}" alt="">
+            </div>
+            </div>  
             {% elif current_theme == 'easter' %}
-              <img loading="lazy" src="static/easter/img/altosconnect.jpg" alt="AltosConnect" />
+            <div class="position-relative" style="z-index: 1;">
+            <img loading="lazy" src="static/easter/img/altosconnect.jpg" alt="AltosConnect" />
+            <div class="position-absolute bottom-0">
+              <img loading="lazy" draggable="false" style="height: 15vw; margin-left: -1vw;" src="{% static 'easter/decor/bunny2.png' %}" alt="">
+          </div>
+          </div>  
             {% elif current_theme == 'xmas' %}
               <div class="position-relative" style="z-index: 1;">
                 <img loading="lazy" src="static/img/team/altosconnect.jpg" alt="AltosConnect" />
@@ -2895,13 +2990,34 @@ h5 {
               </div>
               </div>
             {% elif current_theme == 'republic' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/republic/img/altosconnect.jpg" alt="AltosConnect" />
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 15vw; margin-left: -5vw;" src="{% static 'republic/decor/about_design1.png' %}" alt="">
+            </div>
+            </div>
+          
             {% elif current_theme == 'onam' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/onam/img/altosconnect.jpg" alt="AltosConnect" />
-            {% elif current_theme == 'diwali' %}
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 15vw; margin-left: -1vw;" src="{% static 'onam/decor/maveli.png' %}" alt="">
+            </div>
+            </div>           
+             {% elif current_theme == 'diwali' %}
+             <div class="position-relative" style="z-index: 1;">
               <img loading="lazy"  src="static/diwali/img/altosconnect.jpg" alt="AltosConnect" />
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 15vw; margin-left: -1vw;" src="{% static 'diwali/decor/diwali_footer_image.png' %}" alt="">
+            </div>
+            </div>     
             {% elif current_theme == 'ramadan' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy"  src="static/ramadan/img/altosconnect.jpg" alt="AltosConnect" />
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 10vw; " src="{% static 'ramadan/decor/ramadan_nav_decor.png' %}" alt="">
+            </div>
+            </div>        
             {% else %}
               <img loading="lazy" src="static/img/team/altosconnect.jpg" alt="AltosConnect" />
             {% endif %}
@@ -2911,17 +3027,17 @@ h5 {
           </div>
 
           {% if current_theme == 'xmas' %}
-          <div class="position-relative hide_for_mob">
+          <!-- <div class="position-relative hide_for_mob">
             <div class="position-absolute" style="margin-left: 5.4rem;margin-top: 0.2rem;">
               <img loading="lazy" width="100rem" draggable="false" src="{% static 'xmas/decor/xmaspap_peek_left.png' %}" alt="">
             </div>
-          </div>
+          </div> -->
           {% elif current_theme == 'ramadan' %}
-          <div class="position-relative hide_for_mob">
+          <!-- <div class="position-relative hide_for_mob">
             <div class="position-absolute" style="margin-left: 6.4rem;margin-top: 0.6rem;">
               <img loading="lazy" width="90rem" draggable="false" src="{% static 'ramadan/decor/peeking_characters/peeking_characters1.png' %}" alt="">
             </div>
-          </div>
+          </div> -->
           {% endif %}
 
           <div class="km-button my-5"><a role="button" href="/Service/AltosConnect" 
@@ -2951,11 +3067,26 @@ h5 {
           <div class="img-box-tech image-visible">
             <!-- <h4 class="hide-head">ERP</h4> -->
             {% if current_theme == 'pongal' %}
-            <img loading="lazy" src="static/pongal/img/altosconnect.jpg" alt="AltosConnect"/>
+            <div class="position-relative" style="z-index: 1;">
+              <img loading="lazy" src="static/pongal/img/altosconnect.jpg" alt="AltosConnect"/>
+              <div class="position-absolute bottom-0 ">
+                <img loading="lazy" draggable="false" style="height: 10vw;  margin-left: -1vw; " src="{% static 'pongal/decor/pongal_about1.png' %}" alt="">
+            </div>
+            </div>
             {% elif current_theme == 'vishu' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/vishu/img/altosconnect.jpg" alt="AltosConnect" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 10vw; margin-left: -1vw;" src="{% static 'vishu/decor/happy_vishu4.png' %}" alt="">
+            </div>
+            </div>             
             {% elif current_theme == 'easter' %}
-              <img loading="lazy" src="static/easter/img/altosconnect.jpg" alt="AltosConnect" /> 
+            <div class="position-relative" style="z-index: 1;">
+              <img loading="lazy" src="static/easter/img/altosconnect.jpg" alt="AltosConnect" />
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 10vw; margin-left: -1vw;" src="{% static 'easter/decor/bunny2.png' %}" alt="">
+            </div>
+            </div>              
             {% elif current_theme == 'xmas' %}
               <div class="position-relative" style="z-index: 1;">
                 <img loading="lazy" src="static/img/team/altosconnect.jpg" alt="AltosConnect" />
@@ -2964,13 +3095,34 @@ h5 {
               </div>
               </div>
             {% elif current_theme == 'republic' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/republic/img/altosconnect.jpg" alt="AltosConnect" />
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 13vw; margin-left: -5vw;" src="{% static 'republic/decor/about_design1.png' %}" alt="">
+            </div>
+            </div>
+          
             {% elif current_theme == 'onam' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/onam/img/altosconnect.jpg" alt="AltosConnect" />
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 13vw; margin-left: -1vw;" src="{% static 'onam/decor/maveli.png' %}" alt="">
+            </div>
+            </div>
             {% elif current_theme == 'diwali' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy"  src="static/diwali/img/altosconnect.jpg" alt="AltosConnect" />
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 10vw; margin-left: -1vw;" src="{% static 'diwali/decor/diwali_footer_image.png' %}" alt="">
+            </div>
+            </div>               
             {% elif current_theme == 'ramadan' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy"  src="static/ramadan/img/altosconnect.jpg" alt="AltosConnect" />
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 5vw;" src="{% static 'ramadan/decor/ramadan_nav_decor.png' %}" alt="">
+            </div>
+            </div>
             {% else %}
             <img loading="lazy"  src="static/img/team/altosconnect.jpg" alt="AltosConnect"/>
             {% endif %}
@@ -3030,11 +3182,26 @@ h5 {
           <div class="img-box-tech image-visible">
             <!-- <h4 class="hide-head">CRM</h4> -->
             {% if current_theme == 'pongal' %}
-            <img loading="lazy" src="static/pongal/img/billingsoftwareimg2.png" alt="BillingSoftwware" />
+            <div class="position-relative" style="z-index: 1;">
+              <img loading="lazy" src="static/pongal/img/billingsoftwareimg2.png" alt="BillingSoftwware" />
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 10vw;  margin-left: -1vw; " src="{% static 'pongal/decor/pongal_about1.png' %}" alt="">
+            </div>
+            </div>
             {% elif current_theme == 'vishu' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/vishu/img/billingsoftwareimg2.png" alt="BillingSoftwware" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 10vw; margin-left: -1vw;" src="{% static 'vishu/decor/krishna_standing.png' %}" alt="">
+            </div>
+            </div>
             {% elif current_theme == 'easter' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/easter/img/billingsoftwareimg2.png" alt="BillingSoftwware" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 10vw; margin-left: -1vw;" src="{% static 'easter/decor/bunny1.png' %}" alt="">
+            </div>
+            </div>  
             {% elif current_theme == 'xmas' %}
               <div class="position-relative" style="z-index: 1;">
                 <img loading="lazy" src="static/img/team/billingsoftwareimg2.png" alt="BillingSoftwware" />
@@ -3043,13 +3210,33 @@ h5 {
               </div>
               </div>
             {% elif current_theme == 'republic' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/republic/img/billingsoftwareimg2.png" alt="BillingSoftwware" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 12vw; margin-left: -5vw;" src="{% static 'republic/decor/about_design1.png' %}" alt="">
+            </div>
+            </div>
             {% elif current_theme == 'onam' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/onam/img/billingsoftwareimg2.png" alt="BillingSoftwware" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 11vw; margin-left: -1vw;" src="{% static 'onam/decor/umberlla.png' %}" alt="">
+            </div>
+            </div>
             {% elif current_theme == 'diwali' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy"  src="static/diwali/img/billingsoftwareimg2.png" alt="BillingSoftwware" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 8vw; margin-left: -3vw;" src="{% static 'diwali/decor/diwali_lamp.png' %}" alt="">
+            </div>
+            </div> 
             {% elif current_theme == 'ramadan' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy"  src="static/ramadan/img/billingsoftwareimg2.png" alt="BillingSoftwware" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 5vw; " src="{% static 'ramadan/decor/ramadan_nav_decor.png' %}" alt="">
+            </div>
+            </div> 
             {% else %}
             <img loading="lazy" src="static/img/team/billingsoftwareimg2.png" alt="BillingSoftwware" />
             {% endif %}
@@ -3067,16 +3254,37 @@ h5 {
           <h2 class="xmas_text text-light">Billing Software </h2>
           {% elif current_theme == 'onam' %}
           <h2 style="color: orange;">Billing Software </h2>
+          {% elif current_theme == 'diwali' %}
+          <h2 style="color: rgb(255, 63, 63)">Billing Software </h2>
+          {% elif current_theme == 'republic' %}
+          <h2 style="color: transparent;"><span class="fg_republic"><b>Billing Software </b></span> </h2>
+          {% elif current_theme == 'ramadan' %}
+          <h2 class="ramadan_text1" style="color: transparent;">Billing Software </h2>
           {% else %}
           <h2>Billing Software </h2>
           {% endif %}
           <div class="img-box-tech image-hidden">
             {% if current_theme == 'pongal' %}
-            <img loading="lazy" src="static/pongal/img/billingsoftwareimg2.png" alt="BillingSoftwware" />
+            <div class="position-relative" style="z-index: 1;">
+              <img loading="lazy" src="static/pongal/img/billingsoftwareimg2.png" alt="BillingSoftwware" />
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 15vw;  margin-left: -1vw; " src="{% static 'pongal/decor/pongal_about1.png' %}" alt="">
+            </div>
+            </div>
             {% elif current_theme == 'vishu' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/vishu/img/billingsoftwareimg2.png" alt="BillingSoftwware" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 10vw; margin-left: -1vw;" src="{% static 'vishu/decor/krishna_standing.png' %}" alt="">
+            </div>
+            </div>
             {% elif current_theme == 'easter' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/easter/img/billingsoftwareimg2.png" alt="BillingSoftwware" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 15vw; margin-left: -1vw;" src="{% static 'easter/decor/bunny1.png' %}" alt="">
+            </div>
+            </div>             
             {% elif current_theme == 'xmas' %}
               <div class="position-relative" style="z-index: 1;">
                 <img loading="lazy" src="static/img/team/billingsoftwareimg2.png" alt="BillingSoftwware" />
@@ -3085,13 +3293,33 @@ h5 {
               </div>
               </div>
             {% elif current_theme == 'republic' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/republic/img/billingsoftwareimg2.png" alt="BillingSoftwware" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 12vw; margin-left: -5vw;" src="{% static 'republic/decor/about_design1.png' %}" alt="">
+            </div>
+            </div>            
             {% elif current_theme == 'onam' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/onam/img/billingsoftwareimg2.png" alt="BillingSoftwware" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 15vw; margin-left: -1vw;" src="{% static 'onam/decor/umberlla.png' %}" alt="">
+            </div>
+            </div>            
             {% elif current_theme == 'diwali' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy"  src="static/diwali/img/billingsoftwareimg2.png" alt="BillingSoftwware" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 10vw; margin-left: -1vw;" src="{% static 'diwali/decor/diwali_lamp.png' %}" alt="">
+            </div>
+            </div> 
             {% elif current_theme == 'ramadan' %}
+            <div class="position-relative" style="z-index: 1;">
               <img loading="lazy"  src="static/ramadan/img/billingsoftwareimg2.png" alt="BillingSoftwware" /> 
+              <div class="position-absolute bottom-0">
+                <img loading="lazy" draggable="false" style="height: 10vw; " src="{% static 'ramadan/decor/ramadan_nav_decor.png' %}" alt="">
+            </div>
+            </div>             
             {% else %}
             <img loading="lazy" src="static/img/team/billingsoftwareimg2.png" alt="BillingSoftwware" />
             {% endif %}
@@ -3102,17 +3330,17 @@ h5 {
           </div>
 
           {% if current_theme == 'xmas' %}
-          <div class="position-relative hide_for_mob">
+          <!-- <div class="position-relative hide_for_mob">
             <div class="position-absolute" style="margin-left: 5.4rem;margin-top: -1.5rem;">
               <img loading="lazy" width="100rem" draggable="false" src="{% static 'xmas/decor/xmaspap_peek_left.png' %}" alt="">
             </div>
-          </div>
+          </div> -->
           {% elif current_theme == 'ramadan' %}
-          <div class="position-relative hide_for_mob">
+          <!-- <div class="position-relative hide_for_mob">
             <div class="position-absolute" style="margin-left: 6.4rem;margin-top: -1rem;">
               <img loading="lazy" width="90rem" draggable="false" src="{% static 'ramadan/decor/peeking_characters/peeking_characters2.png' %}" alt="">
             </div>
-          </div>
+          </div> -->
           {% endif %}
           
           <div class="km-button my-4"><a role="button" href="/billingsoftware" 
@@ -3173,6 +3401,12 @@ h5 {
           <h2 class="xmas_text text-light">HRMS  </h2>
           {% elif current_theme == 'onam' %}
           <h2 style="color: orange;">HRMS  </h2>
+          {% elif current_theme == 'diwali' %}
+          <h2 style="color: rgb(255, 63, 63)">HRMS </h2>
+          {% elif current_theme == 'republic' %}
+          <h2 style="color: transparent;"><span class="fg_republic"><b>HRMS</b></span> </h2>
+          {% elif current_theme == 'ramadan' %}
+          <h2 class="ramadan_text1" style="color: transparent;">HRMS</h2>
           {% else %}
           <h2>HRMS  </h2>
           {% endif %}
@@ -3223,17 +3457,17 @@ h5 {
         </div>
 
         {% if current_theme == 'xmas' %}
-        <div class="position-relative hide_for_mob">
+        <!-- <div class="position-relative hide_for_mob">
           <div class="position-absolute" style="margin-left: 8.5rem;margin-top: -1.5rem;">
             <img loading="lazy" width="70rem" draggable="false" src="{% static 'xmas/decor/xams_snoman_peek_no_bg_mirror_right.png' %}" alt="">
           </div>
-        </div>
+        </div> -->
         {% elif current_theme == 'ramadan' %}
-        <div class="position-relative hide_for_mob">
+        <!-- <div class="position-relative hide_for_mob">
           <div class="position-absolute" style="margin-left: 6.4rem;margin-top: -1rem;">
             <img loading="lazy" width="90rem" draggable="false" src="{% static 'ramadan/decor/peeking_characters/peeking_characters3.png' %}" alt="">
           </div>
-        </div>
+        </div> -->
         {% endif %}
         
 
@@ -3387,11 +3621,26 @@ h5 {
         <div class="img-box-tech image-visible">
           <!-- <h4 class="hide-head">ERP</h4> -->
           {% if current_theme == 'pongal' %}
-          <img loading="lazy" src="static/pongal/img/accountingsoftware1.png" alt="ACCOUNTING" />
+          <div class="position-relative" style="z-index: 1;">
+            <img loading="lazy" src="static/pongal/img/accountingsoftware1.png" alt="ACCOUNTING" />
+            <div class="position-absolute bottom-0">
+              <img loading="lazy" draggable="false" style="height: 10vw; margin-left: -1vw ;" src="{% static 'pongal/decor/pongal_about1.png' %}" alt="">
+          </div>
+          </div>
           {% elif current_theme == 'vishu' %}
+          <div class="position-relative" style="z-index: 1;">
             <img loading="lazy" src="static/vishu/img/accountingsoftware1.png" alt="ACCOUNTING" /> 
+            <div class="position-absolute bottom-0">
+              <img loading="lazy" draggable="false" style="height: 10vw; margin-left: -1vw;" src="{% static 'vishu/decor/peacock.png' %}" alt="">
+          </div>
+          </div>
           {% elif current_theme == 'easter' %}
+          <div class="position-relative" style="z-index: 1;">
             <img loading="lazy" src="static/easter/img/accountingsoftware1.png" alt="ACCOUNTING" /> 
+            <div class="position-absolute bottom-0">
+              <img loading="lazy" draggable="false" style="height: 10vw; margin-left: -1vw;" src="{% static 'easter/decor/ballons.png' %}" alt="">
+          </div>
+          </div>
           {% elif current_theme == 'xmas' %}
             <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/img/team/accountingsoftware1.png" alt="ACCOUNTING" />
@@ -3400,13 +3649,33 @@ h5 {
             </div>
             </div>
           {% elif current_theme == 'republic' %}
+          <div class="position-relative" style="z-index: 1;">
             <img loading="lazy" src="static/republic/img/accountingsoftware1.png" alt="ACCOUNTING" /> 
+            <div class="position-absolute bottom-0">
+              <img loading="lazy" draggable="false" style="height: 12vw; margin-left: -5vw;" src="{% static 'republic/decor/about_design1.png' %}" alt="">
+          </div>
+          </div>
           {% elif current_theme == 'onam' %}
+          <div class="position-relative" style="z-index: 1;">
             <img loading="lazy" src="static/onam/img/accountingsoftware1.png" alt="ACCOUNTING" /> 
+            <div class="position-absolute bottom-0">
+              <img loading="lazy" draggable="false" style="height: 11vw; margin-left: -1vw;" src="{% static 'onam/decor/boat.png' %}" alt="">
+          </div>
+          </div>
           {% elif current_theme == 'diwali' %}
+          <div class="position-relative" style="z-index: 1;">
             <img loading="lazy"  src="static/diwali/img/accountingsoftware1.png" alt="ACCOUNTING" /> 
+            <div class="position-absolute bottom-0">
+              <img loading="lazy" draggable="false" style="height: 11vw; margin-left: -1vw;" src="{% static 'diwali/decor/diwali_character2_no_bg.png' %}" alt="">
+          </div>
+          </div>
           {% elif current_theme == 'ramadan' %}
+          <div class="position-relative" style="z-index: 1;">
             <img loading="lazy"  src="static/ramadan/img/accountingsoftware1.png" alt="ACCOUNTING" /> 
+            <div class="position-absolute bottom-0">
+              <img loading="lazy" draggable="false" style="height: 5vw; " src="{% static 'ramadan/decor/ramadan_nav_decor.png' %}" alt="">
+          </div>
+          </div>     
           {% else %}
           <img loading="lazy" src="static/img/team/accountingsoftware1.png" alt="ACCOUNTING" />
           {% endif %}
@@ -3424,16 +3693,37 @@ h5 {
         <h2 class="xmas_text text-light">Accounting software  </h2>
         {% elif current_theme == 'onam' %}
         <h2 style="color: orange;">Accounting software  </h2>
+        {% elif current_theme == 'diwali' %}
+        <h2 style="color: rgb(255, 63, 63)">Accounting software  </h2>
+        {% elif current_theme == 'republic' %}
+        <h2 style="color: transparent;"><span class="fg_republic"><b>Accounting  </b></span> <span class="fg_republic"><b> software </b></span> </h2>
+        {% elif current_theme == 'ramadan' %}
+        <h2 class="ramadan_text1" style="color: transparent;">Accounting software </h2>
         {% else %}
         <h2>Accounting software  </h2>
         {% endif %}
         <div class="img-box-tech image-hidden">
           {% if current_theme == 'pongal' %}
-          <img loading="lazy" src="static/pongal/img/accountingsoftware1.png" alt="ACCOUNTING" />
+          <div class="position-relative" style="z-index: 1;">
+            <img loading="lazy" src="static/pongal/img/accountingsoftware1.png" alt="ACCOUNTING" />
+            <div class="position-absolute bottom-0">
+              <img loading="lazy" draggable="false" style="height: 15vw; margin-left: -1vw ;" src="{% static 'pongal/decor/pongal_about1.png' %}" alt="">
+          </div>
+          </div>
           {% elif current_theme == 'vishu' %}
+          <div class="position-relative" style="z-index: 1;">
             <img loading="lazy" src="static/vishu/img/accountingsoftware1.png" alt="ACCOUNTING" /> 
+            <div class="position-absolute bottom-0">
+              <img loading="lazy" draggable="false" style="height: 15vw; margin-left: -1vw;" src="{% static 'vishu/decor/peacock.png' %}" alt="">
+          </div>
+          </div>          
           {% elif current_theme == 'easter' %}
+          <div class="position-relative" style="z-index: 1;">
             <img loading="lazy" src="static/easter/img/accountingsoftware1.png" alt="ACCOUNTING" /> 
+            <div class="position-absolute bottom-0">
+              <img loading="lazy" draggable="false" style="height: 15vw; margin-left: -1vw;" src="{% static 'easter/decor/ballons.png' %}" alt="">
+          </div>
+          </div>
           {% elif current_theme == 'xmas' %}
             <div class="position-relative" style="z-index: 1;">
               <img loading="lazy" src="static/img/team/accountingsoftware1.png" alt="ACCOUNTING" />
@@ -3442,14 +3732,33 @@ h5 {
             </div>
             </div>
           {% elif current_theme == 'republic' %}
+          <div class="position-relative" style="z-index: 1;">
             <img loading="lazy" src="static/republic/img/accountingsoftware1.png" alt="ACCOUNTING" /> 
+            <div class="position-absolute bottom-0">
+              <img loading="lazy" draggable="false" style="height: 12vw; margin-left: -5vw;" src="{% static 'republic/decor/about_design1.png' %}" alt="">
+          </div>
+          </div>          
           {% elif current_theme == 'onam' %}
+          <div class="position-relative" style="z-index: 1;">
             <img loading="lazy" src="static/onam/img/accountingsoftware1.png" alt="ACCOUNTING" /> 
+            <div class="position-absolute bottom-0">
+              <img loading="lazy" draggable="false" style="height: 11vw; margin-left: -1vw;" src="{% static 'onam/decor/boat.png' %}" alt="">
+          </div>
+          </div>
           {% elif current_theme == 'diwali' %}
+          <div class="position-relative" style="z-index: 1;">
             <img loading="lazy"  src="static/diwali/img/accountingsoftware1.png" alt="ACCOUNTING" /> 
+            <div class="position-absolute bottom-0">
+              <img loading="lazy" draggable="false" style="height: 15vw; margin-left: -1vw;" src="{% static 'diwali/decor/diwali_character2_no_bg.png' %}" alt="">
+          </div>
+          </div>
           {% elif current_theme == 'ramadan' %}
+          <div class="position-relative" style="z-index: 1;">
             <img loading="lazy"  src="static/ramadan/img/accountingsoftware1.png" alt="ACCOUNTING" /> 
-          {% else %}
+            <div class="position-absolute bottom-0">
+              <img loading="lazy" draggable="false" style="height: 10vw; " src="{% static 'ramadan/decor/ramadan_nav_decor.png' %}" alt="">
+          </div>
+          </div>            {% else %}
           <img loading="lazy" src="static/img/team/accountingsoftware1.png" alt="ACCOUNTING" />
           {% endif %}
         </div>
@@ -3474,17 +3783,17 @@ h5 {
         </div>
 
         {% if current_theme == 'xmas' %}
-        <div class="position-relative hide_for_mob">
+        <!-- <div class="position-relative hide_for_mob">
           <div class="position-absolute" style="margin-left: 8.5rem;margin-top: -1.5rem;">
             <img loading="lazy" width="70rem" draggable="false" src="{% static 'xmas/decor/xams_snoman_peek_no_bg_mirror_right.png' %}" alt="">
           </div>
-        </div>
+        </div> -->
         {% elif current_theme == 'ramadan' %}
-        <div class="position-relative hide_for_mob">
+        <!-- <div class="position-relative hide_for_mob">
           <div class="position-absolute" style="margin-left: 6.4rem;margin-top: -1rem;">
             <img loading="lazy" width="90rem" draggable="false" src="{% static 'ramadan/decor/peeking_characters/peeking_characters4.png' %}" alt="">
           </div>
-        </div>
+        </div> -->
         {% endif %}
 
 

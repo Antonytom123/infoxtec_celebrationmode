@@ -1830,9 +1830,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             {% else %}
             class="nav-link scrollto cor hover_anchor" 
             {% endif %}
-            href="{% url 'core' %}"
-              >Product</a
-            >
+            href="{% url 'core' %}">
+            Product
+            </a>
           </li>
           <li>
             <a 
@@ -1910,6 +1910,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               Contact
             </a>
           </li>
+
+          {% comment %} <li>
+            <a 
+            {% if current_theme == 'pongal' %}
+            class="nav-link scrollto cont hover_anchor_pongal" 
+            {% elif current_theme == 'vishu' %}
+            class="nav-link scrollto cont hover_anchor_vishu"
+            {% elif current_theme == 'easter' %}
+              class="nav-link scrollto cont easter_text_sm_bg1_hover"
+            {% elif current_theme == 'xmas' %}
+              class="nav-link scrollto cont xmas_nav_text"
+            {% elif current_theme == 'republic' %}
+              class="nav-link scrollto cont republic_nav_text"
+            {% elif current_theme == 'onam' %}
+              class="nav-link scrollto cont onam_hover"
+            {% elif current_theme == 'diwali' %}
+              class="nav-link scrollto cont diwali_nav"
+            {% elif current_theme == 'ramadan' %}
+              class="nav-link scrollto cont ramadan_nav_text"
+            {% else %}
+            class="nav-link scrollto cont hover_anchor" 
+            {% endif %}
+            href="{% url 'crm' %}">
+              Crm
+            </a>
+          </li> {% endcomment %}
+          
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

@@ -109,6 +109,10 @@ padding-left: 0;
     background-clip: text;
     -webkit-background-clip: text;
   }
+  .pongal_text_theme subs {
+  font-size: smaller; /* Adjust as needed */
+  vertical-align: sub; /* Adjust as needed */
+}
   .pongal_text_theme1{
     background-image: url('/static/pongal/bg/bg_fire1.png');
     background-size: contain;
@@ -116,6 +120,20 @@ padding-left: 0;
     background-clip: text;
     -webkit-background-clip: text;
   }
+
+  @media screen and (width:768px),(width:820px),(width:853px),(width:912px),(width:1024px) {
+    .pongal_text_theme{
+    background-image: url('/static/pongal/bg/bg_fire1.png');
+    background-size: contain;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 7vw;
+  }
+  }
+
+  
+  
   .serv{
     background-image: url('/static/pongal/bg/bg_fire.png');
     background-size: contain;
@@ -194,19 +212,34 @@ padding-left: 0;
       margin-top: -12rem;
     }
   }
-  #pongal_whatsapp_frame{
-    width: 21.6rem;height: 25.5rem;
-  }
-  .pongal_whatsapp_frame_top{
-    margin-top: -3rem;margin-left: -4rem;
-  }
-  @media screen and (max-width:337px) {
-    #pongal_whatsapp_frame{
-      width: 20.2rem;height: 27rem;
+  #pongal_whatsapp_frame {
+    width: 24.6rem;
+    height: 57rem;
+}
+
+.pongal_whatsapp_frame_top {
+    margin-top: -5rem;
+    margin-left: -4rem;
+}
+
+@media screen and (max-width: 768px) {
+    #pongal_whatsapp_frame {
+        width: 120%; /* Set width to 100% for responsiveness */
+        height: 57.20rem; /* Allow height to adjust proportionally */
+        max-width: 24.6rem; /* Set maximum width if needed */
     }
-    .pongal_whatsapp_frame_top{
-      margin-top: -3rem;margin-left: -4rem;
+    
+    .pongal_whatsapp_frame_top {
+        margin-top: -5.50rem;
+        margin-left: -4rem;
     }
+}
+
+@media only screen and (max-width: 600px) {
+      .pongal-theme {
+          margin-top: 14vw !important;
+          color: #00838d;
+      }
   }
 </style>
 
@@ -232,6 +265,21 @@ padding-left: 0;
     background-clip: text;
     -webkit-background-clip: text;
   }
+
+  @media screen and (width:768px),(width:820px),(width:853px),(width:912px),(width:1024px) {
+    .vishu_text_bg1{
+    background-image: url('/static/vishu/bg/text_bg1.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 7vw;
+  }
+  }
+  .vishu_text_bg1 subs {
+  font-size: smaller; 
+  vertical-align: sub; 
+}
   .color-button2{
     font-size: 1em;
     
@@ -281,13 +329,14 @@ padding-left: 0;
       }
     }
     #vishu_whatsapp_frame{
-      width: 19rem;
+      width: 22.50rem;
+      height: 52.20rem
     }
     .vishu_whatsapp_frame_top{
-      margin-top: -2rem;
-      margin-left: -2.6rem;
+      margin-top: -2.90rem;
+      margin-left: -2.9rem;
     }
-    @media screen and (max-width:280px) {
+    /* @media screen and (max-width:280px) {
       #vishu_whatsapp_frame{
         width: 17.3rem;
         height: 25rem;
@@ -296,10 +345,41 @@ padding-left: 0;
         margin-top: -2rem;
         margin-left: -2.6rem;
       }
+    } */
+    @media screen and (max-width: 768px) {
+    #vishu_whatsapp_frame {
+        width: 120%; /* Set width to 100% for responsiveness */
+        height: 52.60rem; /* Allow height to adjust proportionally */
+        max-width: 24.6rem; /* Set maximum width if needed */
     }
+    
+    .vishu_whatsapp_frame_top {
+        margin-top: -3.30rem;
+        margin-left: -2.90rem;
+    }
+}
+
+    #multi_peacock_feather{
+    width: 7rem;
+  }
+  .multi_peacock_feather_top{
+    margin-top: 18.6rem;
+    margin-left: 10.5rem;
+  }
+  @media screen and (max-width:280px) {
+    #multi_peacock_feather{
+    width: 7rem;
+  }
+  .multi_peacock_feather_top{
+    margin-top: 21.5rem;
+    margin-left: 7.5rem;
+  }
+  }
+
+  
 </style>
 
-<!-- seaster -->
+<!-- easter -->
 <style>
   .easter_text_bg1{
     /* background-image: url('/static/easter/bg/text_bg1.png'); */
@@ -310,6 +390,26 @@ padding-left: 0;
     -webkit-background-clip: text;
     text-shadow: 0px 0px 10px rgba(132, 0, 255, 0.374);
   }
+
+  @media screen and (width:768px),(width:820px),(width:853px),(width:912px),(width:1024px) {
+    .easter_text_bg1{
+    /* background-image: url('/static/easter/bg/text_bg1.png'); */
+    background-image: linear-gradient(45deg,rgb(194, 63, 255),rgb(71, 71, 255),rgb(181, 83, 255),rgb(65, 65, 255),rgb(160, 83, 255));
+    background-size: cover;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 0px 0px 10px rgba(132, 0, 255, 0.374);
+    font-size: 7vw;
+  }
+
+  }
+
+  .easter_text_bg1 subs {
+  font-size: smaller; 
+  vertical-align: sub; 
+}
+
   .easter_text_sm_bg1{
     background-image: url('/static/easter/bg/text_bg1.png');
     background-size: cover;
@@ -410,12 +510,13 @@ padding-left: 0;
   }
   .easter_whatsapp_frame{
     width: 21.5rem;
+    height: 54rem;
   }
   .easter_whatsapp_frame_top{
     margin-top: -2.5rem;
-    margin-left: -4rem;
+    margin-left: -2.50rem;
   }
-  @media screen and (max-width:280px) {
+  /* @media screen and (max-width:280px) {
     .easter_whatsapp_frame{
       width: 20rem;
       height: 26.5rem;
@@ -424,7 +525,20 @@ padding-left: 0;
       margin-top: -2.5rem;
       margin-left: -4rem;
     }
-  }
+  } */
+
+  @media screen and (max-width: 768px) {
+    .easter_whatsapp_frame {
+        width: 114%; /* Set width to 100% for responsiveness */
+        height: 55rem; /* Allow height to adjust proportionally */
+        max-width: 24.6rem; /* Set maximum width if needed */
+    }
+    
+    .easter_whatsapp_frame_top {
+        margin-top: -3rem;
+        margin-left: -2.90rem;
+    }
+}
 </style>
 
 <!-- xmas -->
@@ -449,6 +563,24 @@ padding-left: 0;
     color: white;
     text-shadow: 3px 3px 10px rgba(255, 0, 0, 0.797);
   }
+
+  @media screen and (width:768px),(width:820px),(width:853px),(width:912px),(width:1024px) {
+  .xmas_text{
+    color: white;
+    text-shadow: 3px 3px 10px rgba(255, 0, 0, 0.797);
+    font-size: 7vw;
+   }
+  }
+
+/* CSS for decreasing font size in mobile view */
+@media screen and (max-width: 853px) {
+  .xmas_text {
+    color: white;
+    text-shadow: 3px 3px 10px rgba(255, 0, 0, 0.797);
+    font-size: 7vw; /* Adjust the font size as needed */
+  }
+}
+
   .color-button4{
     font-size: 1em;
 
@@ -520,6 +652,28 @@ padding-left: 0;
   .blue_top_top{
     margin-left: -2rem;
     margin-top: -1.45rem;
+  }
+
+  #red_top{
+    width: 7rem;
+  }
+  .red_top_top{
+    margin-left: -2rem;
+    margin-top: -1.45rem;
+  }
+  #red_bottom{
+    width: 10rem;
+  }
+  .red_bottom_top{
+    margin-left: 6.6rem;
+    margin-top: 17.5rem;
+  }
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus,
+  .navbar li:hover>.xmas_nav_text {
+    color: red;
+    text-shadow: 0px 0px 10px rgba(132, 0, 255, 0.374);
   }
 </style>
 
@@ -911,6 +1065,19 @@ padding-left: 0;
     background-clip: text;
     -webkit-background-clip: text;
    }
+
+   @media screen and (width:768px),(width:820px),(width:853px),(width:912px),(width:1024px) {
+  .fg_republic{
+    background-image: url('/static/republic/decor/text_theme1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 7vw;
+   }
+  }
+
+
 </style>
 
 <!-- onam -->
@@ -923,6 +1090,18 @@ padding-left: 0;
     background-clip: text;
     -webkit-background-clip: text;
     text-shadow: 0px 0px 10px rgba(132, 0, 255, 0.374);
+  }
+
+  @media screen and (width:768px),(width:820px),(width:853px),(width:912px),(width:1024px) {
+  .onam_text_sm_bg1{
+    background-image: url('/static/onam/bg/text_bg.png');
+    background-size: cover;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 0px 0px 10px rgba(132, 0, 255, 0.374);
+    font-size: 7vw;
+   }
   }
   .onam_ts{
     text-shadow: 1px 1px 1px black; 
@@ -976,7 +1155,7 @@ padding-left: 0;
     }
   }
   .onam_frame{
-    width: 17rem;
+    width: 20rem;
   }
   @media screen and (max-width:280px) {
     .onam_frame{
@@ -984,6 +1163,41 @@ padding-left: 0;
       margin-top: 3.5rem;
     }
   }
+
+  .onam_whatsapp_frame{
+    width: 20.1rem;
+    height: 49rem;
+  }
+  .onam_whatsapp_frame_top{
+    margin-top: -.6rem;
+    margin-left: -1.8rem;
+  }
+  /* @media screen and (max-width:280px) {
+    .easter_whatsapp_frame{
+      width: 20rem;
+      height: 26.5rem;
+    }
+    .easter_whatsapp_frame_top{
+      margin-top: -2.5rem;
+      margin-left: -4rem;
+    }
+  } */
+
+  @media screen and (max-width: 360px) {
+    .onam_whatsapp_frame {
+        width: 112%; /* Set width to 100% for responsiveness */
+        height: 20.90rem; /* Allow height to adjust proportionally */
+        max-width: 26.6rem; /* Set maximum width if needed */
+    }
+    
+    .onam_whatsapp_frame_top {
+        margin-top:27rem;
+        margin-left: -1.70rem;
+    }
+}
+
+
+  
 </style>
 
 <!-- diwali -->
@@ -1007,6 +1221,19 @@ padding-left: 0;
     color: transparent;
     text-shadow: 0px 0px 10px rgba(132, 0, 255, 0.374);
   }
+
+  @media screen and (width:768px),(width:820px),(width:853px),(width:912px),(width:1024px) {
+    .diwali_nav_text{
+    background: linear-gradient(to right,red,rgb(240, 125, 125));
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0px 0px 10px rgba(132, 0, 255, 0.374);
+    font-size: 7vw;
+  }
+  }
+
   #diwali_footer_decor{
     width: 15rem;
   }
@@ -1057,6 +1284,19 @@ padding-left: 0;
       margin-top: -11rem;
   }
   }
+  @media screen and (max-width:932px) {
+
+    .basic-plan{
+      margin-top: 2rem;
+  }
+  .standered-plan{
+      margin-top: 2rem;
+  }
+  .advanced-plan{
+      margin-top: 2rem;
+  }
+  }
+
 </style>
 
 <!-- ramadan -->
@@ -1089,6 +1329,12 @@ padding-left: 0;
     color: transparent;
     text-shadow: 0px 0px 10px rgba(132, 0, 255, 0.374);
   }
+  
+  .ramadan_text1 subs {
+  font-size: smaller; 
+  vertical-align: sub; 
+}
+
   #ramadan_footer_decor{
     width: 15rem;
   }
@@ -1157,6 +1403,8 @@ padding-left: 0;
       margin-top: -4rem;
     }
   }
+
+  
   #peeking_characters_left{
     width: 10rem;
   }
@@ -1250,36 +1498,61 @@ padding-left: 0;
       width: 0rem;
     }
   }
+
+  @media screen and (width:768px),(width:820px),(width:853px),(width:912px),(width:1024px) {
+  .ramadan_text1{
+    background: linear-gradient(to right,rgb(11, 151, 1),rgb(139, 255, 123));
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0px 0px 10px rgba(132, 0, 255, 0.374);
+    font-size: 7vw;
+   }
+  }
 </style>
 
 
 
 <style>
-  .ResponsiveYTPlayer { 
-      position: relative;
-      padding-bottom: 42.25%; 
-      height: 0; overflow: hidden; max-width: 100%; } 
-      .ResponsiveYTPlayer iframe, 
-      .ResponsiveYTPlayer object, 
-      .ResponsiveYTPlayer embed { 
-          position: absolute; 
-          top: 0; left: 0; 
-          width: 100%; height: 100%; }
+.ResponsiveYTPlayer { 
+  position: relative;
+  padding-bottom: 42.25%; 
+  height: 0; 
+  overflow: hidden; 
+  max-width: 100%; 
+} 
 
-  @media (max-width:732px)
-  {
-      .ResponsiveYTPlayer { 
-        
-          padding-bottom: 62.25%; 
-      }  
-  }
-  @media (max-width:532px)
-  {
-      .ResponsiveYTPlayer { 
-        
-          padding-bottom: 95.25%; 
-      }  
-  }
+.ResponsiveYTPlayer iframe, 
+.ResponsiveYTPlayer object, 
+.ResponsiveYTPlayer embed { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+}
+
+@media (max-width:732px) {
+  .ResponsiveYTPlayer { 
+    padding-bottom: 62.25%; 
+  }  
+  
+}
+
+@media (max-width:532px) {
+  .ResponsiveYTPlayer { 
+    padding-bottom: 95.25%; 
+  }  
+
+}
+
+.aboutus-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
  </style>
 
 
@@ -1442,144 +1715,856 @@ padding-left: 0;
 
 </style>
 
-<!--  FAQs-->
+<!-- FAQs -->
+
 <style>
-  
-  #FAQs p{
-    color: white;
-  }
-  
-  .faqs .accordion .card {
-    border: none;
-    margin-bottom: 30px;
-    position: relative;
-    z-index: 1;
-  }
-  .faqs .our-faq-wrapper .btn-link {
-    display: block;
-    width: 100%;
-    text-align: left;
-    position: relative;
-    background: #242c42;
-    color: #fff;
-    border-radius: 0;
-    padding: 7px 55px 7px 10px;
-    font-size: 16px;
-    overflow: hidden;
-    border: none;
-    font-weight:600;  
-  }
-  .faqs .our-faq-wrapper .btn-link:hover, .faqs .our-faq-wrapper .btn-link:focus {
-    text-decoration: none;
-  }
-  .faqs .our-faq-wrapper .btn-link:after {
-    position: absolute;
-    content: '-';
-    right: 15px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+
+  /* xmas */
+
+   .btn-link-xmas {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+    .faqs .our-faq-wrapper .btn-link-xmas {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+     .btn-link-xmas:hover, .faqs .our-faq-wrapper .btn-link-xmas:focus {
+      text-decoration: none;
+    }
+    .btn-link-xmas:after {
+      position: absolute;
+      content: '-';
+      right: 15px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      font-family: fontawesome;
+    }
+    .faqs .our-faq-wrapper .btn-link-xmas.collapsed:after {
+      content: '+';
+    
+    }
+    
+    .btn-link-xmas:before {
+      position: absolute;
+      content: '';
+      background: linear-gradient(
+          45deg,
+          #840000,
+          rgb(187, 0, 0),
+          #5c0404 100%
+          );
+      -webkit-transform: skew(-35deg);
+      transform: skew(-35deg);
+      height: 100%;
+      width: 50%;
+      left: 90%;
+      top: 0;
+    }
+
+    .faqs .card-body-xmas:after {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background: linear-gradient(
+          45deg,
+          #840000,
+          rgb(187, 0, 0),
+          #5c0404 100%
+          );
+    }
+    .faqs .card-body-xmas:before {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 50%;
+      left: 0;
+      bottom: 0;
+      background: linear-gradient(
+          45deg,
+          #840000,
+          rgb(187, 0, 0),
+          #5c0404 100%
+          );
+      z-index: 1;
+    }
+    
+
+  /* xmas */
+
+
+    /* onam */
+
+    .btn-link-onam {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+    .faqs .our-faq-wrapper .btn-link-onam {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+     .btn-link-onam:hover, .faqs .our-faq-wrapper .btn-link-onam:focus {
+      text-decoration: none;
+    }
+    .btn-link-onam:after {
+      position: absolute;
+      content: '-';
+      right: 15px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      font-family: fontawesome;
+    }
+    .faqs .our-faq-wrapper .btn-link-onam.collapsed:after {
+      content: '+';
+    
+    }
+    
+    .btn-link-onam:before {
+      position: absolute;
+      content: '';
+      background: orange;
+      -webkit-transform: skew(-35deg);
+      transform: skew(-35deg);
+      height: 100%;
+      width: 50%;
+      left: 90%;
+      top: 0;
+    }
+
+    .faqs .card-body-onam:after {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background: orange;
+    }
+    .faqs .card-body-onam:before {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 50%;
+      left: 0;
+      bottom: 0;
+      background: orange;
+      z-index: 1;
+    }
+    
+
+  /* onam */
+
+       /* diwali */
+
+       .btn-link-diwali {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+    .faqs .our-faq-wrapper .btn-link-diwali {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+     .btn-link-diwali:hover, .faqs .our-faq-wrapper .btn-link-diwali:focus {
+      text-decoration: none;
+    }
+    .btn-link-diwali:after {
+      position: absolute;
+      content: '-';
+      right: 15px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      font-family: fontawesome;
+    }
+    .faqs .our-faq-wrapper .btn-link-diwali.collapsed:after {
+      content: '+';
+    
+    }
+    
+    .btn-link-diwali:before {
+      position: absolute;
+      content: '';
+      background: linear-gradient(to right,rgb(255, 63, 63),rgb(240, 125, 125));
+      -webkit-transform: skew(-35deg);
+      transform: skew(-35deg);
+      height: 100%;
+      width: 50%;
+      left: 90%;
+      top: 0;
+    }
+
+    .faqs .card-body-diwali:after {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background: linear-gradient(to right,rgb(255, 63, 63),rgb(240, 125, 125));
+    }
+    .faqs .card-body-diwali:before {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 50%;
+      left: 0;
+      bottom: 0;
+      background: linear-gradient(to right,rgb(255, 63, 63),rgb(240, 125, 125));
+      z-index: 1;
+    }
+    
+
+  /* diwali */
+
+
+    /* pongal */
+
+    .btn-link-pongal {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+    .faqs .our-faq-wrapper .btn-link-pongal {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+     .btn-link-pongal:hover, .faqs .our-faq-wrapper .btn-link-pongal:focus {
+      text-decoration: none;
+    }
+    .btn-link-pongal:after {
+      position: absolute;
+      content: '-';
+      right: 15px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      font-family: fontawesome;
+      font: bolder;
+      font-size: 1.5rem;
+    color: black;
+    }
+    .faqs .our-faq-wrapper .btn-link-pongal.collapsed:after {
+      content: '+';
+      font: bolder;
+      font-size: 1.5rem;
+    color: black;
     font-family: fontawesome;
-  }
-  .faqs .our-faq-wrapper .btn-link.collapsed:after {
-    content: '+';
+    }
+    
+    .btn-link-pongal:before {
+      position: absolute;
+      content: '';
+   background-image: url('/static/pongal/bg/bg_fire.png');
+      -webkit-transform: skew(-35deg);
+      transform: skew(-35deg);
+      height: 100%;
+      width: 50%;
+      left: 90%;
+      top: 0;
+    }
+
+    .faqs .card-body-pongal:after {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background-image: url('/static/pongal/bg/bg_fire.png');
+    }
+    .faqs .card-body-pongal:before {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 50%;
+      left: 0;
+      bottom: 0;
+      background-image: url('/static/pongal/bg/bg_fire.png');
+      z-index: 1;
+    }
+    
+
+  /* pongal */
+
+
+   /* vishu */
+
+   .btn-link-vishu {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+    .faqs .our-faq-wrapper .btn-link-vishu {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+     .btn-link-vishu:hover, .faqs .our-faq-wrapper .btn-link-vishu:focus {
+      text-decoration: none;
+    }
+    .btn-link-vishu:after {
+      position: absolute;
+      content: '-';
+      right: 15px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      font-family: fontawesome;
+      font: bolder;
+      font-size: 1.5rem;
+
+    }
+    .faqs .our-faq-wrapper .btn-link-vishu.collapsed:after {
+      content: '+';
+      font: bolder;
+      font-size: 1.5rem;
+ 
+    font-family: fontawesome;
+    }
+    
+    .btn-link-vishu:before {
+      position: absolute;
+      content: '';
+      background-image: url('/static/vishu/bg/text_bg1.jpg');
+      -webkit-transform: skew(-35deg);
+      transform: skew(-35deg);
+      height: 100%;
+      width: 50%;
+      left: 90%;
+      top: 0;
+    }
+
+    .faqs .card-body-vishu:after {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background-image: url('/static/vishu/bg/text_bg1.jpg');
+    }
+    .faqs .card-body-vishu:before {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 50%;
+      left: 0;
+      bottom: 0;
+      background-image: url('/static/vishu/bg/text_bg1.jpg');
+      z-index: 1;
+    }
+    
+
+  /* vishu */
+
+
+       /* easter */
+
+       .btn-link-easter {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+    .faqs .our-faq-wrapper .btn-link-easter {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+     .btn-link-easter:hover, .faqs .our-faq-wrapper .btn-link-easter:focus {
+      text-decoration: none;
+    }
+    .btn-link-easter:after {
+      position: absolute;
+      content: '-';
+      right: 15px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      font-family: fontawesome;
+      font: bolder;
+      font-size: 1.5rem;
+
+    }
+    .faqs .our-faq-wrapper .btn-link-easter.collapsed:after {
+      content: '+';
+      font: bolder;
+      font-size: 1.5rem;
+ 
+    font-family: fontawesome;
+    }
+    
+    .btn-link-easter:before {
+      position: absolute;
+      content: '';
+      background-image: linear-gradient(45deg,rgb(194, 63, 255),rgb(71, 71, 255),rgb(181, 83, 255),rgb(65, 65, 255),rgb(160, 83, 255));
+      -webkit-transform: skew(-35deg);
+      transform: skew(-35deg);
+      height: 100%;
+      width: 50%;
+      left: 90%;
+      top: 0;
+    }
+
+    .faqs .card-body-easter:after {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background-image: linear-gradient(45deg,rgb(194, 63, 255),rgb(71, 71, 255),rgb(181, 83, 255),rgb(65, 65, 255),rgb(160, 83, 255));
+    }
+    .faqs .card-body-easter:before {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 50%;
+      left: 0;
+      bottom: 0;
+      background-image: linear-gradient(45deg,rgb(194, 63, 255),rgb(71, 71, 255),rgb(181, 83, 255),rgb(65, 65, 255),rgb(160, 83, 255));
+      z-index: 1;
+    }
+    
+
+  /* easter */
+
+
+   /* republic */
+
+   .btn-link-republic {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+    .faqs .our-faq-wrapper .btn-link-republic {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+     .btn-link-republic:hover, .faqs .our-faq-wrapper .btn-link-republic:focus {
+      text-decoration: none;
+    }
+    .btn-link-republic:after {
+      position: absolute;
+      content: '-';
+      right: 15px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      font-family: fontawesome;
+      font: bolder;
+      font-size: 1.5rem;
+
+    }
+    .faqs .our-faq-wrapper .btn-link-republic.collapsed:after {
+      content: '+';
+      font: bolder;
+      font-size: 1.5rem;
+ 
+    font-family: fontawesome;
+    }
+    
+    .btn-link-republic:before {
+      position: absolute;
+      content: '';
+      background-image: url('/static/republic/decor/text_theme1.png');
+      -webkit-transform: skew(-35deg);
+      transform: skew(-35deg);
+      height: 100%;
+      width: 50%;
+      left: 90%;
+      top: 0;
+    }
+
+    .faqs .card-body-republic:after {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background-image: url('/static/republic/decor/text_theme1.png');
+    }
+    .faqs .card-body-republic:before {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 50%;
+      left: 0;
+      bottom: 0;
+      background-image: url('/static/republic/decor/text_theme1.png');
+      z-index: 1;
+    }
+    
+
+  /* republic */
+
+/* ramadan */
+
+.btn-link-ramadan {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+    .faqs .our-faq-wrapper .btn-link-ramadan {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+     .btn-link-ramadan:hover, .faqs .our-faq-wrapper .btn-link-ramadan:focus {
+      text-decoration: none;
+    }
+    .btn-link-ramadan:after {
+      position: absolute;
+      content: '-';
+      right: 15px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      font-family: fontawesome;
+      font: bolder;
+      font-size: 1.5rem;
+
+    }
+    .faqs .our-faq-wrapper .btn-link-ramadan.collapsed:after {
+      content: '+';
+      font: bolder;
+      font-size: 1.5rem;
+ 
+    font-family: fontawesome;
+    }
+    
+    .btn-link-ramadan:before {
+      position: absolute;
+      content: '';
+      background: linear-gradient(to right,rgb(11, 151, 1),rgb(139, 255, 123));
+      -webkit-transform: skew(-35deg);
+      transform: skew(-35deg);
+      height: 100%;
+      width: 50%;
+      left: 90%;
+      top: 0;
+    }
+
+    .faqs .card-body-ramadan:after {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background: linear-gradient(to right,rgb(11, 151, 1),rgb(139, 255, 123));
+    }
+    .faqs .card-body-ramadan:before {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 50%;
+      left: 0;
+      bottom: 0;
+      background: linear-gradient(to right,rgb(11, 151, 1),rgb(139, 255, 123));
+      z-index: 1;
+    }
+    
+
+  /* ramadan */
   
-  }
-  .faqs .our-faq-wrapper .btn-link:before {
-    position: absolute;
-    content: '';
-    background: #00838d;
-    -webkit-transform: skew(-35deg);
-    transform: skew(-35deg);
-    height: 100%;
-    width: 50%;
-    left: 90%;
-    top: 0;
-  }
-  .faqs .card-header {
-    padding: 0;
-    background: transparent;
-    border-bottom: none;
-  }
-  .faqs .card-body {
-    position: relative;
-    background: #c6c7c6;
-  }
-  .faqs .card-body:after {
-    position: absolute;
-    content: '';
-    height: 4px;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    background: #00838d;
-  }
-  .faqs .card-body:before {
-    position: absolute;
-    content: '';
-    height: 4px;
-    width: 50%;
-    left: 0;
-    bottom: 0;
-    background: #00838d;
-    z-index: 1;
-  }
-  
-  section {
-    padding: 20px 0;
-    overflow: hidden;
-  }
-  
-  .section-bg {
-    background: #00000099;
-    /* background: linear-gradient(180deg, #f2f6fa 0%, #fff 100%); */
-  }
-  
-  .section-title {
-    text-align: center;
-    padding-bottom: 30px;
-  }
-  
-  .section-title h2 {
-    font-size: 32px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    position: relative;
-    font-family: "Poppins", sans-serif;
-    color: #00838d;
-  }
-  
-  .section-title h2::before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 120px;
-    height: 1px;
-    background: #00838d;
-    bottom: 1px;
-    left: calc(50% - 60px);
-  }
-  
-  .section-title h2::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 40px;
-    height: 3px;
-    background: #00838d;
-    bottom: 0;
-    left: calc(50% - 20px);
-  }
-  
-  .section-title p {
-    margin-bottom: 0;
-  }
-  
-  
-  </style>
-  
+    #FAQs p{
+      color: white;
+    }
+    
+    .faqs .accordion .card {
+      border: none;
+      margin-bottom: 30px;
+      position: relative;
+      z-index: 1;
+    }
+    .faqs .our-faq-wrapper .btn-link {
+      display: block;
+      width: 100%;
+      text-align: left;
+      position: relative;
+      background: #242c42;
+      color: #fff;
+      border-radius: 0;
+      padding: 7px 55px 7px 10px;
+      font-size: 16px;
+      overflow: hidden;
+      border: none;
+      font-weight:600;  
+    }
+    .faqs .our-faq-wrapper .btn-link:hover, .faqs .our-faq-wrapper .btn-link:focus {
+      text-decoration: none;
+    }
+    .faqs .our-faq-wrapper .btn-link:after {
+      position: absolute;
+      content: '-';
+      right: 15px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      font-family: fontawesome;
+    }
+    .faqs .our-faq-wrapper .btn-link.collapsed:after {
+      content: '+';
+    
+    }
+    
+    .btn-link:before {
+      position: absolute;
+      content: '';
+      background: #00838d;
+      -webkit-transform: skew(-35deg);
+      transform: skew(-35deg);
+      height: 100%;
+      width: 50%;
+      left: 90%;
+      top: 0;
+    }
+    .faqs .card-header {
+      padding: 0;
+      background: transparent;
+      border-bottom: none;
+    }
+    .faqs .card-body {
+      position: relative;
+      background: #c6c7c6;
+    }
+    .faqs .card-body:after {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background: #00838d;
+    }
+    .faqs .card-body:before {
+      position: absolute;
+      content: '';
+      height: 4px;
+      width: 50%;
+      left: 0;
+      bottom: 0;
+      background: #00838d;
+      z-index: 1;
+    }
+    
+    section {
+      padding: 20px 0;
+      overflow: hidden;
+    }
+    
+    .section-bg {
+      background: #00000099;
+      margin-bottom: 3vw;
+      margin-top: 2vw;
+      /* background: linear-gradient(180deg, #f2f6fa 0%, #fff 100%); */
+    }
+    
+    .section-title {
+      text-align: center;
+      padding-bottom: 30px;
+    }
+    
+    .section-title h2 {
+      font-size: 32px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+ 
+      font-family: "Poppins", sans-serif;
+      color: #00838d;
+    }
+    
+    
+    .section-title h2::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 120px;
+      height: 1px;
+      background: #00838d;
+      bottom: 1px;
+      left: calc(50% - 60px);
+      
+    }
+    
+    .section-title h2::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 40px;
+      height: 3px;
+      background: #00838d;
+      bottom: 0;
+      left: calc(50% - 20px);
+    }
+    
+    .section-title p {
+      margin-bottom: 0;
+    }
+    
+    
+    </style>
 
 </head>
 <!-- Google tag (gtag.js) -->
@@ -2072,7 +3057,7 @@ gtag('config', 'G-3RLTXDEGMP');
     padding: 20px;
     box-sizing: border-box;
     vertical-align: top;
-    height: 700px; /* Set the height to your desired value */
+    height:780px; /* Set the height to your desired value */
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
@@ -2171,7 +3156,7 @@ gtag('config', 'G-3RLTXDEGMP');
   .img-box-tech.image-hidden{
     display: none;
   }
-  @media screen and (max-width:768px) {
+  @media screen and (max-width:767px) {
     .img-box-tech.image-hidden{
       display: block;
       max-width: 100%;
@@ -2192,7 +3177,7 @@ gtag('config', 'G-3RLTXDEGMP');
 
   .santa_peek11_top{
     margin-left: -6.5rem;
-    margin-top: 28vh;
+    margin-top: 22vh;
   }
 
   #santa_peek22{
@@ -2401,31 +3386,48 @@ window.addEventListener('resize', handleResize);
       <br><br><br><br>
       <div class="section-title">
         {% if current_theme == 'pongal' %}
-        <p data-aos="fade-up" data-aos-duration="750" class="d-none d-sm-block"> <span class="pongal_text_theme" style="font-size: 5vh;color: transparent;">Improve Your Audience with</span> <br> <span style="font-size: 10vh; color:rgb(62, 199, 206)"> ALT Whatsapp Module </span></p>
-        <p data-aos="fade-up" data-aos-duration="750" class="d-lg-none d-md-none pongal_text_theme" style="color: transparent;">Improve Your Audience with</span> <br> <span style="color:rgb(62, 199, 206)"> ALT Whatsapp Module </span></p>
+        <p data-aos="fade-up" data-aos-duration="750" class="d-none d-sm-block"> <span class="pongal_text_theme" style="font-size: 5vh;color: transparent;">Introducing Altos Connect</span> <br> <span style="font-size: 7vh;"><span class="pongal_text_theme"  style=" color: transparent;"> The Ultimate Solution for Powerful & Efficient <br>Whatsapp Marketing! </span> </span> </p>
+        <p data-aos="fade-up" data-aos-duration="750" class="d-lg-none d-md-none pongal_text_theme" style="color: transparent;">Introducing Altos Connect</span> <br> <span class="pongal_text_theme" style="color:transparent; font-size: 4vh;"> The Ultimate Solution for Powerful & Efficient <br>Whatsapp Marketing! </span></p>
         {% elif current_theme == 'vishu' %} 
-        <p data-aos="fade-up" data-aos-duration="750" class="d-none d-sm-block"> <span class="vishu_text_bg1" style="font-size: 5vh;color: transparent;">Improve Your Audience with</span> <br> <span style="font-size: 10vh; color:rgb(62, 199, 206)"> ALT Whatsapp Module </span></p>
-        <p data-aos="fade-up" data-aos-duration="750" class="d-lg-none d-md-none vishu_text_bg1" style="color: transparent;">Improve Your Audience with</span> <br> <span style="color:rgb(62, 199, 206)"> ALT Whatsapp Module </span></p>
+        <p data-aos="fade-up" data-aos-duration="750" class="d-none d-sm-block"> <span class="vishu_text_bg1" style="font-size: 5vh;color: transparent;">Introducing Altos Connect</span> <br> <span style="font-size: 7vh;"> <span class="vishu_text_bg1 "  style=" color: transparent;"> The Ultimate Solution for Powerful & Efficient <br> Whatsapp Marketing! </span> </span></p>
+        <p data-aos="fade-up" data-aos-duration="750" class="d-lg-none d-md-none vishu_text_bg1" style="color: transparent;">Introducing Altos Connect</span> <br> <span class="vishu_text_bg1" style="color:transparent; font-size: 4vh;"> The Ultimate Solution for Powerful & Efficient <br>Whatsapp Marketing! </span></p>
+       
         {% elif current_theme == 'easter' %} 
-        <p data-aos="fade-up" data-aos-duration="750" class="d-none d-sm-block"> <span >Improve Your Audience with</span> <br> <span class="easter_text_bg1" style="font-size: 10vh;color: transparent;"> ALT Whatsapp Module </span></p>
-        <p data-aos="fade-up" data-aos-duration="750" class="d-lg-none d-md-none">Improve Your Audience with</span> <br> <span class="easter_text_bg1" style="color:transparent"> ALT Whatsapp Module </span></p>
+        <p data-aos="fade-up" data-aos-duration="750" class="d-none d-sm-block"> <span class="easter_text_bg1" style="font-size: 5vh;color: transparent;">Introducing Altos Connect</span> <br> <span style="font-size: 7vh;"> <span class="easter_text_bg1"  style=" color: transparent;"> The Ultimate Solution for Powerful & Efficient <br>Whatsapp Marketing! </span> </span> </p>
+        <p data-aos="fade-up" data-aos-duration="750" class="d-lg-none d-md-none easter_text_bg1" style="color: transparent;">Introducing Altos Connect</span> <br> <span class="easter_text_bg1" style="color:transparent; font-size: 4vh;"> The Ultimate Solution for Powerful & Efficient <br>Whatsapp Marketing! </span></p>
+       
         {% elif current_theme == 'xmas' %} 
-        <p data-aos="fade-up" data-aos-duration="750" class="d-none d-sm-block xmas_text text-light"> <span >Improve Your Audience with</span> <br> <span style="font-size: 10vh;"> ALT Whatsapp Module </span></p>
-        <p data-aos="fade-up" data-aos-duration="750" class="d-lg-none d-md-none xmas_text text-light">Improve Your Audience with</span> <br> <span > ALT Whatsapp Module </span></p>
+        <p data-aos="fade-up" data-aos-duration="750" class="d-none d-sm-block "> <span class="xmas_text text-light">Introducing Altos Connect</span> <br> <span class="xmas_text text-light" style="font-size: 3vw;" > <span class=" xmas_text text-light"> The Ultimate Solution for Powerful & Efficient<br> Whatsapp Marketing! </span> </span></p>
+        <p data-aos="fade-up" data-aos-duration="750" class="d-lg-none d-md-none xmas_text text-light"><span>Introducing Altos Connect</span> <br> <span style="font-size: 8vw;">  The Ultimate Solution for Powerful & Efficient <br>Whatsapp Marketing!  </span></p>
         {% elif current_theme == 'republic' %}
         <p data-aos="fade-up" data-aos-duration="750" class="d-none d-sm-block"> <span style="font-size: 5vh;">
-          <span class="fg_republic" style="color: transparent;">Improve </span>
-          <span class="fg_republic" style="color: transparent;">Your </span>
-          <span class="fg_republic" style="color: transparent;">Audience </span>
-          <span class="fg_republic" style="color: transparent;">with </span>   </span> <br> <span style="font-size: 10vh; color:rgb(62, 199, 206)"> ALT Whatsapp Module </span></p>
-        <p data-aos="fade-up" data-aos-duration="750" class="d-lg-none d-md-none" >Improve Your Audience with</span> <br> <span style="color:rgb(62, 199, 206)"> ALT Whatsapp Module </span></p>
+          <span class="fg_republic" style="color: transparent;">Introducing </span>
+          <span class="fg_republic" style="color: transparent;">Altos </span>
+          <span class="fg_republic" style="color: transparent;">Connect </span> </span> </p>   <br> 
+          <p data-aos="fade-up" data-aos-duration="750" class="d-none d-sm-block"><span style="font-size: 7vh;">
+          <span class="fg_republic" style="color: transparent; ">  The Ultimate   </span> 
+          <span class="fg_republic" style="color: transparent; ">   Solution for   </span> 
+          <span class="fg_republic" style="color: transparent; "> Powerful &  </span> 
+          <span class="fg_republic" style="color: transparent; ">  Efficient </span> <br>
+           <span class="fg_republic" style="color: transparent; "> Whatsapp  </span>
+           <span class="fg_republic" style="color: transparent;">  Marketing!  </span> </span> </p>    
+               <p data-aos="fade-up" data-aos-duration="750" class="d-lg-none d-md-none" >    <span style="font-size: 3vh;">   
+                   <span class="fg_republic" style="color: transparent;">Introducing </span>
+                <span class="fg_republic" style="color: transparent;">Altos </span>
+                <span class="fg_republic" style="color: transparent;">Connect </span>  <br>
+                <span class="fg_republic" style="color: transparent; font-size: 4vh;">  The Ultimate   </span> 
+                <span class="fg_republic" style="color: transparent; font-size: 4vh;">   Solution for   </span> 
+                <span class="fg_republic" style="color: transparent; font-size: 4vh;"> Powerful &  </span> 
+                <span class="fg_republic" style="color: transparent; font-size: 4vh;">  Efficient </span> <br>
+                 <span class="fg_republic" style="color: transparent; font-size: 4vh;"> Whatsapp  </span>
+                 <span class="fg_republic" style="color: transparent; font-size: 4vh;">  Marketing!  </span>
+              </p>
         {% elif current_theme == 'onam' %}
         <p data-aos="fade-up" data-aos-duration="750" class="d-none d-sm-block"> <span style="font-size: 5vh;">
-          <span class="onam_text_sm_bg1" style="color: transparent;">Improve </span>
-          <span class="onam_text_sm_bg1" style="color: transparent;">Your </span>
-          <span class="onam_text_sm_bg1" style="color: transparent;">Audience </span>
-          <span class="onam_text_sm_bg1" style="color: transparent;">with </span>   </span> <br> <span style="font-size: 10vh;" class="onam_text_sm_bg1"> ALT Whatsapp Module </span></p>
-        <p data-aos="fade-up" data-aos-duration="750" class="d-lg-none d-md-none onam_text_sm_bg1" style="color: transparent;">Improve Your Audience with</span> <br> <span class="text-light"> ALT Whatsapp Module </span></p>
+          <span class="onam_text_sm_bg1" style="color: transparent;">Introducing </span>
+          <span class="onam_text_sm_bg1" style="color: transparent;">Altos </span>
+          <span class="onam_text_sm_bg1" style="color: transparent;">Connect </span>  </span> <br> <span style="font-size: 7vh;"><span style=" color: transparent;" class="onam_text_sm_bg1">The Ultimate Solution for Powerful & Efficient <br>Whatsapp Marketing!</span></span> </p>
+        <p data-aos="fade-up" data-aos-duration="750" class="d-lg-none d-md-none onam_text_sm_bg1" style="color: transparent;"><span class="onam_text_sm_bg1" style="color: transparent;"> Introducing Altos Audience with</span> <br> <span class="onam_text_sm_bg1" style="color: transparent;"> The Ultimate Solution for Powerful & Efficient <br>Whatsapp Marketing! </span></p>
         {% elif current_theme == 'diwali' %}
         <div class="position-relative">
           <div class="position-absolute diwali_fire_cracker2_top">
@@ -2433,9 +3435,9 @@ window.addEventListener('resize', handleResize);
           </div>
         </div>
         <p data-aos="fade-up" data-aos-duration="750" class="d-none d-sm-block"> <span style="font-size: 5vh;">
-          <span class="diwali_nav_text" style="color: transparent;">Improve Your Audience with</span></span> 
-          <br> <span style="font-size: 10vh;"> ALT Whatsapp Module </span></p>
-        <p data-aos="fade-up" data-aos-duration="750" class="d-lg-none d-md-none diwali_nav_text" style="color: transparent;">Improve Your Audience with</span> <br> <span class="text-light"> ALT Whatsapp Module </span></p>
+          <span class="diwali_nav_text" style="color: transparent;">Introducing Altos Connect</span></span> 
+          <br> <span style="font-size: 7vh;"> <span style=" color: transparent;" class="diwali_nav_text" > The Ultimate Solution for Powerful & Efficient <br>Whatsapp Marketing! </span> </span></p>
+        <p data-aos="fade-up" data-aos-duration="750" class="d-lg-none d-md-none diwali_nav_text" style="color: transparent;">Introducing Altos Connect</span> <br> <span class="diwali_nav_text"  style="color: transparent; font-size: 7vw;" > The Ultimate Solution for Powerful & Efficient <br>Whatsapp Marketing! </span></p>
         {% elif current_theme == 'ramadan' %}
         <div class="position-relative">
           <div class="position-absolute ramadan_ballon1_top">
@@ -2448,9 +3450,9 @@ window.addEventListener('resize', handleResize);
           </div>
         </div>
         <p data-aos="fade-up" data-aos-duration="750" class="d-none d-sm-block"> <span style="font-size: 5vh;">
-          <span class="ramadan_text1" style="color: transparent;">Improve Your Audience with</span></span> 
-          <br> <span style="font-size: 10vh;"> ALT Whatsapp Module </span></p>
-        <p data-aos="fade-up" data-aos-duration="750" class="d-lg-none d-md-none ramadan_text1" style="color: transparent;">Improve Your Audience with</span> <br> <span class="text-light"> ALT Whatsapp Module </span></p>
+          <span class="ramadan_text1" style="color: transparent;">Introducing Altos Connect</span></span> 
+          <br><span style="font-size: 7vh;"><span class="ramadan_text1"  style=" color: transparent;"> The Ultimate Solution for Powerful & Efficient <br>Whatsapp Marketing! </span></span> </p>
+        <p data-aos="fade-up" data-aos-duration="750" class="d-lg-none d-md-none " ><span class="ramadan_text1" style="color: transparent;">Introducing Altos Connect</span> <br> <span class="ramadan_text1"  style="color: transparent;"> The Ultimate Solution for Powerful & Efficient Whatsapp Marketing!</span></p>
         {% else %}
         <p data-aos="fade-up" data-aos-duration="750" class="d-none d-sm-block"> <span style="font-size: 5vh;">Introducing Altos Connect</span> <br> <span style="font-size: 7vh; color:rgb(62, 199, 206)"> The Ultimate Solution for Powerful & Efficient </span></p>
         <p data-aos="fade-up" data-aos-duration="750" class="d-lg-none d-md-none" >Introducing Altos Connect</span> <br> <span style="color:rgb(62, 199, 206)"> The Ultimate Solution for Powerful & Efficient </span></p>
@@ -2502,25 +3504,29 @@ window.addEventListener('resize', handleResize);
 
             <div class="col-lg-6 col-sm-12 col-md-6 px-3 ">
               <div class="content-boxs border-0 rounded-4 background_img1  ">
-                <div class="section-title">
-                {% if current_theme == 'pongal' %}
-                <p class="pongal_text_theme" style="color: transparent;">Altos Connect</p>
-                {% elif current_theme == 'vishu' %} 
-                <p class="vishu_text_bg1" style="color: transparent;">Altos Connect</p>
-                {% elif current_theme == 'easter' %} 
-                <p class="easter_text_bg1" style="color: transparent;">Altos Connect</p>
-                {% elif current_theme == 'xmas' %} 
-                <p class="xmas_text text-light">Altos Connect</p>
-                {% elif current_theme == 'republic' %}
-                <p>
-                  <span class="fg_republic" style="color: transparent;">Altos </span>
-                  <span class="fg_republic" style="color: transparent;">Connect </span>
-                      
-                {% elif current_theme == 'ramadan' %} 
-                <p class="ramadan_text1" style="color: transparent;">Altos Connect </p>
-                {% else %}
-                <p>Altos Connect</p>
-                {% endif %}
+                <div class="">
+
+                  {% if current_theme == 'pongal' %}
+                  <h2 class="pongal_text_theme" style="color: transparent; "><b>Altos Connect</b></h2>
+                  {% elif current_theme == 'vishu' %}
+                  <h2 class="vishu_text_bg1" style="color: transparent;"><b>Altos Connect</b></h2>
+                  {% elif current_theme == 'easter' %}
+                  <h2 class="easter_text_bg1" style="color: transparent;"><b>Altos Connect</b></h2>
+                  {% elif current_theme == 'xmas' %}
+                  <h2 class="xmas_text text-light"><b>Altos Connect</b></h2>
+                  {% elif current_theme == 'onam' %}
+                  <h2 style="color: orange;"><b>Altos Connect</b></h2>
+                  {% elif current_theme == 'diwali' %}
+                  <h2 style="color: rgb(255, 63, 63)"><b>Altos Connect</b></h2>
+                  {% elif current_theme == 'republic' %}
+                  <h2 style="color: transparent;"><span class="fg_republic"><b>Altos Connect</b></h2>
+                  {% elif current_theme == 'ramadan' %}
+                  <h2 style="color: transparent;"><span class="ramadan_text1"><b>Altos Connect</b></h2>
+                  {% else %}
+                  <h2 class="text-start mt-3" style=" color: #00838d;"><b>Altos Connect</b></h2>
+                  {% endif %}
+
+               
                 </div>
                 <p class="text-light" style="font-size: larger; text-align: justify;">
                   Altos Connect is a revolutionary WhatsApp marketing tool designed to elevate your business's communication and outreach strategies. With its powerful features and user-friendly interface, Altos Connect empowers businesses to connect with their audience on WhatsApp like never before. Below, we've outlined what Altos Connect is, its benefits and answers to some frequently asked questions.
@@ -2529,26 +3535,26 @@ window.addEventListener('resize', handleResize);
             </div>
             <div class="col-lg-6 col-sm-12 col-md-6 px-4 d-flex align-items-center ">
               <div class="content-boxs border-0 rounded-4 background_img1  ">
-                <div class="section-title">
-                {% if current_theme == 'pongal' %}
-                <p class="pongal_text_theme" style="color: transparent;">What is Altos Connect?</p>
-                {% elif current_theme == 'vishu' %} 
-                <p class="vishu_text_bg1" style="color: transparent;">What is Altos Connect?</p>
-                {% elif current_theme == 'easter' %} 
-                <p class="easter_text_bg1" style="color: transparent;">What is Altos Connect?</p>
-                {% elif current_theme == 'xmas' %} 
-                <p class="xmas_text text-light">What is Altos Connect?</p>
-                {% elif current_theme == 'republic' %}
-                <p>
-                  <span class="fg_republic" style="color: transparent;">What </span>
-                  <span class="fg_republic" style="color: transparent;">Altos </span>
-                  <span class="fg_republic" style="color: transparent;">Connect? </span>
-                      
-                {% elif current_theme == 'ramadan' %} 
-                <p class="ramadan_text1" style="color: transparent;">What is Altos Connect?</p>
-                {% else %}
-                <p>What is Altos Connect?</p>
-                {% endif %}
+                <div class="">
+                  {% if current_theme == 'pongal' %}
+                  <h2 class="pongal_text_theme" style="color: transparent; "><b>What is Altos Connect?</b></h2>
+                  {% elif current_theme == 'vishu' %}
+                  <h2 class="vishu_text_bg1" style="color: transparent;"><b>What is Altos Connect?</b></h2>
+                  {% elif current_theme == 'easter' %}
+                  <h2 class="easter_text_bg1" style="color: transparent;"><b>What is Altos Connect?</b></h2>
+                  {% elif current_theme == 'xmas' %}
+                  <h2 class="xmas_text text-light"><b>What is Altos Connect?</b></h2>
+                  {% elif current_theme == 'onam' %}
+                  <h2 style="color: orange;"><b>What is Altos Connect?</b></h2>
+                  {% elif current_theme == 'diwali' %}
+                  <h2 style="color: rgb(255, 63, 63)"><b>What is Altos Connect?</b></h2>
+                  {% elif current_theme == 'republic' %}
+                  <h2 style="color: transparent;"><span class="fg_republic"><b>What is </b></span> <span class="fg_republic"><b> Altos Connect?</b></span> </h2>
+                  {% elif current_theme == 'ramadan' %}
+                  <h2 style="color: transparent;"><span class="ramadan_text1"><b>What is Altos Connect?</b></h2>
+                  {% else %}
+                  <h2 class="text-start mt-3" style=" color: #00838d;"><b>What is Altos Connect?</b></h2>
+                  {% endif %}
                 </div>
                 <p class="text-light" style="font-size: larger; text-align: justify;">
                   Altos Connect is a comprehensive WhatsApp marketing tool that enables businesses to engage with their customers, prospects, and leads through the world's most popular messaging platform. It offers a range of features designed to streamline your WhatsApp marketing efforts, including automated messaging, audience segmentation, analytics, and more.
@@ -2560,24 +3566,43 @@ window.addEventListener('resize', handleResize);
       </section>
      
       
-<section id="aboutus-section-2" class="" style="margin-top: -1rem; margin-left: 5vw;">
-  <div class="row aboutus-content container" style="background-color: transparent;">
-    <div class="col-12 ">
-
-      <h5 class="sub-head text-center mb-3">
-          
-      </h5>
-      <div class='ResponsiveYTPlayer'>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/pOvMaOTddlw?si=bs8YtvX-3VeGsBmd&amp;controls=1&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
-      </div>
-
-    </div>
-  </div>
- </section>
+      <section id="aboutus-section-2" class="text-center" style="margin-top: -1rem;">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h5 class="sub-head mb-3">
+                
+              </h5>
+              <div class="ResponsiveYTPlayer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pOvMaOTddlw?si=bs8YtvX-3VeGsBmd&amp;controls=1&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
 
  <section id="digital-marketing">
   <div class="container dig-mark-container" >
+    {% if current_theme == 'pongal' %}
+    <h2 class="pongal_text_theme" style="color: transparent; "><b>Benefits of Altos Connect</b></h2>
+    {% elif current_theme == 'vishu' %}
+    <h2 class="vishu_text_bg1" style="color: transparent;"><b>Benefits of Altos Connect</b></h2>
+    {% elif current_theme == 'easter' %}
+    <h2 class="easter_text_bg1" style="color: transparent;"><b>Benefits of Altos Connect</b></h2>
+    {% elif current_theme == 'xmas' %}
+    <h2 class="xmas_text text-light"><b>Benefits of Altos Connect</b></h2>
+    {% elif current_theme == 'onam' %}
+    <h2 style="color: orange;"><b>Benefits of Altos Connect</b></h2>
+    {% elif current_theme == 'diwali' %}
+    <h2 style="color: rgb(255, 63, 63)"><b>Benefits of Altos Connect</b></h2>
+    {% elif current_theme == 'republic' %}
+    <h2 style="color: transparent;"><span class="fg_republic"><b>Benefits of </b></span> <span class="fg_republic"><b>Altos Connect</b></span></h2>
+    {% elif current_theme == 'ramadan' %}
+    <h2 style="color: transparent;"><span class="ramadan_text1"><b>Benefits of Altos Connect</b></h2>
+    {% else %}
     <h2 class="text-start mt-3" style=" color: white"><b>Benefits of  Altos Connect</b></h2>
+    {% endif %}
     <div class="container" id="sub-content">
       <p>Enhanced Customer Engagement: Altos Connect allows you to reach your audience directly on WhatsApp, where they're most active. With personalized messaging and targeted campaigns, you can increase engagement, build relationships, and drive conversions.
       </p>
@@ -2585,12 +3610,12 @@ window.addEventListener('resize', handleResize);
 
     <div {% if current_theme == 'onam' %}
     class="box-service bg-light rounded"
-    style="height: 450px;background-image: url('/static/onam/decor/frame2/service_frame2.png');
+    style="height: 420px;background-image: url('/static/onam/decor/frame2/service_frame2.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;"
     {% elif current_theme == 'pongal' %}
     class="box-service bg-dark rounded"
-    style="height: 450px;background-image: url('/static/pongal/frame/frame3_1.png');
+    style="height: 480px;background-image: url('/static/pongal/frame/frame3_1.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;"
     {% elif current_theme == 'republic' %}
@@ -2600,7 +3625,7 @@ window.addEventListener('resize', handleResize);
     background-repeat: no-repeat;"
     {% elif current_theme == 'diwali' %}
     class="box-service bg-dark rounded"
-    style="height: 450px;background-image: url('/static/diwali/decor/service_frame/diwali_service_frame.png');
+    style="height: 380px;background-image: url('/static/diwali/decor/service_frame/diwali_service_frame.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;"
     {% elif current_theme == 'ramadan' %}
@@ -2608,7 +3633,10 @@ window.addEventListener('resize', handleResize);
     style="height: 450px;background-image: url('/static/ramadan/decor/service_frame/ramadan_service_frame.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;"
-    {% else %}
+        {% elif current_theme == 'vishu' %}
+        class="box-service bg-dark rounded"
+        style="height: 410px;"
+        {% else %}
     class="box-service" style="height: 380px;"
     {% endif %}>
       <div class="box-contents">
@@ -2628,7 +3656,7 @@ window.addEventListener('resize', handleResize);
         {% elif current_theme == 'easter' %}
         <div class="position-relative">
           <div class="position-absolute start-0 top-0" style="margin-top: -2rem;margin-left: -3.5rem;">
-            <img loading="lazy" style="width: 6.5rem;" src="{% static 'easter/decor/frame/service_frame1_1.png' %}" alt="">
+            <img loading="lazy" style="height: 24rem; width: 6.5rem;" src="{% static 'easter/decor/frame/service_frame1_1.png' %}" alt="">
           </div>
         </div>
         {% elif current_theme == 'xmas' %}
@@ -2656,7 +3684,17 @@ window.addEventListener('resize', handleResize);
         </div> -->
         {% endif %}
 
-        <h4 class="text-center" {% if current_theme == 'onam' %} style="color: orange;" class="onam_ts" {% else %} style="color: #00838d;" {% endif %}>Automation</h4>
+
+        {% if current_theme == 'onam' %} 
+        <h4 class="text-center" style="color: orange; margin-top: 1rem;" class="onam_ts">Automation</h4>
+         {% elif  current_theme == 'pongal' %} 
+         <h4 class="text-center pongal-theme"  style="margin-top: 4vw; margin-left: 1vw; color: #00838d;">Automation</h4>
+          {% elif  current_theme == 'republic' %} 
+          <h4 class="text-center" style="margin-top: 3rem; color: orange;" >Automation</h4>
+          {% else %}
+          <h4 class="text-center" style="color: #00838d;">Automation</h4>
+           {% endif %}
+
         <div class="overflow_for_card_p">
           <p {% if current_theme == 'onam' %} style="color: black;" {% endif %}>Save time and effort with Altos Connect's automation features. Schedule messages, set up autoresponders, and automate follow-ups to nurture leads and maintain consistent communication with your audience.
           </p>
@@ -2674,12 +3712,12 @@ window.addEventListener('resize', handleResize);
 
     <div {% if current_theme == 'onam' %}
     class="box-service bg-light rounded"
-    style="height: 450px;background-image: url('/static/onam/decor/frame2/service_frame2.png');
+    style="height: 420px;background-image: url('/static/onam/decor/frame2/service_frame2.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;"
     {% elif current_theme == 'pongal' %}
     class="box-service bg-dark rounded"
-    style="height: 450px;background-image: url('/static/pongal/frame/frame3_1.png');
+    style="height: 480px;background-image: url('/static/pongal/frame/frame3_1.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;"
     {% elif current_theme == 'republic' %}
@@ -2689,7 +3727,7 @@ window.addEventListener('resize', handleResize);
     background-repeat: no-repeat;"
     {% elif current_theme == 'diwali' %}
     class="box-service bg-dark rounded"
-    style="height: 450px;background-image: url('/static/diwali/decor/service_frame/diwali_service_frame.png');
+    style="height: 380px;background-image: url('/static/diwali/decor/service_frame/diwali_service_frame.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;"
     {% elif current_theme == 'ramadan' %}
@@ -2697,6 +3735,9 @@ window.addEventListener('resize', handleResize);
     style="height: 450px;background-image: url('/static/ramadan/decor/service_frame/ramadan_service_frame.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;"
+      {% elif current_theme == 'vishu' %}
+      class="box-service bg-dark rounded"
+      style="height: 410px;"
     {% else %}
     class="box-service" style="height: 380px;"
     {% endif %}>
@@ -2717,7 +3758,7 @@ window.addEventListener('resize', handleResize);
         {% elif current_theme == 'easter' %}
         <div class="position-relative">
           <div class="position-absolute start-0 top-0" style="margin-top: -2rem;margin-left: -3.5rem;">
-            <img loading="lazy" style="width: 6.5rem;" src="{% static 'easter/decor/frame/service_frame2_2.png' %}" alt="">
+            <img loading="lazy" style=" height: 24rem; width: 6.5rem;" src="{% static 'easter/decor/frame/service_frame2_2.png' %}" alt="">
           </div>
         </div>
         {% elif current_theme == 'xmas' %}
@@ -2745,8 +3786,17 @@ window.addEventListener('resize', handleResize);
           </div>
         </div> -->
         {% endif %}
+
+        {% if current_theme == 'onam' %} 
+        <h4 class="text-center" style="color: orange; margin-top: 1rem;" class="onam_ts">Audience Segmentation</h4>
+         {% elif  current_theme == 'pongal' %} 
+         <h4 class="text-center pongal-theme"  style="margin-top: 4vw; margin-left: 1vw; color: #00838d;">Audience Segmentation</h4>
+          {% elif  current_theme == 'republic' %} 
+          <h4 class="text-center" style="margin-top: 3rem; color: orange;" >Audience <br>Segmentation</h4>
+          {% else %}
+          <h4 class="text-center" style="color: #00838d;">Audience Segmentation</h4>
+           {% endif %}
         
-        <h4 class="text-center" {% if current_theme == 'onam' %} style="color: orange;" class="onam_ts" {% else %} style="color: #00838d;" {% endif %}>Audience Segmentation</span> </h4>
         <div class="overflow_for_card_p">
           <p {% if current_theme == 'onam' %} style="color: black;" {% endif %}>Segment your audience based on demographics, behavior, or other criteria to deliver more relevant and targeted messages. By sending the right message to the right people at the right time, you can improve response rates and ROI.
           </p>
@@ -2764,12 +3814,12 @@ window.addEventListener('resize', handleResize);
 
     <div {% if current_theme == 'onam' %}
     class="box-service bg-light rounded"
-    style="height: 450px;background-image: url('/static/onam/decor/frame2/service_frame2.png');
+    style="height: 420px;background-image: url('/static/onam/decor/frame2/service_frame2.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;"
     {% elif current_theme == 'pongal' %}
     class="box-service bg-dark rounded"
-    style="height: 450px;background-image: url('/static/pongal/frame/frame3_1.png');
+    style="height: 480px;background-image: url('/static/pongal/frame/frame3_1.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;"
     {% elif current_theme == 'republic' %}
@@ -2779,7 +3829,7 @@ window.addEventListener('resize', handleResize);
     background-repeat: no-repeat;"
     {% elif current_theme == 'diwali' %}
     class="box-service bg-dark rounded"
-    style="height: 450px;background-image: url('/static/diwali/decor/service_frame/diwali_service_frame.png');
+    style="height: 380px;background-image: url('/static/diwali/decor/service_frame/diwali_service_frame.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;"
     {% elif current_theme == 'ramadan' %}
@@ -2787,6 +3837,9 @@ window.addEventListener('resize', handleResize);
     style="height: 450px;background-image: url('/static/ramadan/decor/service_frame/ramadan_service_frame.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;"
+    {% elif current_theme == 'vishu' %}
+    class="box-service bg-dark rounded"
+    style="height: 410px;"
     {% else %}
     class="box-service" style="height: 380px;"
     {% endif %}>
@@ -2807,7 +3860,7 @@ window.addEventListener('resize', handleResize);
         {% elif current_theme == 'easter' %}
         <div class="position-relative">
           <div class="position-absolute start-0 top-0" style="margin-top: -2rem;margin-left: -3.5rem;">
-            <img loading="lazy" style="width: 6.5rem;" src="{% static 'easter/decor/frame/service_frame3_3.png' %}" alt="">
+            <img loading="lazy" style=" height: 24rem; width: 6.5rem;" src="{% static 'easter/decor/frame/service_frame3_3.png' %}" alt="">
           </div>
         </div>
         {% elif current_theme == 'xmas' %}
@@ -2836,7 +3889,16 @@ window.addEventListener('resize', handleResize);
         </div> -->
         {% endif %}
 
-        <h4 {% if current_theme == 'onam' %} style="color: orange;" class="onam_ts" {% else %} style="color: #00838d;" {% endif %}>Analytics and Reporting</span></h4>
+        {% if current_theme == 'onam' %} 
+        <h4 class="text-center" style="color: orange; margin-top: 1rem;" class="onam_ts">Analytics and Reporting</h4>
+         {% elif  current_theme == 'pongal' %} 
+         <h4 class="text-center pongal-theme"  style="margin-top: 4vw; margin-left: 1vw; color: #00838d;">Analytics and Reporting</h4>
+          {% elif  current_theme == 'republic' %} 
+          <h4 class="text-center" style="margin-top: 3rem; color: orange;" >Analytics and <br>Reporting</h4>
+          {% else %}
+          <h4 class="text-center" style="color: #00838d;">Analytics and Reporting</h4>
+           {% endif %}
+
         <div class="overflow_for_card_p">
           <p {% if current_theme == 'onam' %} style="color: black;" {% endif %}>Gain valuable insights into your WhatsApp marketing performance with Altos Connect's analytics and reporting tools. Track message delivery, open rates, click-through rates, and other key metrics to measure the effectiveness of your campaigns and optimize your strategy.
           </p>
@@ -2854,7 +3916,7 @@ window.addEventListener('resize', handleResize);
 
     <div {% if current_theme == 'onam' %}
     class="box-service bg-light rounded"
-    style="height: 450px;background-image: url('/static/onam/decor/frame2/service_frame2.png');
+    style="height: 390px;background-image: url('/static/onam/decor/frame2/service_frame2.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;"
     {% elif current_theme == 'pongal' %}
@@ -2869,7 +3931,7 @@ window.addEventListener('resize', handleResize);
     background-repeat: no-repeat;"
     {% elif current_theme == 'diwali' %}
     class="box-service bg-dark rounded"
-    style="height: 450px;background-image: url('/static/diwali/decor/service_frame/diwali_service_frame.png');
+    style="height: 380px;background-image: url('/static/diwali/decor/service_frame/diwali_service_frame.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;"
     {% elif current_theme == 'ramadan' %}
@@ -2877,6 +3939,9 @@ window.addEventListener('resize', handleResize);
     style="height: 450px;background-image: url('/static/ramadan/decor/service_frame/ramadan_service_frame.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;"
+    {% elif current_theme == 'vishu' %}
+    class="box-service bg-dark rounded"
+    style="height: 410px;"
     {% else %}
     class="box-service" style="height: 350px;"
     {% endif %}>
@@ -2897,7 +3962,7 @@ window.addEventListener('resize', handleResize);
         {% elif current_theme == 'easter' %}
         <div class="position-relative">
           <div class="position-absolute start-0 top-0" style="margin-top: -2rem;margin-left: -3.5rem;">
-            <img loading="lazy" style="width: 6.5rem;" src="{% static 'easter/decor/frame/service_frame5_5.png' %}" alt="">
+            <img loading="lazy" style=" height: 23rem; width: 6.5rem;" src="{% static 'easter/decor/frame/service_frame5_5.png' %}" alt="">
           </div>
         </div>
         {% elif current_theme == 'xmas' %}
@@ -2925,7 +3990,17 @@ window.addEventListener('resize', handleResize);
         </div> -->
         {% endif %}
 
-        <h4 class="text-center" {% if current_theme == 'onam' %} style="color: orange;" class="onam_ts" {% else %} style="color: #00838d;" {% endif %}>Compliance</h4>
+        
+        {% if current_theme == 'onam' %} 
+        <h4 class="text-center" style="color: orange; margin-top: 1rem;" class="onam_ts">Compliance</h4>
+         {% elif  current_theme == 'pongal' %} 
+         <h4 class="text-center pongal-theme"  style="margin-top: 4vw; margin-left: 1vw; color: #00838d;">Compliance</h4>
+          {% elif  current_theme == 'republic' %} 
+          <h4 class="text-center" style="margin-top: 3rem; color: orange;" >Compliance</h4>
+          {% else %}
+          <h4 class="text-center" style="color: #00838d;">Compliance</h4>
+           {% endif %}
+
         <div  class="overflow_for_card_p">
           <p {% if current_theme == 'onam' %} style="color: black;" {% endif %}> Stay compliant with WhatsApp's policies and regulations with Altos Connect's built-in compliance features. Ensure that your messaging practices adhere to industry standards and best practices to maintain trust and credibility with your audience.
           </p>
@@ -2951,34 +4026,36 @@ window.addEventListener('resize', handleResize);
         <div class="container mt-2">
           <div class="row  g-3 content-boxs-parent border-0 rounded-4">
 
-            {% if current_theme == 'xmas' %}
+            {% comment %} {% if current_theme == 'xmas' %}
             <div class="position-relative" style="z-index: 9999;">
               <div class="position-absolute santa_peek11_top">
                 <img loading="lazy" id="santa_peek11" draggable="false" src="{% static 'xmas/decor/xmaspap_peek.png' %}" alt="">
               </div>
             </div>
-            {% endif %}
+            {% endif %} {% endcomment %}
 
-            <div class="section-title ">  
+            <div class=" ">  
+
               {% if current_theme == 'pongal' %}
-              <p class="pongal_text_theme" style="color: transparent;">Why Altos Connect?</p>
-              {% elif current_theme == 'vishu' %} 
-              <p class="vishu_text_bg1" style="color: transparent;">Why Altos Connect?</p>
-              {% elif current_theme == 'easter' %} 
-              <p class="easter_text_bg1" style="color: transparent;">Why Altos Connect? </p>
-              {% elif current_theme == 'xmas' %} 
-              <p class="xmas_text text-light">Why Altos Connect? </p>
+              <h2 class="pongal_text_theme" style="color: transparent; "><b>Why Altos Connect?</b></h2>
+              {% elif current_theme == 'vishu' %}
+              <h2 class="vishu_text_bg1" style="color: transparent;"><b>Why Altos Connect?</b></h2>
+              {% elif current_theme == 'easter' %}
+              <h2 class="easter_text_bg1" style="color: transparent;"><b>Why Altos Connect?</b></h2>
+              {% elif current_theme == 'xmas' %}
+              <h2 class="xmas_text text-light"><b>Why Altos Connect?</b></h2>
+              {% elif current_theme == 'onam' %}
+              <h2 style="color: orange;"><b>Why Altos Connect?</b></h2>
+              {% elif current_theme == 'diwali' %}
+              <h2 style="color: rgb(255, 63, 63)"><b>Why Altos Connect?</b></h2>
               {% elif current_theme == 'republic' %}
-              <p>
-                <span class="fg_republic" style="color: transparent;">Why </span>
-                <span class="fg_republic" style="color: transparent;">Altos </span>
-                <span class="fg_republic" style="color: transparent;">Connect? </span>
-                    
-              {% elif current_theme == 'ramadan' %} 
-              <p class="ramadan_text1" style="color: transparent;">Why Altos Connect? </p>
+              <h2 style="color: transparent;"><span class="fg_republic"><b>Why Altos Connect?</b></h2>
+              {% elif current_theme == 'ramadan' %}
+              <h2 style="color: transparent;"><span class="ramadan_text1"><b>Why Altos Connect?</b></h2>
               {% else %}
-              <p>Why Altos Connect?</p>
+              <h2 class="text-start mt-3" style=" color: #00838d;"><b>Why Altos Connect?</b></h2>
               {% endif %}
+
             </div>
             <div class="col-lg-6 col-sm-12 col-md-6 px-3 mt-1">
               <div class="content-boxs border-0 rounded-4 background_img1">
@@ -2992,7 +4069,7 @@ window.addEventListener('resize', handleResize);
                   {% elif current_theme == 'republic' %} 
                   <img loading="lazy" src="/static/republic/img/connectimg.png" alt="AltosConnect" />
                   {% elif current_theme == 'onam' %} 
-                  <img loading="lazy" src="/static/onam/img/erp.connectimg" alt="AltosConnect" />
+                  <img loading="lazy" src="/static/onam/img/connectimg.png" alt="AltosConnect" />
                   {% elif current_theme == 'diwali' %} 
                   <img loading="lazy"  src="/static/diwali/img/connectimg.png" alt="AltosConnect" />
                   {% elif current_theme == 'ramadan' %} 
@@ -3039,14 +4116,14 @@ window.addEventListener('resize', handleResize);
         <div class="container mt-3">
           <div class="row  g-3 content-boxs-parent border-0 rounded-4">
 
-            {% if current_theme == 'xmas' %}
+            {% comment %} {% if current_theme == 'xmas' %}
             <div class="position-relative" style="z-index: 1;">
               <div class="position-absolute end-0 santa_peek22_top">
                 <img loading="lazy" id="santa_peek22" draggable="false" src="{% static 'xmas/decor/xmaspap_peek_left.png' %}" alt="">
               </div>
             </div>
             {% endif %}
-            
+             {% endcomment %}
             <div class="col-lg-6 col-sm-12 col-md-6 px-4 d-flex align-items-center">
               <div class="img-box-tech image-visible" style="height: 75%; margin-top: -10vh;">
                 {% if current_theme == 'pongal' %}
@@ -3056,7 +4133,7 @@ window.addEventListener('resize', handleResize);
                 {% elif current_theme == 'easter' %} 
                 <img loading="lazy" src="/static/easter/img/connectimg.png" alt="BillingSoftware" />
                 {% elif current_theme == 'republic' %}
-                <img loading="lazy" src="/static/republic/connectimg/connectimg.png" alt="BillingSoftware" />
+                <img loading="lazy" src="/static/republic/img/connectimg.png" alt="BillingSoftware" />
                 {% elif current_theme == 'onam' %}
                 <img loading="lazy" src="/static/onam/img/connectimg.png" alt="BillingSoftware" />
                 {% elif current_theme == 'diwali' %}
@@ -3116,35 +4193,27 @@ window.addEventListener('resize', handleResize);
           </div>
           {% endif %}
           <div class="col-12">
+
             {% if current_theme == 'pongal' %}
-            <p class=" more-head text- d-none d-sm-none pongal_text_theme"  style="font-size: 1.7em;color: transparent;"><b>Revolutionizing Business Marketing </b></p>
-            <p  class=" more-head text- d-lg-block pongal_text_theme"  style="font-size: 3rem;color: transparent;"><b>Revolutionizing Business Marketing </b></p>
-            {% elif current_theme == 'vishu' %} 
-            <p class=" more-head text- d-none d-sm-none vishu_text_bg1"  style="font-size: 1.7em;color: transparent;"><b>Revolutionizing Business Marketing </b></p>
-            <p  class=" more-head text- d-lg-block vishu_text_bg1"  style="font-size: 3rem;color: transparent;"><b>Revolutionizing Business Marketing </b></p>
-            {% elif current_theme == 'easter' %} 
-            <p class=" more-head text- d-none d-sm-none easter_text_bg1"  style="font-size: 1.7em;color: transparent;"><b>Revolutionizing Business Marketing </b></p>
-            <p  class=" more-head text- d-lg-block easter_text_bg1"  style="font-size: 3rem;color: transparent;"><b>Revolutionizing Business Marketing </b></p>
-            {% elif current_theme == 'xmas' %} 
-            <p class=" more-head text- d-none d-sm-none xmas_text text-light"  style="font-size: 1.7em;"><b>Revolutionizing Business Marketing </b></p>
-            <p  class=" more-head text- d-lg-block xmas_text text-light"  style="font-size: 3rem;"><b>Revolutionizing Business Marketing </b></p>
+            <h2 class="pongal_text_theme" style="color: transparent; "><b>Revolutionizing Business Marketing</b></h2>
+            {% elif current_theme == 'vishu' %}
+            <h2 class="vishu_text_bg1" style="color: transparent;"><b>Revolutionizing Business Marketing</b></h2>
+            {% elif current_theme == 'easter' %}
+            <h2 class="easter_text_bg1" style="color: transparent;"><b>Revolutionizing Business Marketing</b></h2>
+            {% elif current_theme == 'xmas' %}
+            <h2 class="xmas_text text-light"><b>Revolutionizing Business Marketing</b></h2>
+            {% elif current_theme == 'onam' %}
+            <h2 style="color: orange;"><b>Revolutionizing Business Marketing</b></h2>
+            {% elif current_theme == 'diwali' %}
+            <h2 style="color: rgb(255, 63, 63)"><b>Revolutionizing Business Marketing</b></h2>
             {% elif current_theme == 'republic' %}
-            <p class=" more-head text- d-none d-sm-none"  style="font-size: 1.7em;"><b>
-              <span class="fg_republic" style="color: transparent;">Revolutionizisng </span>
-              <span class="fg_republic" style="color: transparent;">Business </span>
-              <span class="fg_republic" style="color: transparent;">Marketing </span>   </b></p>
-            <p  class=" more-head text-white d-lg-block"  style="font-size: 3rem;"><b>
-              <span class="fg_republic" style="color: transparent;">Revolutionizisng </span>
-              <span class="fg_republic" style="color: transparent;">Business </span>
-              <span class="fg_republic" style="color: transparent;">Marketing </span>
-            </b></p>
-            {% elif current_theme == 'ramadan' %} 
-            <p class=" more-head text- d-none d-sm-none ramadan_text1"  style="font-size: 1.7em;color: transparent;"><b>Revolutionizing Business Marketing </b></p>
-            <p  class=" more-head text- d-lg-block ramadan_text1"  style="font-size: 3rem;color: transparent;"><b>Revolutionizing Business Marketing </b></p>
+            <h2 style="color: transparent;"><span class="fg_republic"><b>Revolutionizing </b></span> <span class="fg_republic"><b> Business Marketing</b></span></h2>
+            {% elif current_theme == 'ramadan' %}
+            <h2 style="color: transparent;"><span class="ramadan_text1"><b>Revolutionizing Business Marketing</b></h2>
             {% else %}
-            <p class=" more-head text-white d-none d-sm-none"  style="font-size: 1.7em;"><b>Ready to take your WhatsApp marketing to the next level? </b></p>
-            <p  class=" more-head text-white d-lg-block"  style="font-size: 3rem;"><b>Ready to take your WhatsApp marketing to the next level? </b></p>
+            <h2 class="text-center mt-3" style=" color: #00838d;"><b>Revolutionizing Business Marketing</b></h2>
             {% endif %}
+
             <div class="row">
               <div class="col-md-3"></div>
               <div class="col-md-6">
@@ -3164,35 +4233,44 @@ window.addEventListener('resize', handleResize);
       <div class="container service-box ">
         <div class="dig-mark-container ">
           {% if current_theme == 'pongal' %}
-          <p class="text- mb-3 pongal_text_theme1" style="color: transparent;" id="price-head"><b>Plan and Pricing</b></p>
-          {% elif current_theme == 'vishu' %} 
-          <p class="text- mb-3 vishu_text_bg1" style="color: transparent;" id="price-head"><b>Plan and Pricing</b></p>
-          {% elif current_theme == 'easter' %} 
-          <p class="text- mb-3 easter_text_bg1" style="color: transparent;" id="price-head"><b>Plan and Pricing</b></p>
-          {% elif current_theme == 'xmas' %} 
-          <p class="text- mb-3 xmas_text text-light" style="color: transparent;" id="price-head"><b>Plan and Pricing</b></p>
+          <h2 class="pongal_text_theme" style="color: transparent; "><b>Plan and Pricing</b></h2>
+          {% elif current_theme == 'vishu' %}
+          <h2 class="vishu_text_bg1" style="color: transparent;"><b>Plan and Pricing</b></h2>
+          {% elif current_theme == 'easter' %}
+          <h2 class="easter_text_bg1" style="color: transparent;"><b>Plan and Pricing</b></h2>
+          {% elif current_theme == 'xmas' %}
+          <h2 class="xmas_text text-light"><b>Plan and Pricing</b></h2>
+          {% elif current_theme == 'onam' %}
+          <h2 style="color: orange;"><b>Plan and Pricing</b></h2>
+          {% elif current_theme == 'diwali' %}
+          <h2 style="color: rgb(255, 63, 63)"><b>Plan and Pricing</b></h2>
           {% elif current_theme == 'republic' %}
-          <p class="text-white mb-3" id="price-head"><b>
-            <span class="fg_republic" style="color: transparent;">Plan </span>
-            <span class="fg_republic" style="color: transparent;">and </span>
-            <span class="fg_republic" style="color: transparent;">Pricing </span>
-              </b></p>
-          {% elif current_theme == 'ramadan' %} 
-          <p class="text- mb-3 ramadan_text1" style="color: transparent;" id="price-head"><b>Plan and Pricing</b></p>
+          <h2 style="color: transparent;"><span class="fg_republic"><b>Plan and Pricing</b></h2>
+          {% elif current_theme == 'ramadan' %}
+          <h2 style="color: transparent;"><span class="ramadan_text1"><b>Plan and Pricing</b></h2>
           {% else %}
-          <p class="text-white mb-3 pongal_text_theme" style="color: transparent;" id="price-head"><b>Plan and Pricing</b></p>
+          <h2 class="text-start mt-3" style=" color: #00838d;"><b>Plan and Pricing</b></h2>
           {% endif %}
+          
           <div class="container" id="sub-content"></div>
           <br><br>
           
           <div class="box-service " 
+          
           {% if current_theme == 'ramadan' %}
           style="margin-bottom: 3vh; padding: 1em 1.7em; width: 320px;
           background-image: url('/static/ramadan/decor/whatsapp_frame/whatsapp_frame.png');
           background-size: 100% 100%"
+
+          {% elif current_theme == 'diwali' %}
+          style="margin-bottom: 3vh; padding: 1em 1.7em; width: 320px;
+          background-image: url('/static/diwali/decor/whatsapp_frame/diwali_whatsapp_frame.png');
+          background-size: 100% 100%"
           {% else %}
           style="margin-bottom: 3vh; padding: 1em 1.7em; width: 320px; border-radius: 1vw;"
-          {% endif %}>
+          {% endif %}
+
+          >
 
             {% if current_theme == 'pongal' %}
             <div class="position-relative">
@@ -3203,21 +4281,17 @@ window.addEventListener('resize', handleResize);
             {% elif current_theme == 'vishu' %} 
             <div class="position-relative">
               <div class="position-absolute start-0 top-0 vishu_whatsapp_frame_top" >
-                <img loading="lazy" id="vishu_whatsapp_frame" src="{% static 'vishu/decor/frame_decor/gallery_frame3.png' %}" alt="">
+                <img loading="lazy"  id="vishu_whatsapp_frame" src="{% static 'vishu/decor/frame_decor/gallery_frame3.png' %}" alt="">
               </div>
             </div>
+   
             {% elif current_theme == 'easter' %} 
             <div class="position-relative" style="z-index: 10;">
               <div class="position-absolute start-0 top-0 easter_whatsapp_frame_top">
                 <img loading="lazy" class="easter_whatsapp_frame" src="{% static 'easter/decor/frame/whatsapp_frame.png' %}" alt="">
               </div>
             </div>
-            {% elif current_theme == 'diwali' %} 
-            <div class="position-relative">
-              <div class="position-absolute start-0 top-0 vishu_whatsapp_frame_top" >
-                <img loading="lazy"  id="vishu_whatsapp_frame" src="{% static 'diwali/decor/whatsapp_frame/diwali_whatsapp_frame.png' %}" alt="">
-              </div>
-            </div>
+      
             {% endif %}
             
             <div class="box-contents" style="height: 50%;">
@@ -3229,24 +4303,41 @@ window.addEventListener('resize', handleResize);
               </div>
               {% elif current_theme == 'republic' %}
               <div class="position-relative">
-                <div class="position-absolute" style="margin-left: -2.2rem;margin-top: 2.2rem;">
-                  <img loading="lazy" width="220rem" src="{% static 'republic/decor/frames/normal_frame/frame_top_left.png' %}" alt="">
+                <div class="position-absolute" style="margin-left: -1.80rem;margin-top: 2.70rem;">
+                  <img loading="lazy" style="margin-top: -3.70rem;" width="220rem" src="{% static 'republic/decor/frames/normal_frame/frame_top_left.png' %}" alt="">
                 </div>
               </div>
               {% elif current_theme == 'onam' %}
-              <div class="position-relative">
-                <div class="position-absolute" style="margin-left: -1.8rem;margin-top: 2.2rem;">
+              <!-- <div class="position-relative">
+                <div class="position-absolute" style="margin-left: -1.8rem;margin-top: 20.5rem;">
                   <img loading="lazy" class="onam_frame" src="{% static 'onam/decor/frame6/onam_whatsapp_frame.png' %}" alt="">
+                </div>
+              </div> -->
+              <div class="position-relative" style="z-index: 10;">
+                <div class="position-absolute start-0 top-0 onam_whatsapp_frame_top">
+                  <img loading="lazy" class="onam_whatsapp_frame" src="{% static 'onam/decor/frame6/onam_whatsapp_frame.png' %}" alt="">
                 </div>
               </div>
               {% endif %}
-              <h1 style="color:rgb(62, 199, 206)">
-                <span class="plan-icon text-center text-9xl text-[#205846] transition-all">
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"></path>
-                    </svg>
-                </span>
-            </h1>
+              
+            {% if current_theme == 'diwali' %}
+                <h1 style="color:rgb(227, 55, 55); margin-top: 3vw;">
+                    <span class="plan-icon text-center text-9xl text-[#205846] transition-all">
+                        <svg class="basic-plan" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"></path>
+                        </svg>
+                    </span>
+                </h1>
+              {% else %}
+          <h1 style="color:rgb(62, 199, 206)">
+              <span class="plan-icon text-center text-9xl text-[#205846] transition-all">
+                  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"></path>
+                  </svg>
+              </span>
+          </h1>
+      {% endif %}
+
             <div style="text-align: justify;"> 
                 <ul class="flex items-center flex-col whitespace-nowrap gap-4 text-xs text-white custom-list">
                     <h4 class="text-2xl font-bold mt-5 whitespace-nowrap text-center ">Basic Plan</h4>
@@ -3261,23 +4352,31 @@ window.addEventListener('resize', handleResize);
 
 
             {% if current_theme == 'republic' %}
-            <div class="position-relative">
-              <div class="position-absolute bottom-0 end-0" style="margin-right: -2.2rem;margin-bottom: -1.4rem;">
-                <img loading="lazy" width="220rem" src="{% static 'republic/decor/frames/normal_frame/frame_bottom_right.png' %}" alt="">
+            <div class="position-relative" style="margin-top: 23rem;">
+              <div class="position-absolute bottom-0 end-0" style="margin-right: -1.7rem;margin-bottom: -1.4rem;">
+                <img loading="lazy"  width="220rem" src="{% static 'republic/decor/frames/normal_frame/frame_bottom_right.png' %}" alt="">
               </div>
             </div>
             {% endif %}
 
           </div>
 
-          <div class="box-service" 
+          <div class="box-service " 
+          
           {% if current_theme == 'ramadan' %}
-          style="margin-bottom: 3vh; padding: 1em 1.7em; width: 350px;
+          style="margin-bottom: 3vh; padding: 1em 1.7em; width: 320px;
           background-image: url('/static/ramadan/decor/whatsapp_frame/whatsapp_frame.png');
           background-size: 100% 100%"
+
+          {% elif current_theme == 'diwali' %}
+          style="margin-bottom: 3vh; padding: 1em 1.7em; width: 320px;
+          background-image: url('/static/diwali/decor/whatsapp_frame/diwali_whatsapp_frame.png');
+          background-size: 100% 100%"
           {% else %}
-          style="margin-bottom: 3vh; padding: 1em 1.7em; width: 350px; border-radius: 1vw;" 
-          {% endif %}>
+          style="margin-bottom: 3vh; padding: 1em 1.7em; width: 320px; border-radius: 1vw;"
+          {% endif %}
+
+          >
 
             {% if current_theme == 'pongal' %}
             <div class="position-relative">
@@ -3294,21 +4393,20 @@ window.addEventListener('resize', handleResize);
             {% elif current_theme == 'easter' %} 
             <div class="position-relative" style="z-index: 10;">
               <div class="position-absolute start-0 top-0 easter_whatsapp_frame_top">
-                <img loading="lazy" class="easter_whatsapp_frame" src="{% static 'easter/decor/frame/whatsapp_frame.png' %}" alt="">
+                <img loading="lazy"  class="easter_whatsapp_frame" src="{% static 'easter/decor/frame/whatsapp_frame.png' %}" alt="">
               </div>
             </div>
             {% elif current_theme == 'onam' %}
-              <div class="position-relative">
-                <div class="position-absolute" style="margin-left: -1.8rem;margin-top: 13.3rem;">
+              <!-- <div class="position-relative">
+                <div class="position-absolute" style="margin-left: -1.8rem;margin-top: 20.8rem;">
                   <img loading="lazy" class="onam_frame" src="{% static 'onam/decor/frame6/onam_whatsapp_frame.png' %}" alt="">
                 </div>
+              </div> -->
+              <div class="position-relative" style="z-index: 10;">
+                <div class="position-absolute start-0 top-0 onam_whatsapp_frame_top">
+                  <img loading="lazy" class="onam_whatsapp_frame" src="{% static 'onam/decor/frame6/onam_whatsapp_frame.png' %}" alt="">
+                </div>
               </div>
-              {% elif current_theme == 'diwali' %} 
-            <div class="position-relative">
-              <div class="position-absolute start-0 top-0 vishu_whatsapp_frame_top" >
-                <img loading="lazy"  id="vishu_whatsapp_frame" src="{% static 'diwali/decor/whatsapp_frame/diwali_whatsapp_frame.png' %}" alt="">
-              </div>
-            </div>
             {% endif %}
 
             <div class="box-contents" style="height: 50%;">
@@ -3320,14 +4418,22 @@ window.addEventListener('resize', handleResize);
               </div>
               {% elif current_theme == 'republic' %}
               <div class="position-relative">
-                <div class="position-absolute" style="margin-left: -2.2rem;margin-top:  13.3rem;">
-                  <img loading="lazy" width="220rem" src="{% static 'republic/decor/frames/normal_frame/frame_top_left.png' %}" alt="">
+                <div class="position-absolute" style="margin-left: -1.80rem;margin-top: -1rem;">
+                  <img loading="lazy"   width="220rem" src="{% static 'republic/decor/frames/normal_frame/frame_top_left.png' %}" alt="">
                 </div>
               </div>
               {% endif %}
-              <h1 style="color:rgb(62, 199, 206)">
-                <span class="plan-icon text-center text-9xl text-[#205846]"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3.414 13.778 2 15.192l4.949 2.121 2.122 4.95 1.414-1.414-.707-3.536L13.091 14l3.61 7.704 1.339-1.339-1.19-10.123 2.828-2.829a2 2 0 1 0-2.828-2.828l-2.903 2.903L3.824 6.297 2.559 7.563l7.644 3.67-3.253 3.253-3.536-.708z"></path></svg></span>
-            </h1>
+              
+            
+            {% if current_theme == 'diwali' %}
+            <h1 style="margin-top: 3vw; color:rgb(227, 55, 55)">
+              <span class=" text-center text-9xl text-[#205846]"><svg class="standered-plan" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3.414 13.778 2 15.192l4.949 2.121 2.122 4.95 1.414-1.414-.707-3.536L13.091 14l3.61 7.704 1.339-1.339-1.19-10.123 2.828-2.829a2 2 0 1 0-2.828-2.828l-2.903 2.903L3.824 6.297 2.559 7.563l7.644 3.67-3.253 3.253-3.536-.708z"></path></svg></span>
+          </h1>
+        {% else %}
+        <h1 style=" color:rgb(62, 199, 206)">
+          <span class="standered-icon text-center text-9xl text-[#205846]"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M3.414 13.778 2 15.192l4.949 2.121 2.122 4.95 1.414-1.414-.707-3.536L13.091 14l3.61 7.704 1.339-1.339-1.19-10.123 2.828-2.829a2 2 0 1 0-2.828-2.828l-2.903 2.903L3.824 6.297 2.559 7.563l7.644 3.67-3.253 3.253-3.536-.708z"></path></svg></span>
+        </h1>
+        {% endif %}
             <div style="text-align: justify;"> 
                 <ul class="flex items-center flex-col whitespace-nowrap gap-4 text-xs text-white custom-list">
                     <h4 class="text-2xl font-bold mt-5 whitespace-nowrap text-center ">Standard Plan</h4>
@@ -3344,8 +4450,8 @@ window.addEventListener('resize', handleResize);
             </div>
             
             {% if current_theme == 'republic' %}
-            <div class="position-relative">
-              <div class="position-absolute bottom-0 end-0" style="margin-right: -2.2rem;margin-bottom: -1.4rem;">
+            <div class="position-relative" style="margin-top: 23rem;">
+              <div class="position-absolute bottom-0 end-0" style="margin-right: -1.7rem;margin-bottom: -1.4rem;">
                 <img loading="lazy" width="220rem" src="{% static 'republic/decor/frames/normal_frame/frame_bottom_right.png' %}" alt="">
               </div>
             </div>
@@ -3355,11 +4461,16 @@ window.addEventListener('resize', handleResize);
 
           <div class="box-service"
           {% if current_theme == 'ramadan' %}
-          style="margin-bottom: 3vh; padding: 1em 1.7em; width: 350px;
+          style="margin-bottom: 3vh; padding: 1em 1.7em; width: 320px;
           background-image: url('/static/ramadan/decor/whatsapp_frame/whatsapp_frame.png');
           background-size: 100% 100%"
+
+          {% elif current_theme == 'diwali' %}
+          style="margin-bottom: 3vh; padding: 1em 1.7em; width: 320px;
+          background-image: url('/static/diwali/decor/whatsapp_frame/diwali_whatsapp_frame.png');
+          background-size: 100% 100%"
           {% else %}
-          style="margin-bottom: 3vh; padding: 1em 1.7em; width: 350px; border-radius: 1vw;"
+          style="margin-bottom: 3vh; padding: 1em 1.7em; width: 320px; border-radius: 1vw;"
           {% endif %}
           >
 
@@ -3381,15 +4492,10 @@ window.addEventListener('resize', handleResize);
                 <img loading="lazy" class="easter_whatsapp_frame" src="{% static 'easter/decor/frame/whatsapp_frame.png' %}" alt="">
               </div>
             </div>
-            {% elif current_theme == 'diwali' %} 
-            <div class="position-relative">
-              <div class="position-absolute start-0 top-0 vishu_whatsapp_frame_top" >
-                <img loading="lazy"  id="vishu_whatsapp_frame" src="{% static 'diwali/decor/whatsapp_frame/diwali_whatsapp_frame.png' %}" alt="">
-              </div>
-            </div>
+
             {% endif %}
 
-            <div class="box-contents" style="height: 50%;" >
+            <div class="box-contents" style="height: 51%;" >
               {% if current_theme == 'xmas' %}
               <div class="position-relative" style="z-index: 1;">
                 <div class="position-absolute blue_top_top">
@@ -3398,19 +4504,31 @@ window.addEventListener('resize', handleResize);
               </div>
               {% elif current_theme == 'republic' %}
               <div class="position-relative">
-                <div class="position-absolute" style="margin-left: -2.2rem;margin-top: 20.3rem;">
+                <div class="position-absolute" style="margin-left: -1.80rem;margin-top: -1rem;">
                   <img loading="lazy" width="220rem" src="{% static 'republic/decor/frames/normal_frame/frame_top_left.png' %}" alt="">
                 </div>
               </div>
               {% elif current_theme == 'onam' %}
-              <div class="position-relative">
-                <div class="position-absolute" style="margin-left: -1.8rem;margin-top: 20.3rem;">
+              <!-- <div class="position-relative">
+                <div class="position-absolute" style="margin-left: -1.8rem;margin-top: 20.8rem;">
                   <img loading="lazy" class="onam_frame" src="{% static 'onam/decor/frame6/onam_whatsapp_frame.png' %}" alt="">
+                </div>
+              </div> -->
+              <div class="position-relative" style="z-index: 10;">
+                <div class="position-absolute start-0 top-0 onam_whatsapp_frame_top">
+                  <img loading="lazy" class="onam_whatsapp_frame" src="{% static 'onam/decor/frame6/onam_whatsapp_frame.png' %}" alt="">
                 </div>
               </div>
               {% endif %}
-              <h1 style="color:rgb(62, 199, 206)">
-                <span class="plan-icon text-center text-9xl text-[#205846]"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12.17 9.53c2.307-2.592 3.278-4.684 3.641-6.218.21-.887.214-1.58.16-2.065a3.578 3.578 0 0 0-.108-.563 2.22 2.22 0 0 0-.078-.23V.453c-.073-.164-.168-.234-.352-.295a2.35 2.35 0 0 0-.16-.045 3.797 3.797 0 0 0-.57-.093c-.49-.044-1.19-.03-2.08.188-1.536.374-3.618 1.343-6.161 3.604l-2.4.238h-.006a2.552 2.552 0 0 0-1.524.734L.15 7.17a.512.512 0 0 0 .433.868l1.896-.271c.28-.04.592.013.955.132.232.076.437.16.655.248l.203.083c.196.816.66 1.58 1.275 2.195.613.614 1.376 1.08 2.191 1.277l.082.202c.089.218.173.424.249.657.118.363.172.676.132.956l-.271 1.9a.512.512 0 0 0 .867.433l2.382-2.386c.41-.41.668-.949.732-1.526l.24-2.408Zm.11-3.699c-.797.8-1.93.961-2.528.362-.598-.6-.436-1.733.361-2.532.798-.799 1.93-.96 2.528-.361.599.599.437 1.732-.36 2.531Z"></path><path d="M5.205 10.787a7.632 7.632 0 0 0 1.804 1.352c-1.118 1.007-4.929 2.028-5.054 1.903-.126-.127.737-4.189 1.839-5.18.346.69.837 1.35 1.411 1.925Z"></path></svg></span>            </h1>
+                {% if current_theme == 'diwali' %}
+                <h1  style="margin-top: 3vw; color:rgb(227, 55, 55)">
+                  <span class=" text-center text-9xl text-[#205846]"><svg class="advanced-plan" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12.17 9.53c2.307-2.592 3.278-4.684 3.641-6.218.21-.887.214-1.58.16-2.065a3.578 3.578 0 0 0-.108-.563 2.22 2.22 0 0 0-.078-.23V.453c-.073-.164-.168-.234-.352-.295a2.35 2.35 0 0 0-.16-.045 3.797 3.797 0 0 0-.57-.093c-.49-.044-1.19-.03-2.08.188-1.536.374-3.618 1.343-6.161 3.604l-2.4.238h-.006a2.552 2.552 0 0 0-1.524.734L.15 7.17a.512.512 0 0 0 .433.868l1.896-.271c.28-.04.592.013.955.132.232.076.437.16.655.248l.203.083c.196.816.66 1.58 1.275 2.195.613.614 1.376 1.08 2.191 1.277l.082.202c.089.218.173.424.249.657.118.363.172.676.132.956l-.271 1.9a.512.512 0 0 0 .867.433l2.382-2.386c.41-.41.668-.949.732-1.526l.24-2.408Zm.11-3.699c-.797.8-1.93.961-2.528.362-.598-.6-.436-1.733.361-2.532.798-.799 1.93-.96 2.528-.361.599.599.437 1.732-.36 2.531Z"></path><path d="M5.205 10.787a7.632 7.632 0 0 0 1.804 1.352c-1.118 1.007-4.929 2.028-5.054 1.903-.126-.127.737-4.189 1.839-5.18.346.69.837 1.35 1.411 1.925Z"></path></svg></span>            </h1>
+            {% else %}
+            <h1 style=" color:rgb(62, 199, 206)">
+              <span class=" text-center text-9xl text-[#205846]"><svg class="advanced-plan" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12.17 9.53c2.307-2.592 3.278-4.684 3.641-6.218.21-.887.214-1.58.16-2.065a3.578 3.578 0 0 0-.108-.563 2.22 2.22 0 0 0-.078-.23V.453c-.073-.164-.168-.234-.352-.295a2.35 2.35 0 0 0-.16-.045 3.797 3.797 0 0 0-.57-.093c-.49-.044-1.19-.03-2.08.188-1.536.374-3.618 1.343-6.161 3.604l-2.4.238h-.006a2.552 2.552 0 0 0-1.524.734L.15 7.17a.512.512 0 0 0 .433.868l1.896-.271c.28-.04.592.013.955.132.232.076.437.16.655.248l.203.083c.196.816.66 1.58 1.275 2.195.613.614 1.376 1.08 2.191 1.277l.082.202c.089.218.173.424.249.657.118.363.172.676.132.956l-.271 1.9a.512.512 0 0 0 .867.433l2.382-2.386c.41-.41.668-.949.732-1.526l.24-2.408Zm.11-3.699c-.797.8-1.93.961-2.528.362-.598-.6-.436-1.733.361-2.532.798-.799 1.93-.96 2.528-.361.599.599.437 1.732-.36 2.531Z"></path><path d="M5.205 10.787a7.632 7.632 0 0 0 1.804 1.352c-1.118 1.007-4.929 2.028-5.054 1.903-.126-.127.737-4.189 1.839-5.18.346.69.837 1.35 1.411 1.925Z"></path></svg></span>            </h1>
+            </h1>
+            {% endif %}
+            
             <div style="text-align: justify;"> 
                 <ul class="flex items-center flex-col whitespace-nowrap gap-4 text-xs text-white custom-list">
                     <h4 class="text-2xl font-bold mt-5 whitespace-nowrap text-center ">Advanced Plan</h4>
@@ -3430,8 +4548,8 @@ window.addEventListener('resize', handleResize);
             </div>
 
             {% if current_theme == 'republic' %}
-            <div class="position-relative">
-              <div class="position-absolute bottom-0 end-0" style="margin-right: -2.2rem;margin-bottom: -1.4rem;">
+            <div class="position-relative" style="margin-top: 22.50rem;">
+              <div class="position-absolute bottom-0 end-0" style="margin-right: -1.7rem;margin-bottom: -1.4rem;">
                 <img loading="lazy" width="220rem" src="{% static 'republic/decor/frames/normal_frame/frame_bottom_right.png' %}" alt="">
               </div>
             </div>
@@ -3448,21 +4566,21 @@ window.addEventListener('resize', handleResize);
             <img loading="lazy"  id="peeking_characters_left" src="{% static 'ramadan/decor/peeking_characters/peeking_characters1_left.png' %}" alt="">
           </div>
 
-          <div class="position-absolute peeking_both_characters_top start-50 translate-middle-x">
+          <!-- <div class="position-absolute peeking_both_characters_top start-50 translate-middle-x">
             <img loading="lazy"  id="peeking_both_characters" src="{% static 'ramadan/decor/peeking_both_characters.png' %}" alt="">
-          </div>
+          </div> -->
         </div>
         {% endif %}
 
         <br>
-        <div class="row mb-0 ml-2 mr-2"  style="margin-top: -6.6vh; background-color: #00000099;">
-          <div class="col-md-3"></div>
-          <div class="col-lg-6 col-md-6 mb-3">
-            <form action="{% url 'enquerys' %}" method="post"  class="enquiry-form">
-              {% csrf_token %}
-              <center>                  
+        <div class="">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 mb-3">
+            <center>
+              <form action="{% url 'enquerys' %}" method="post" class="enquiry-form">
+                {% csrf_token %}
                 <div class="form-group mt-4">
-                  <label for="Name" class="text-white" >Name</label>
+                  <label for="Name" class="text-white">Name</label>
                   <input type="text" class="form-control" name="Name" id="Name" placeholder="Write your name here.." required>
                 </div>
                 <div class="form-group mt-4">
@@ -3482,11 +4600,13 @@ window.addEventListener('resize', handleResize);
                   <input type="text" class="form-control" name="message" id="message" placeholder="What would you like to tell us.." required>
                 </div>
                 <br>
-                <button type="submit" class="form-control" style=" background-color: black; color: white; width: 75%;">Send</button>
-              </center>
-            </form>
+                <button type="submit" class="form-control" style="background-color: black; color: white; width: 75%;">Send</button>
+              </form>
+            </center>
+            </div>
           </div>
         </div>
+        
         {% if current_theme == 'ramadan' %}
         <div class="position-relative"> 
           <div class="position-absolute end-0 peeking_characters_right_top">
@@ -3496,103 +4616,796 @@ window.addEventListener('resize', handleResize);
         {% endif %}
       </div>
 
-        <!-- ======= FAQs Section ======= -->
-        <section id="FAQs" class=" container faqs section-bg" style="margin-top: 3vw; margin-bottom: 3vw;">
+         <!-- ======= FAQs Section ======= -->
+    <section id="FAQs" class="container faqs section-bg">
 
-          <div class="our-faq-wrapper">
-            <div class="container">
-              <div class="section-title" >
-                <h2 >FAQ<sub>s</sub></h2>
-              </div>
-    
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="accordion" id="accordion">
-                    <div class="card">
-                      <div class="card-header" id="headingOne">
-                        <h5 class="mb-0">
-                          <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Is Altos Connect easy to use? </button>
-                        </h5>
-                      </div>
-                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
-                        <div class="card-body">Yes, Altos Connect is designed to be user-friendly and intuitive. Whether you're a beginner or an experienced marketer, you can quickly set up and launch WhatsApp campaigns with ease.
-                        </div>
-                      </div>
+      <div class="our-faq-wrapper">
+        <div class="container">
+          <div class="section-title">
+            {% if current_theme == 'pongal' %}
+          <h2 class="pongal_text_theme" style="color: transparent; ">FAQ<subs>s</subs></h2>
+          {% elif current_theme == 'vishu' %}
+          <h2 class="vishu_text_bg1" style="color: transparent;">FAQ<subs>s</subs></h2>
+          {% elif current_theme == 'easter' %}
+          <h2 class="easter_text_bg1" style="color: transparent;">FAQ<subs>s</subs></h2>
+          {% elif current_theme == 'xmas' %}
+          <h2 class="xmas_text text-light">FAQ<sub>s</sub></h2>
+          {% elif current_theme == 'onam' %}
+          <h2 style="color: orange;">FAQ<sub>s</sub></h2>
+          {% elif current_theme == 'diwali' %}
+          <h2 style="color: rgb(255, 63, 63)">FAQ<sub>s</sub></h2>
+          {% elif current_theme == 'republic' %}
+          <p style="color: transparent;"><span class="fg_republic">FAQ<subs class="fg_republic">s</subs>  </span></p>
+          {% elif current_theme == 'ramadan' %}
+          <p style="color: transparent;"><span class="ramadan_text1">FAQ<subs class="ramadan_text1">s</subs>  </span></p>
+          {% else %}
+          <h2 >FAQ<sub>s</sub></h2>
+          {% endif %}
+          </div>
+
+          {% if current_theme == 'xmas' %}
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link-xmas collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Is Altos Connect easy to use? </button>
+                      </h5>
                     </div>
-                    <div class="card">
-                      <div class="card-header" id="headingTwo">
-                        <h5 class="mb-0">
-                          <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Can I use Altos Connect for bulk messaging?
-                          </button>
-                        </h5>
-                      </div>
-                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
-                        <div class="card-body">Yes, Altos Connect supports bulk messaging, allowing you to send personalized messages to large groups of recipients simultaneously. However, it's important to adhere to WhatsApp's guidelines to avoid being flagged as spam.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-header" id="headingThree">
-                        <h5 class="mb-0">
-                          <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">How can Altos Connect help my business grow?
-                          </button>
-                        </h5>
-                      </div>
-                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
-                        <div class="card-body"> Altos Connect enables businesses to engage with their audience on a more personal level, leading to increased customer loyalty, higher conversion rates, and ultimately, business growth. By leveraging WhatsApp's popularity and reach, you can expand your reach and drive revenue.
-                        </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                      <div class="card-body-xmas"> Yes, Altos Connect is designed to be user-friendly and intuitive. Whether you're a beginner or an experienced marketer, you can quickly set up and launch WhatsApp campaigns with ease.
                       </div>
                     </div>
                   </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-xmas collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Can I use Altos Connect for bulk messaging?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                    <div class="card-body-xmas">Yes, Altos Connect supports bulk messaging, allowing you to send personalized messages to large groups of recipients simultaneously. However, it's important to adhere to WhatsApp's guidelines to avoid being flagged as spam.
+                    </div>
+                  </div>
                 </div>
-                <div class="col-lg-6">
-                  <div class="accordion" id="accordion2">
-                    <div class="card">
-                      <div class="card-header" id="heading4">
-                        <h5 class="mb-0">
-                          <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4"> Is Altos Connect secure?
-                          </button>
-                        </h5>
-                      </div>
-                      <div id="collapse4" class="collapse" aria-labelledby="heading4" data-bs-parent="#accordion2">
-                        <div class="card-body"> Yes, Altos Connect prioritizes data security and privacy. We employ robust encryption and security measures to protect your data and ensure that your messaging activities remain secure and confidential.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-header" id="heading5">
-                        <h5 class="mb-0">
-                          <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5"> Can Altos Connect integrate with other marketing tools?
-                          </button>
-                        </h5>
-                      </div>
-                      <div id="collapse5" class="collapse" aria-labelledby="heading5" data-bs-parent="#accordion2">
-                        <div class="card-body">Yes, Altos Connect offers integration capabilities with other marketing tools and platforms, such as CRM systems, email marketing software, and analytics platforms, to streamline your marketing workflows and maximize your results.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-header" id="heading6">
-                        <h5 class="mb-0">
-                          <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6"> How can I get started with Altos Connect?
-                          </button>
-                        </h5>
-                      </div>
-                      <div id="collapse6" class="collapse" aria-labelledby="heading6" data-bs-parent="#accordion2">
-                        <div class="card-body">Getting started with Altos Connect is easy! Simply sign up for an account, customize your settings, upload your contact lists, and start creating and sending WhatsApp campaigns. Our team is here to provide support and guidance every step of the way.<br>
-                          Experience the power of Altos Connect and revolutionize your communication strategy on WhatsApp. Sign up now to unlock a world of possibilities for engaging with your audience, automating your messaging, and driving growth for your business. Don't miss out on this opportunity to elevate your marketing efforts and connect with your customers like never before. Get started today and discover why businesses around the world trust Altos Connect for their WhatsApp marketing needs.                        
-                           </div>
-                      </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-xmas collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">  How can Altos Connect help my business grow?
+
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                    <div class="card-body-xmas">Altos Connect enables businesses to engage with their audience on a more personal level, leading to increased customer loyalty, higher conversion rates, and ultimately, business growth. By leveraging WhatsApp's popularity and reach, you can expand your reach and drive revenue.
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion2">
+                <div class="card">
+                  <div class="card-header" id="heading4">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-xmas collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Is Altos Connect secure?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse4" class="collapse" aria-labelledby="heading4" data-bs-parent="#accordion2">
+                    <div class="card-body-xmas">  Yes, Altos Connect prioritizes data security and privacy. We employ robust encryption and security measures to protect your data and ensure that your messaging activities remain secure and confidential.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading5">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-xmas collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5"> Can Altos Connect integrate with other marketing tools?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse5" class="collapse" aria-labelledby="heading5" data-bs-parent="#accordion2">
+                    <div class="card-body-xmas">Yes, Altos Connect offers integration capabilities with other marketing tools and platforms, such as CRM systems, email marketing software, and analytics platforms, to streamline your marketing workflows and maximize your results.
+                       </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading6">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-xmas collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6"> How can I get started with Altos Connect?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse6" class="collapse" aria-labelledby="heading6" data-bs-parent="#accordion2">
+                    <div class="card-body-xmas">Getting started with Altos Connect is easy! Simply sign up for an account, customize your settings, upload your contact lists, and start creating and sending WhatsApp campaigns. Our team is here to provide support and guidance every step of the way.
+                      Experience the power of Altos Connect and revolutionize your communication strategy on WhatsApp. Sign up now to unlock a world of possibilities for engaging with your audience, automating your messaging, and driving growth for your business. Don't miss out on this opportunity to elevate your marketing efforts and connect with your customers like never before. Get started today and discover why businesses around the world trust Altos Connect for their WhatsApp marketing needs.                      
+                       </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </section>
-        <!-- End FAQs Section -->
-  
+          {% elif current_theme == 'onam' %}
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link-onam collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Is Altos Connect easy to use? </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                      <div class="card-body-onam"> Yes, Altos Connect is designed to be user-friendly and intuitive. Whether you're a beginner or an experienced marketer, you can quickly set up and launch WhatsApp campaigns with ease.
+                      </div>
+                    </div>
+                  </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-onam collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Can I use Altos Connect for bulk messaging?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                    <div class="card-body-onam">Yes, Altos Connect supports bulk messaging, allowing you to send personalized messages to large groups of recipients simultaneously. However, it's important to adhere to WhatsApp's guidelines to avoid being flagged as spam.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-onam collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">  How can Altos Connect help my business grow?
+
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                    <div class="card-body-onam">Altos Connect enables businesses to engage with their audience on a more personal level, leading to increased customer loyalty, higher conversion rates, and ultimately, business growth. By leveraging WhatsApp's popularity and reach, you can expand your reach and drive revenue.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion2">
+                <div class="card">
+                  <div class="card-header" id="heading4">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-onam collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Is Altos Connect secure?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse4" class="collapse" aria-labelledby="heading4" data-bs-parent="#accordion2">
+                    <div class="card-body-onam">  Yes, Altos Connect prioritizes data security and privacy. We employ robust encryption and security measures to protect your data and ensure that your messaging activities remain secure and confidential.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading5">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-onam collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5"> Can Altos Connect integrate with other marketing tools?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse5" class="collapse" aria-labelledby="heading5" data-bs-parent="#accordion2">
+                    <div class="card-body-onam">Yes, Altos Connect offers integration capabilities with other marketing tools and platforms, such as CRM systems, email marketing software, and analytics platforms, to streamline your marketing workflows and maximize your results.
+                       </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading6">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-onam collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6"> How can I get started with Altos Connect?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse6" class="collapse" aria-labelledby="heading6" data-bs-parent="#accordion2">
+                    <div class="card-body-onam">Getting started with Altos Connect is easy! Simply sign up for an account, customize your settings, upload your contact lists, and start creating and sending WhatsApp campaigns. Our team is here to provide support and guidance every step of the way.
+                      Experience the power of Altos Connect and revolutionize your communication strategy on WhatsApp. Sign up now to unlock a world of possibilities for engaging with your audience, automating your messaging, and driving growth for your business. Don't miss out on this opportunity to elevate your marketing efforts and connect with your customers like never before. Get started today and discover why businesses around the world trust Altos Connect for their WhatsApp marketing needs.                      
+                       </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% elif current_theme == 'diwali' %}
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link-diwali collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Is Altos Connect easy to use? </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                      <div class="card-body-diwali"> Yes, Altos Connect is designed to be user-friendly and intuitive. Whether you're a beginner or an experienced marketer, you can quickly set up and launch WhatsApp campaigns with ease.
+                      </div>
+                    </div>
+                  </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-diwali collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Can I use Altos Connect for bulk messaging?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                    <div class="card-body-diwali">Yes, Altos Connect supports bulk messaging, allowing you to send personalized messages to large groups of recipients simultaneously. However, it's important to adhere to WhatsApp's guidelines to avoid being flagged as spam.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-diwali collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">  How can Altos Connect help my business grow?
+
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                    <div class="card-body-diwali">Altos Connect enables businesses to engage with their audience on a more personal level, leading to increased customer loyalty, higher conversion rates, and ultimately, business growth. By leveraging WhatsApp's popularity and reach, you can expand your reach and drive revenue.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion2">
+                <div class="card">
+                  <div class="card-header" id="heading4">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-diwali collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Is Altos Connect secure?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse4" class="collapse" aria-labelledby="heading4" data-bs-parent="#accordion2">
+                    <div class="card-body-diwali">  Yes, Altos Connect prioritizes data security and privacy. We employ robust encryption and security measures to protect your data and ensure that your messaging activities remain secure and confidential.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading5">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-diwali collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5"> Can Altos Connect integrate with other marketing tools?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse5" class="collapse" aria-labelledby="heading5" data-bs-parent="#accordion2">
+                    <div class="card-body-diwali">Yes, Altos Connect offers integration capabilities with other marketing tools and platforms, such as CRM systems, email marketing software, and analytics platforms, to streamline your marketing workflows and maximize your results.
+                       </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading6">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-diwali collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6"> How can I get started with Altos Connect?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse6" class="collapse" aria-labelledby="heading6" data-bs-parent="#accordion2">
+                    <div class="card-body-diwali">Getting started with Altos Connect is easy! Simply sign up for an account, customize your settings, upload your contact lists, and start creating and sending WhatsApp campaigns. Our team is here to provide support and guidance every step of the way.
+                      Experience the power of Altos Connect and revolutionize your communication strategy on WhatsApp. Sign up now to unlock a world of possibilities for engaging with your audience, automating your messaging, and driving growth for your business. Don't miss out on this opportunity to elevate your marketing efforts and connect with your customers like never before. Get started today and discover why businesses around the world trust Altos Connect for their WhatsApp marketing needs.                      
+                       </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% elif current_theme == 'pongal' %}
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link-pongal collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Is Altos Connect easy to use? </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                      <div class="card-body-pongal"> Yes, Altos Connect is designed to be user-friendly and intuitive. Whether you're a beginner or an experienced marketer, you can quickly set up and launch WhatsApp campaigns with ease.
+                      </div>
+                    </div>
+                  </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-pongal collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Can I use Altos Connect for bulk messaging?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                    <div class="card-body-pongal">Yes, Altos Connect supports bulk messaging, allowing you to send personalized messages to large groups of recipients simultaneously. However, it's important to adhere to WhatsApp's guidelines to avoid being flagged as spam.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-pongal collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">  How can Altos Connect help my business grow?
+
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                    <div class="card-body-pongal">Altos Connect enables businesses to engage with their audience on a more personal level, leading to increased customer loyalty, higher conversion rates, and ultimately, business growth. By leveraging WhatsApp's popularity and reach, you can expand your reach and drive revenue.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion2">
+                <div class="card">
+                  <div class="card-header" id="heading4">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-pongal collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Is Altos Connect secure?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse4" class="collapse" aria-labelledby="heading4" data-bs-parent="#accordion2">
+                    <div class="card-body-pongal">  Yes, Altos Connect prioritizes data security and privacy. We employ robust encryption and security measures to protect your data and ensure that your messaging activities remain secure and confidential.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading5">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-pongal collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5"> Can Altos Connect integrate with other marketing tools?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse5" class="collapse" aria-labelledby="heading5" data-bs-parent="#accordion2">
+                    <div class="card-body-pongal">Yes, Altos Connect offers integration capabilities with other marketing tools and platforms, such as CRM systems, email marketing software, and analytics platforms, to streamline your marketing workflows and maximize your results.
+                       </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading6">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-pongal collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6"> How can I get started with Altos Connect?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse6" class="collapse" aria-labelledby="heading6" data-bs-parent="#accordion2">
+                    <div class="card-body-pongal">Getting started with Altos Connect is easy! Simply sign up for an account, customize your settings, upload your contact lists, and start creating and sending WhatsApp campaigns. Our team is here to provide support and guidance every step of the way.
+                      Experience the power of Altos Connect and revolutionize your communication strategy on WhatsApp. Sign up now to unlock a world of possibilities for engaging with your audience, automating your messaging, and driving growth for your business. Don't miss out on this opportunity to elevate your marketing efforts and connect with your customers like never before. Get started today and discover why businesses around the world trust Altos Connect for their WhatsApp marketing needs.                      
+                       </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% elif current_theme == 'vishu' %}
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link-vishu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Is Altos Connect easy to use? </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                      <div class="card-body-vishu"> Yes, Altos Connect is designed to be user-friendly and intuitive. Whether you're a beginner or an experienced marketer, you can quickly set up and launch WhatsApp campaigns with ease.
+                      </div>
+                    </div>
+                  </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-vishu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Can I use Altos Connect for bulk messaging?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                    <div class="card-body-vishu">Yes, Altos Connect supports bulk messaging, allowing you to send personalized messages to large groups of recipients simultaneously. However, it's important to adhere to WhatsApp's guidelines to avoid being flagged as spam.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-vishu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">  How can Altos Connect help my business grow?
+
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                    <div class="card-body-vishu">Altos Connect enables businesses to engage with their audience on a more personal level, leading to increased customer loyalty, higher conversion rates, and ultimately, business growth. By leveraging WhatsApp's popularity and reach, you can expand your reach and drive revenue.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion2">
+                <div class="card">
+                  <div class="card-header" id="heading4">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-vishu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Is Altos Connect secure?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse4" class="collapse" aria-labelledby="heading4" data-bs-parent="#accordion2">
+                    <div class="card-body-vishu">  Yes, Altos Connect prioritizes data security and privacy. We employ robust encryption and security measures to protect your data and ensure that your messaging activities remain secure and confidential.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading5">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-vishu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5"> Can Altos Connect integrate with other marketing tools?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse5" class="collapse" aria-labelledby="heading5" data-bs-parent="#accordion2">
+                    <div class="card-body-vishu">Yes, Altos Connect offers integration capabilities with other marketing tools and platforms, such as CRM systems, email marketing software, and analytics platforms, to streamline your marketing workflows and maximize your results.
+                       </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading6">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-vishu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6"> How can I get started with Altos Connect?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse6" class="collapse" aria-labelledby="heading6" data-bs-parent="#accordion2">
+                    <div class="card-body-vishu">Getting started with Altos Connect is easy! Simply sign up for an account, customize your settings, upload your contact lists, and start creating and sending WhatsApp campaigns. Our team is here to provide support and guidance every step of the way.
+                      Experience the power of Altos Connect and revolutionize your communication strategy on WhatsApp. Sign up now to unlock a world of possibilities for engaging with your audience, automating your messaging, and driving growth for your business. Don't miss out on this opportunity to elevate your marketing efforts and connect with your customers like never before. Get started today and discover why businesses around the world trust Altos Connect for their WhatsApp marketing needs.                      
+                       </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% elif current_theme == 'easter' %}
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link-easter collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Is Altos Connect easy to use? </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                      <div class="card-body-easter"> Yes, Altos Connect is designed to be user-friendly and intuitive. Whether you're a beginner or an experienced marketer, you can quickly set up and launch WhatsApp campaigns with ease.
+                      </div>
+                    </div>
+                  </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-easter collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Can I use Altos Connect for bulk messaging?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                    <div class="card-body-easter">Yes, Altos Connect supports bulk messaging, allowing you to send personalized messages to large groups of recipients simultaneously. However, it's important to adhere to WhatsApp's guidelines to avoid being flagged as spam.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-easter collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">  How can Altos Connect help my business grow?
+
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                    <div class="card-body-easter">Altos Connect enables businesses to engage with their audience on a more personal level, leading to increased customer loyalty, higher conversion rates, and ultimately, business growth. By leveraging WhatsApp's popularity and reach, you can expand your reach and drive revenue.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion2">
+                <div class="card">
+                  <div class="card-header" id="heading4">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-easter collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Is Altos Connect secure?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse4" class="collapse" aria-labelledby="heading4" data-bs-parent="#accordion2">
+                    <div class="card-body-easter">  Yes, Altos Connect prioritizes data security and privacy. We employ robust encryption and security measures to protect your data and ensure that your messaging activities remain secure and confidential.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading5">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-easter collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5"> Can Altos Connect integrate with other marketing tools?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse5" class="collapse" aria-labelledby="heading5" data-bs-parent="#accordion2">
+                    <div class="card-body-easter">Yes, Altos Connect offers integration capabilities with other marketing tools and platforms, such as CRM systems, email marketing software, and analytics platforms, to streamline your marketing workflows and maximize your results.
+                       </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading6">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-easter collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6"> How can I get started with Altos Connect?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse6" class="collapse" aria-labelledby="heading6" data-bs-parent="#accordion2">
+                    <div class="card-body-easter">Getting started with Altos Connect is easy! Simply sign up for an account, customize your settings, upload your contact lists, and start creating and sending WhatsApp campaigns. Our team is here to provide support and guidance every step of the way.
+                      Experience the power of Altos Connect and revolutionize your communication strategy on WhatsApp. Sign up now to unlock a world of possibilities for engaging with your audience, automating your messaging, and driving growth for your business. Don't miss out on this opportunity to elevate your marketing efforts and connect with your customers like never before. Get started today and discover why businesses around the world trust Altos Connect for their WhatsApp marketing needs.                      
+                       </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% elif current_theme == 'republic' %}
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link-republic collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Is Altos Connect easy to use? </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                      <div class="card-body-republic"> Yes, Altos Connect is designed to be user-friendly and intuitive. Whether you're a beginner or an experienced marketer, you can quickly set up and launch WhatsApp campaigns with ease.
+                      </div>
+                    </div>
+                  </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-republic collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Can I use Altos Connect for bulk messaging?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                    <div class="card-body-republic">Yes, Altos Connect supports bulk messaging, allowing you to send personalized messages to large groups of recipients simultaneously. However, it's important to adhere to WhatsApp's guidelines to avoid being flagged as spam.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-republic collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">  How can Altos Connect help my business grow?
+
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                    <div class="card-body-republic">Altos Connect enables businesses to engage with their audience on a more personal level, leading to increased customer loyalty, higher conversion rates, and ultimately, business growth. By leveraging WhatsApp's popularity and reach, you can expand your reach and drive revenue.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion2">
+                <div class="card">
+                  <div class="card-header" id="heading4">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-republic collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Is Altos Connect secure?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse4" class="collapse" aria-labelledby="heading4" data-bs-parent="#accordion2">
+                    <div class="card-body-republic">  Yes, Altos Connect prioritizes data security and privacy. We employ robust encryption and security measures to protect your data and ensure that your messaging activities remain secure and confidential.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading5">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-republic collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5"> Can Altos Connect integrate with other marketing tools?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse5" class="collapse" aria-labelledby="heading5" data-bs-parent="#accordion2">
+                    <div class="card-body-republic">Yes, Altos Connect offers integration capabilities with other marketing tools and platforms, such as CRM systems, email marketing software, and analytics platforms, to streamline your marketing workflows and maximize your results.
+                       </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading6">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-republic collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6"> How can I get started with Altos Connect?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse6" class="collapse" aria-labelledby="heading6" data-bs-parent="#accordion2">
+                    <div class="card-body-republic">Getting started with Altos Connect is easy! Simply sign up for an account, customize your settings, upload your contact lists, and start creating and sending WhatsApp campaigns. Our team is here to provide support and guidance every step of the way.
+                      Experience the power of Altos Connect and revolutionize your communication strategy on WhatsApp. Sign up now to unlock a world of possibilities for engaging with your audience, automating your messaging, and driving growth for your business. Don't miss out on this opportunity to elevate your marketing efforts and connect with your customers like never before. Get started today and discover why businesses around the world trust Altos Connect for their WhatsApp marketing needs.                      
+                       </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% elif current_theme == 'ramadan' %}
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link-ramadan collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Is Altos Connect easy to use? </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                      <div class="card-body-ramadan"> Yes, Altos Connect is designed to be user-friendly and intuitive. Whether you're a beginner or an experienced marketer, you can quickly set up and launch WhatsApp campaigns with ease.
+                      </div>
+                    </div>
+                  </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-ramadan collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Can I use Altos Connect for bulk messaging?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                    <div class="card-body-ramadan">Yes, Altos Connect supports bulk messaging, allowing you to send personalized messages to large groups of recipients simultaneously. However, it's important to adhere to WhatsApp's guidelines to avoid being flagged as spam.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-ramadan collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">  How can Altos Connect help my business grow?
+
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                    <div class="card-body-ramadan">Altos Connect enables businesses to engage with their audience on a more personal level, leading to increased customer loyalty, higher conversion rates, and ultimately, business growth. By leveraging WhatsApp's popularity and reach, you can expand your reach and drive revenue.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion2">
+                <div class="card">
+                  <div class="card-header" id="heading4">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-ramadan collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Is Altos Connect secure?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse4" class="collapse" aria-labelledby="heading4" data-bs-parent="#accordion2">
+                    <div class="card-body-ramadan">  Yes, Altos Connect prioritizes data security and privacy. We employ robust encryption and security measures to protect your data and ensure that your messaging activities remain secure and confidential.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading5">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-ramadan collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5"> Can Altos Connect integrate with other marketing tools?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse5" class="collapse" aria-labelledby="heading5" data-bs-parent="#accordion2">
+                    <div class="card-body-ramadan">Yes, Altos Connect offers integration capabilities with other marketing tools and platforms, such as CRM systems, email marketing software, and analytics platforms, to streamline your marketing workflows and maximize your results.
+                       </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading6">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link-ramadan collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6"> How can I get started with Altos Connect?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse6" class="collapse" aria-labelledby="heading6" data-bs-parent="#accordion2">
+                    <div class="card-body-ramadan">Getting started with Altos Connect is easy! Simply sign up for an account, customize your settings, upload your contact lists, and start creating and sending WhatsApp campaigns. Our team is here to provide support and guidance every step of the way.
+                      Experience the power of Altos Connect and revolutionize your communication strategy on WhatsApp. Sign up now to unlock a world of possibilities for engaging with your audience, automating your messaging, and driving growth for your business. Don't miss out on this opportunity to elevate your marketing efforts and connect with your customers like never before. Get started today and discover why businesses around the world trust Altos Connect for their WhatsApp marketing needs.                      
+                       </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% else %}
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Is Altos Connect easy to use? </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                      <div class="card-body"> Yes, Altos Connect is designed to be user-friendly and intuitive. Whether you're a beginner or an experienced marketer, you can quickly set up and launch WhatsApp campaigns with ease.
+                      </div>
+                    </div>
+                  </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Can I use Altos Connect for bulk messaging?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                    <div class="card-body">Yes, Altos Connect supports bulk messaging, allowing you to send personalized messages to large groups of recipients simultaneously. However, it's important to adhere to WhatsApp's guidelines to avoid being flagged as spam.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">  How can Altos Connect help my business grow?
+
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                    <div class="card-body">Altos Connect enables businesses to engage with their audience on a more personal level, leading to increased customer loyalty, higher conversion rates, and ultimately, business growth. By leveraging WhatsApp's popularity and reach, you can expand your reach and drive revenue.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="accordion" id="accordion2">
+                <div class="card">
+                  <div class="card-header" id="heading4">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">Is Altos Connect secure?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse4" class="collapse" aria-labelledby="heading4" data-bs-parent="#accordion2">
+                    <div class="card-body">  Yes, Altos Connect prioritizes data security and privacy. We employ robust encryption and security measures to protect your data and ensure that your messaging activities remain secure and confidential.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading5">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5"> Can Altos Connect integrate with other marketing tools?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse5" class="collapse" aria-labelledby="heading5" data-bs-parent="#accordion2">
+                    <div class="card-body">Yes, Altos Connect offers integration capabilities with other marketing tools and platforms, such as CRM systems, email marketing software, and analytics platforms, to streamline your marketing workflows and maximize your results.
+                       </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading6">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6"> How can I get started with Altos Connect?
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapse6" class="collapse" aria-labelledby="heading6" data-bs-parent="#accordion2">
+                    <div class="card-body">Getting started with Altos Connect is easy! Simply sign up for an account, customize your settings, upload your contact lists, and start creating and sending WhatsApp campaigns. Our team is here to provide support and guidance every step of the way.
+                      Experience the power of Altos Connect and revolutionize your communication strategy on WhatsApp. Sign up now to unlock a world of possibilities for engaging with your audience, automating your messaging, and driving growth for your business. Don't miss out on this opportunity to elevate your marketing efforts and connect with your customers like never before. Get started today and discover why businesses around the world trust Altos Connect for their WhatsApp marketing needs.                      
+                       </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+     
     </section>
+    <!-- End FAQs Section -->
+    
 
 </div>
 
